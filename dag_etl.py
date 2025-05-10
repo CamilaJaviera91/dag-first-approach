@@ -7,7 +7,13 @@ data_store = {}
 
 def extract_data(n=1000):
     faker = Faker()
-    products = ['item1', 'item2', 'item3', 'item4']
+    products = ["Blue pen", "Red pen", "Black pen", "#2 Pencil", "Mechanical pencil", "Erasers", "Highlighter", "Colored pencils", 
+                "markers", "Sharpener", "Lined notebooks or composition books", "Graph paper", "Loose-leaf paper", "Sticky notes", 
+                "page flags", "3-ring binders", "Dividers with tabs", "Folder", "Index cards", "Pencil pouch", "Pencil case", "Clipboard", 
+                "Ruler", "Protractor", "Compass", "Scientific calculator", "Graphing calculator", "Lab notebook", "USB flash drive", 
+                "Laptop", "Tablet", "Headphones or earbuds", "Charger & extension cord", "Mouse", "Glue stick & liquid glue", 
+                "Safety scissors", "Crayons or watercolor paints", "Construction paper", "Art sketchbook", "Water bottle", "Tissues", 
+                "Hand sanitizer", "Backpack", "Lunch box or bag"]
 
     def generate_sales_data(n):
         sales = []
@@ -40,6 +46,7 @@ def extract_data(n=1000):
 
     df = pd.DataFrame(records)
     data_store['raw'] = df
+    df.to_csv("sales_unprocessed.csv", index=False)
     print("✅ Extracted data with simulated errors...")
 
 def clean_data():
@@ -61,6 +68,7 @@ def clean_data():
 def transform_data():
     df = data_store['clean']
     df['total'] = df['quantity'] * df['unit_price']
+    df['total'] = round(df['total'], 2)
     data_store['transformed'] = df
     print("🛠️ Transformed data...")
 
