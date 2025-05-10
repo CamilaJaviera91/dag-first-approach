@@ -1,0 +1,904 @@
+product,quantity,unit_price,date,client,total
+item3,97.0,118.97,2024-08-26,"Kelley, Irwin and Barker",11540.09
+item4,105.0,430.22,2024-07-14,Gutierrez-Jackson,45173.100000000006
+item3,48.0,402.12,2024-08-13,"Norris, Gaines and Mcclure",19301.760000000002
+item4,60.0,88.68,2024-11-21,"Wolfe, Bradford and Pierce",5320.8
+item2,29.0,365.08,2024-10-20,Martinez and Sons,10587.32
+item1,95.0,488.65,2024-09-27,"Shaw, Barrett and Thompson",46421.75
+item1,136.0,401.98,2025-04-30,"Miller, Moore and Russell",54669.28
+item2,122.0,349.27,2024-06-07,Carter-Parker,42610.939999999995
+item3,37.0,10.99,2025-03-21,"Johnson, Walker and Lester",406.63
+item3,58.0,367.47,2024-09-23,"Fitzgerald, Thomas and Caldwell",21313.260000000002
+item3,110.0,269.49,2024-10-06,"King, Bates and Herrera",29643.9
+item2,23.0,299.71,2024-09-29,Adams-Mayer,6893.33
+item4,100.0,472.52,2025-03-13,Crawford Ltd,47252.0
+item4,116.0,334.23,2024-12-29,Carter-Galvan,38770.68
+item4,13.0,78.55,2025-04-01,"Bender, Stewart and Donovan",1021.15
+item4,63.0,247.79,2024-06-04,Ward Ltd,15610.769999999999
+item1,78.0,441.27,2024-11-19,Johnson-Roberts,34419.06
+item3,131.0,312.6,2025-03-07,Evans Group,40950.600000000006
+item2,23.0,75.33,2024-06-22,"Wells, Hamilton and Watson",1732.59
+item3,17.0,140.07,2024-05-25,Fowler Inc,2381.19
+item2,102.0,146.76,2025-04-10,Sweeney Ltd,14969.519999999999
+item3,85.0,450.98,2025-01-20,"Gomez, Hall and Bolton",38333.3
+item3,117.0,245.1,2025-01-26,Mclean-Torres,28676.7
+item3,100.0,104.83,2025-03-20,Rodriguez LLC,10483.0
+item2,126.0,11.08,2025-01-04,"Smith, Arellano and Molina",1396.08
+item3,32.0,410.01,2024-10-28,Soto-Reeves,13120.32
+item3,127.0,384.01,2024-05-09,Freeman Ltd,48769.27
+item3,88.0,478.09,2024-06-26,Jones-Fox,42071.92
+item1,81.0,363.67,2024-12-15,Martin-Taylor,29457.27
+item1,82.0,408.37,2025-01-09,Stevens Inc,33486.340000000004
+item3,139.0,303.02,2024-12-01,"Anderson, Sandoval and Fernandez",42119.78
+item3,43.0,38.57,2024-07-12,Mueller PLC,1658.51
+item3,132.0,408.68,2024-08-23,"Carter, Hernandez and Arellano",53945.76
+item2,140.0,116.69,2024-12-13,Dennis Inc,16336.6
+item2,72.0,261.84,2024-06-21,Lopez LLC,18852.48
+item1,102.0,353.7,2025-04-24,"Valenzuela, Mcgee and Sanders",36077.4
+item3,113.0,273.85,2024-07-22,Lane and Sons,30945.050000000003
+item1,17.0,453.97,2025-03-19,Martinez and Sons,7717.490000000001
+item1,137.0,15.9,2025-05-08,"Whitney, Warner and French",2178.3
+item4,122.0,334.36,2024-12-18,Alvarado-Moore,40791.92
+item4,91.0,100.95,2024-12-01,Welch PLC,9186.45
+item2,62.0,462.53,2024-09-07,"Wheeler, Hayes and Owen",28676.859999999997
+item3,133.0,443.3,2025-05-07,Winters LLC,58958.9
+item4,71.0,262.46,2024-12-19,"Mcgee, Boyd and Costa",18634.66
+item4,70.0,118.33,2025-02-09,Clark-Ross,8283.1
+item3,33.0,93.35,2024-10-30,Mclean Inc,3080.5499999999997
+item4,134.0,451.64,2024-08-07,Wheeler Group,60519.759999999995
+item3,12.0,376.14,2024-07-11,"Nichols, Richard and Walters",4513.68
+item4,19.0,346.77,2025-01-21,Hill-Wright,6588.629999999999
+item4,47.0,491.5,2025-03-10,"Hampton, Wagner and Hull",23100.5
+item1,61.0,243.43,2024-06-03,Sutton PLC,14849.23
+item3,141.0,72.16,2024-10-07,Flores Ltd,10174.56
+item4,20.0,53.81,2024-09-15,Stokes-Stevens,1076.2
+item2,46.0,29.05,2025-02-06,Cannon Group,1336.3
+item3,144.0,459.13,2024-07-26,Moreno and Sons,66114.72
+item3,132.0,228.01,2024-12-12,"Ford, Ortiz and Price",30097.32
+item1,83.0,104.96,2025-03-02,Harper-Martin,8711.68
+item3,20.0,308.8,2024-12-12,"Williams, Bennett and Smith",6176.0
+item1,55.0,420.49,2024-12-16,"Thomas, Roberts and Brooks",23126.95
+item2,25.0,78.2,2025-04-26,"Montgomery, Wade and Gordon",1955.0
+item1,66.0,315.22,2025-02-03,"Barr, Ward and Bruce",20804.52
+item3,100.0,44.43,2025-02-07,Daniel LLC,4443.0
+item1,19.0,282.84,2024-10-17,"Douglas, Chapman and Gomez",5373.959999999999
+item3,89.0,305.52,2024-07-21,Costa Group,27191.28
+item1,18.0,66.65,2024-12-06,"Watson, Richardson and Good",1199.7
+item3,133.0,344.12,2025-01-06,Byrd Inc,45767.96
+item1,39.0,207.62,2025-02-23,"Henderson, Cain and Horne",8097.18
+item2,131.0,381.95,2024-12-23,Austin Inc,50035.45
+item3,122.0,142.24,2025-02-21,Martin PLC,17353.280000000002
+item4,92.0,365.64,2025-01-05,Koch-Nunez,33638.88
+item4,30.0,119.93,2025-04-12,Bishop PLC,3597.9
+item4,69.0,409.45,2024-10-06,Soto Group,28252.05
+item3,113.0,488.49,2024-12-05,"Gates, Day and Crane",55199.37
+item2,77.0,66.84,2025-03-03,"Owens, Schwartz and Grant",5146.68
+item1,71.0,292.94,2025-01-17,Young-Hunter,20798.74
+item3,90.0,174.83,2024-11-12,Little PLC,15734.7
+item2,48.0,423.68,2024-07-29,"Jackson, Andersen and Brown",20336.64
+item3,48.0,434.74,2024-12-01,"Martinez, Morse and Hernandez",20867.52
+item2,133.0,380.76,2025-02-25,"Sutton, Morris and Harris",50641.08
+item4,14.0,58.38,2024-07-10,"Thompson, Gilbert and Johnson",817.32
+item1,35.0,186.51,2025-01-26,"Hunter, Thompson and Scott",6527.849999999999
+item4,69.0,361.68,2025-04-11,Moore-Mccormick,24955.920000000002
+item1,103.0,446.94,2025-01-21,Robinson PLC,46034.82
+item4,100.0,390.2,2024-12-17,Duffy Group,39020.0
+item1,136.0,397.47,2024-06-10,Sanford and Sons,54055.920000000006
+item4,47.0,122.74,2024-08-03,White PLC,5768.78
+item4,82.0,154.43,2024-12-15,Grant Group,12663.26
+item2,115.0,75.87,2024-08-20,Guerrero Ltd,8725.050000000001
+item2,16.0,92.87,2025-01-04,Anderson-Rodriguez,1485.92
+item3,57.0,232.73,2025-01-13,"Adams, Alexander and Dixon",13265.609999999999
+item4,112.0,393.52,2024-05-31,"Oneill, Vega and Hansen",44074.24
+item4,72.0,345.98,2025-01-07,Hernandez-Kemp,24910.56
+item4,18.0,444.73,2025-02-26,"Jackson, Taylor and Kane",8005.14
+item3,73.0,433.75,2024-11-14,Hall Group,31663.75
+item1,87.0,47.01,2024-09-17,Smith Inc,4089.87
+item4,143.0,31.77,2024-09-10,Case-Blair,4543.11
+item3,83.0,64.17,2025-03-31,"Hamilton, Parker and Keller",5326.110000000001
+item3,102.0,188.23,2024-11-20,Wilson Inc,19199.46
+item3,128.0,108.54,2025-04-01,Klein-Sanders,13893.12
+item1,25.0,286.39,2024-08-06,Dean PLC,7159.75
+item4,73.0,348.79,2025-02-21,Smith Ltd,25461.670000000002
+item1,142.0,328.04,2025-05-09,Mclaughlin LLC,46581.68
+item2,80.0,412.56,2024-10-12,Smith PLC,33004.8
+item2,113.0,366.48,2024-05-23,Franklin and Sons,41412.240000000005
+item4,50.0,363.65,2024-09-03,Henderson-Jones,18182.5
+item3,103.0,271.58,2025-02-04,"Rodgers, Warner and Reyes",27972.739999999998
+item1,44.0,294.03,2025-01-15,Jones Ltd,12937.32
+item3,60.0,98.79,2024-10-06,Williams Group,5927.400000000001
+item4,88.0,456.55,2025-04-11,"Mack, Nunez and Nelson",40176.4
+item4,72.0,74.55,2024-07-28,"Mclaughlin, Adams and Phillips",5367.599999999999
+item3,79.0,47.95,2024-10-16,"Vargas, Williams and Rogers",3788.05
+item3,77.0,20.1,2024-09-03,Chavez-Watson,1547.7
+item3,15.0,360.95,2025-03-03,"Harding, Weaver and Hernandez",5414.25
+item2,114.0,74.29,2025-04-29,Hernandez-Rojas,8469.060000000001
+item2,135.0,125.73,2025-03-04,Patel Inc,16973.55
+item3,61.0,336.0,2024-06-05,Lamb-Harding,20496.0
+item4,44.0,452.76,2024-05-13,Mcdonald PLC,19921.44
+item4,90.0,427.6,2024-12-01,Bell-Hunter,38484.0
+item1,72.0,94.94,2025-04-19,Andrews Inc,6835.68
+item1,67.0,323.94,2024-05-26,Fleming Inc,21703.98
+item4,72.0,94.45,2024-12-02,Barnett-Wallace,6800.400000000001
+item1,113.0,398.28,2025-03-29,Nash LLC,45005.64
+item4,25.0,354.6,2025-03-05,Odom-White,8865.0
+item4,58.0,113.24,2024-05-21,"Gill, Jones and Mooney",6567.92
+item2,139.0,424.33,2024-10-12,"Curtis, Fields and Harper",58981.869999999995
+item3,13.0,145.12,2025-03-14,"Kirby, Daugherty and Morgan",1886.56
+item1,97.0,130.55,2024-11-14,"Watson, Stevens and Holmes",12663.35
+item2,18.0,266.38,2024-12-30,Medina Inc,4794.84
+item4,50.0,23.63,2024-07-19,Kane Ltd,1181.5
+item1,85.0,475.95,2025-04-29,Miller-Clark,40455.75
+item4,142.0,373.66,2024-12-08,Gomez-Bennett,53059.72
+item3,22.0,350.2,2024-09-14,Powell-Dennis,7704.4
+item2,16.0,401.97,2024-06-29,Burns-Garcia,6431.52
+item2,58.0,368.54,2024-11-01,Gonzalez PLC,21375.32
+item2,72.0,392.6,2024-10-20,"Martin, Barry and Anderson",28267.2
+item3,112.0,470.01,2024-09-22,Robinson-Rice,52641.119999999995
+item2,92.0,146.44,2025-03-31,Rogers and Sons,13472.48
+item3,136.0,425.44,2024-12-19,Howard LLC,57859.84
+item3,29.0,492.06,2024-09-04,"Parks, Moore and Jones",14269.74
+item4,94.0,469.92,2024-10-30,Henderson LLC,44172.48
+item2,12.0,460.98,2024-12-03,Tate and Sons,5531.76
+item1,101.0,217.91,2024-12-18,Pace Ltd,22008.91
+item1,120.0,362.37,2025-02-07,"Riley, Gillespie and Watson",43484.4
+item4,59.0,310.54,2024-07-01,Ruiz PLC,18321.86
+item4,17.0,424.76,2025-04-04,"Mendoza, Mcbride and Camacho",7220.92
+item1,144.0,477.28,2024-10-10,"Henry, Hardin and Brown",68728.31999999999
+item2,84.0,104.62,2024-12-14,Tyler LLC,8788.08
+item4,77.0,396.55,2024-09-05,"Bartlett, Johnson and Reed",30534.350000000002
+item3,128.0,223.7,2025-01-25,Anderson-Williams,28633.6
+item1,76.0,457.16,2024-10-07,"Palmer, Anderson and Simmons",34744.16
+item1,141.0,92.0,2025-02-05,Johnson-Pacheco,12972.0
+item3,138.0,136.0,2024-05-29,Obrien Ltd,18768.0
+item3,100.0,120.21,2024-12-04,Scott-Warner,12021.0
+item1,128.0,296.79,2025-01-25,"Yang, Jones and Powell",37989.12
+item3,41.0,55.49,2025-02-06,"Matthews, Carter and Robinson",2275.09
+item1,81.0,83.48,2025-03-14,Porter-White,6761.88
+item4,32.0,288.95,2025-03-13,"Rivers, Rodriguez and Rowland",9246.4
+item2,97.0,321.49,2025-03-17,Hughes and Sons,31184.530000000002
+item3,37.0,470.13,2024-06-21,Rivera-Barnett,17394.81
+item4,109.0,440.19,2024-09-18,Richardson-Ross,47980.71
+item3,42.0,326.69,2024-06-12,Lopez-Rivera,13720.98
+item1,135.0,164.97,2025-02-12,Bonilla-Erickson,22270.95
+item4,30.0,61.48,2024-12-05,Gonzales-Gonzalez,1844.3999999999999
+item4,112.0,261.65,2025-01-19,Cox-Jackson,29304.799999999996
+item1,48.0,134.05,2024-10-06,Bowers-Gilbert,6434.400000000001
+item4,144.0,259.0,2024-12-07,Evans-Roberts,37296.0
+item4,77.0,293.67,2024-08-19,"Price, Stone and Manning",22612.59
+item4,72.0,248.16,2025-01-06,"Moreno, Atkinson and Wright",17867.52
+item1,82.0,227.73,2024-06-25,"Robertson, Yates and Wheeler",18673.86
+item2,131.0,44.41,2024-08-13,Ayers-Rojas,5817.709999999999
+item2,20.0,247.95,2024-06-25,"Freeman, Wyatt and Hood",4959.0
+item3,44.0,134.16,2024-08-04,Martin-Burton,5903.04
+item4,136.0,429.54,2024-10-11,"Bauer, Schmidt and Rivera",58417.44
+item1,25.0,472.24,2024-09-02,"Baker, Hale and Miller",11806.0
+item4,76.0,346.96,2025-03-31,Clark PLC,26368.96
+item1,76.0,80.11,2024-09-28,Young Group,6088.36
+item4,20.0,61.23,2024-12-18,Carpenter-Romero,1224.6
+item4,94.0,296.55,2025-04-26,James Ltd,27875.7
+item3,14.0,46.67,2025-05-03,Obrien LLC,653.38
+item2,125.0,254.03,2024-12-28,"Martin, Gomez and Hayes",31753.75
+item3,121.0,309.11,2024-12-08,"Cook, Vasquez and Maxwell",37402.310000000005
+item3,115.0,369.02,2024-07-16,Cunningham Ltd,42437.299999999996
+item2,82.0,100.58,2025-01-01,Hampton LLC,8247.56
+item4,89.0,145.85,2025-02-20,Owens PLC,12980.65
+item3,134.0,78.7,2025-05-07,Patel-Ward,10545.800000000001
+item4,70.0,257.99,2025-02-27,Shaw Inc,18059.3
+item4,144.0,468.87,2025-04-04,Johnson and Sons,67517.28
+item4,127.0,305.84,2024-09-15,King-Sanders,38841.68
+item1,132.0,128.31,2024-09-13,"Estrada, Smith and Graves",16936.920000000002
+item4,21.0,257.34,2024-11-12,"Tucker, Lopez and Medina",5404.139999999999
+item3,58.0,391.59,2025-01-30,"Cordova, Benton and Patel",22712.219999999998
+item4,108.0,262.97,2024-10-22,Sullivan-Hayes,28400.760000000002
+item1,59.0,102.02,2025-03-06,"Martin, Castro and Valentine",6019.179999999999
+item3,56.0,131.24,2025-01-07,Pearson-White,7349.4400000000005
+item2,127.0,48.69,2025-04-29,Moore-Craig,6183.63
+item3,89.0,225.5,2025-03-07,"Fisher, Anderson and Anderson",20069.5
+item2,67.0,307.16,2025-02-08,Robbins-Schmidt,20579.72
+item3,22.0,313.43,2024-12-21,Reid-Malone,6895.46
+item2,85.0,428.23,2025-02-10,"Moran, Rodriguez and Bryant",36399.55
+item1,31.0,484.46,2024-07-18,"Lewis, Brooks and Martin",15018.26
+item2,57.0,176.7,2025-04-05,Scott-Medina,10071.9
+item3,73.0,51.52,2024-10-16,Campbell-Ho,3760.96
+item3,95.0,363.66,2025-02-19,"Miller, Long and Barton",34547.700000000004
+item3,106.0,218.77,2024-09-14,Martinez-Ramirez,23189.620000000003
+item2,97.0,303.72,2024-10-09,Roth-White,29460.840000000004
+item1,45.0,246.61,2024-12-26,"Meadows, Moran and Cohen",11097.45
+item2,39.0,46.93,2025-03-05,"Roberts, Weaver and Evans",1830.27
+item3,72.0,116.27,2024-06-21,Ball and Sons,8371.44
+item2,52.0,462.73,2025-05-04,Clark Group,24061.96
+item3,75.0,55.31,2024-06-12,"Anthony, Rodriguez and Ward",4148.25
+item3,25.0,443.86,2024-12-09,Myers Inc,11096.5
+item2,139.0,331.05,2024-10-29,"Mclaughlin, Moore and Mcknight",46015.950000000004
+item1,74.0,316.54,2024-10-13,Ferrell-Duncan,23423.960000000003
+item3,131.0,288.43,2024-06-02,Hood LLC,37784.33
+item4,142.0,309.19,2025-03-24,"Lindsey, Rivera and Buckley",43904.98
+item3,32.0,159.46,2025-04-09,"Brown, Fischer and Shaw",5102.72
+item1,62.0,269.02,2024-06-28,"Elliott, Walker and Blackwell",16679.239999999998
+item4,141.0,21.18,2024-06-20,Rivera-Huber,2986.38
+item4,60.0,97.28,2024-09-03,Benson LLC,5836.8
+item3,71.0,339.23,2024-08-09,Sanchez Ltd,24085.33
+item1,53.0,43.73,2024-07-20,"Allen, Elliott and Phillips",2317.69
+item3,27.0,405.56,2025-03-04,"Bartlett, Thomas and Guzman",10950.12
+item3,51.0,314.29,2024-09-04,"Hayes, Pierce and Shepherd",16028.79
+item2,55.0,372.41,2024-12-13,Roman-Wu,20482.550000000003
+item1,109.0,353.99,2025-04-04,"Bennett, Ramos and Johnson",38584.91
+item3,100.0,243.15,2025-04-22,"Vaughn, Lane and Cole",24315.0
+item1,85.0,359.28,2024-11-19,"Walker, Leblanc and Brown",30538.8
+item3,49.0,167.64,2024-05-20,Wright-Dunn,8214.359999999999
+item2,38.0,118.11,2025-03-21,Flowers Group,4488.18
+item3,101.0,267.8,2024-06-30,"Young, Wright and Smith",27047.800000000003
+item2,140.0,415.3,2024-06-04,Owens-Morris,58142.0
+item4,34.0,335.61,2025-03-22,"Hansen, Gibbs and Owens",11410.74
+item4,32.0,184.47,2025-04-22,"Hernandez, Townsend and Odonnell",5903.04
+item2,59.0,175.88,2025-04-17,Murphy Group,10376.92
+item3,51.0,348.21,2024-12-29,Medina-May,17758.71
+item2,51.0,376.37,2024-05-20,"Moore, Gregory and Wallace",19194.87
+item1,130.0,305.85,2024-11-15,Garcia Inc,39760.5
+item2,31.0,347.85,2024-11-03,Hunt LLC,10783.35
+item3,46.0,491.03,2025-03-14,Ward-Whitaker,22587.379999999997
+item4,23.0,61.06,2024-08-29,Chandler-Gonzalez,1404.38
+item1,142.0,110.89,2024-07-14,Mendoza-Martinez,15746.38
+item2,39.0,73.3,2024-07-29,"Green, Taylor and Horne",2858.7
+item1,103.0,470.19,2025-02-07,Jones PLC,48429.57
+item1,90.0,21.03,2024-07-16,Smith-Patrick,1892.7
+item4,34.0,14.95,2024-10-20,"Johnson, Berg and Cabrera",508.29999999999995
+item1,89.0,291.45,2025-03-05,Adams-Perez,25939.05
+item3,115.0,462.22,2024-10-02,"Green, Craig and Rodriguez",53155.3
+item2,124.0,204.19,2024-08-10,"Hall, Brown and Wilkins",25319.56
+item4,141.0,197.17,2024-07-15,Gaines-Yu,27800.969999999998
+item1,20.0,303.59,2024-11-17,Farrell-Romero,6071.799999999999
+item4,33.0,194.77,2024-09-01,Jenkins-Sanchez,6427.410000000001
+item3,129.0,65.83,2025-03-06,Colon PLC,8492.07
+item4,15.0,52.51,2024-09-30,Buchanan-Watts,787.65
+item3,136.0,204.74,2024-12-20,Henry Ltd,27844.64
+item2,109.0,342.89,2025-04-03,Johnson-Soto,37375.01
+item3,80.0,365.04,2024-06-01,Martinez-Morales,29203.2
+item3,20.0,473.86,2024-08-31,"Snow, Hill and Contreras",9477.2
+item2,13.0,57.07,2025-03-03,"Hood, Nguyen and Foster",741.91
+item1,106.0,487.23,2024-10-24,Taylor Ltd,51646.380000000005
+item4,118.0,433.33,2024-06-18,Moore Inc,51132.939999999995
+item1,89.0,397.83,2024-08-30,Choi-Moore,35406.869999999995
+item1,40.0,111.51,2024-05-20,"Ross, Oliver and Bowman",4460.400000000001
+item4,47.0,484.86,2024-06-09,"Fox, Hoover and Small",22788.420000000002
+item2,88.0,134.99,2024-07-31,Cardenas Inc,11879.12
+item3,137.0,334.44,2025-02-06,"Stevenson, Peters and Crawford",45818.28
+item4,114.0,257.41,2024-08-30,Flores Inc,29344.74
+item2,91.0,250.16,2024-11-18,"Adams, Gentry and Porter",22764.56
+item1,59.0,80.1,2024-12-01,"Medina, Lopez and White",4725.9
+item4,24.0,167.57,2024-09-26,Williams-Christensen,4021.68
+item2,39.0,105.54,2025-04-09,"Wilkins, Hansen and Thompson",4116.06
+item1,84.0,469.85,2025-04-01,Garrett-Kelley,39467.4
+item3,70.0,87.4,2024-06-07,Maldonado PLC,6118.0
+item2,91.0,493.04,2025-03-22,"Williams, Johnson and Delgado",44866.64
+item3,84.0,192.83,2025-04-30,"Holmes, Oconnell and White",16197.720000000001
+item3,74.0,15.5,2025-02-14,Bradley-Morgan,1147.0
+item3,73.0,265.2,2024-09-27,"Hicks, Gonzalez and Miller",19359.6
+item4,69.0,299.83,2024-10-08,Edwards Inc,20688.27
+item2,72.0,27.26,2025-03-18,Brown Ltd,1962.72
+item4,130.0,227.72,2024-10-24,Chavez-Thomas,29603.6
+item2,35.0,158.44,2024-11-04,Miller-Brooks,5545.4
+item2,55.0,31.9,2025-03-21,"Walker, Obrien and Velasquez",1754.5
+item1,139.0,483.11,2024-11-09,Davis-Lopez,67152.29000000001
+item2,102.0,44.59,2024-09-18,Miller-Aguilar,4548.18
+item4,30.0,259.25,2024-07-02,Robles-King,7777.5
+item4,103.0,367.92,2024-10-08,"Powell, West and George",37895.76
+item1,107.0,343.66,2025-01-08,Ward-Poole,36771.62
+item1,86.0,235.54,2025-01-17,Hopkins and Sons,20256.44
+item1,65.0,314.94,2024-08-21,Perez Group,20471.1
+item2,129.0,384.32,2025-04-10,"Matthews, Martinez and Carter",49577.28
+item1,43.0,62.5,2025-03-01,Allison-Salas,2687.5
+item2,44.0,456.34,2025-04-28,"Garcia, James and Miller",20078.96
+item2,45.0,447.73,2025-03-04,"Lopez, Martin and Evans",20147.850000000002
+item3,121.0,319.97,2024-10-21,Herrera-Phillips,38716.37
+item3,99.0,305.33,2024-11-26,Stanley Ltd,30227.67
+item3,31.0,263.5,2025-01-08,Donovan-Smith,8168.5
+item1,62.0,306.51,2025-04-21,Wyatt-Perez,19003.62
+item3,66.0,431.07,2024-09-15,Henry-Mcgee,28450.62
+item3,22.0,381.53,2024-08-10,Brown Ltd,8393.66
+item4,68.0,272.72,2025-04-20,Hammond and Sons,18544.960000000003
+item1,44.0,418.67,2025-04-10,"Oliver, Hopkins and Woodard",18421.48
+item3,133.0,179.98,2024-07-15,"Lynch, Shepard and Leonard",23937.34
+item2,64.0,43.73,2024-10-17,Phillips-Cobb,2798.72
+item4,26.0,70.52,2025-03-14,Foster and Sons,1833.52
+item3,132.0,347.48,2024-06-11,"Harper, Bryan and Cummings",45867.36
+item3,125.0,328.01,2025-01-20,"Bell, Hall and Roth",41001.25
+item3,118.0,88.81,2025-01-07,Harris and Sons,10479.58
+item3,85.0,225.01,2025-02-11,Hall Inc,19125.85
+item4,109.0,195.12,2024-09-28,"Barrett, Bailey and Lynch",21268.08
+item1,48.0,174.63,2024-09-01,Ramsey LLC,8382.24
+item3,107.0,418.56,2024-11-08,Patel Inc,44785.92
+item4,46.0,227.69,2024-07-23,Price Inc,10473.74
+item2,143.0,220.78,2024-09-27,"Cunningham, Graham and Ferguson",31571.54
+item1,125.0,126.48,2025-04-13,"Nelson, Warren and Hoffman",15810.0
+item4,125.0,409.91,2025-04-09,"Roberts, Sharp and Johnson",51238.75
+item3,76.0,215.09,2024-10-29,Carpenter-Paul,16346.84
+item3,132.0,141.76,2024-05-09,Small-Clark,18712.32
+item1,15.0,50.7,2024-09-12,Jackson LLC,760.5
+item4,70.0,201.64,2024-12-24,"George, Mills and Morales",14114.8
+item2,29.0,182.01,2025-04-04,Prince-Wilson,5278.29
+item2,126.0,266.72,2024-11-11,Espinoza and Sons,33606.72
+item1,92.0,215.15,2025-02-07,Erickson-Lang,19793.8
+item3,49.0,125.09,2024-06-28,"Holloway, Taylor and Chavez",6129.41
+item2,82.0,10.69,2024-06-02,Ramos-Paul,876.5799999999999
+item2,92.0,103.54,2024-06-07,"Mitchell, Bullock and Salas",9525.68
+item2,85.0,370.43,2025-01-30,Wiggins-Burke,31486.55
+item3,36.0,65.82,2024-11-03,Turner PLC,2369.5199999999995
+item1,52.0,236.82,2025-03-03,Brewer-Sweeney,12314.64
+item3,49.0,390.11,2024-06-25,Anderson-Hensley,19115.39
+item1,32.0,237.1,2024-08-12,Mullen and Sons,7587.2
+item2,92.0,61.53,2025-03-29,Chen-Montgomery,5660.76
+item4,132.0,384.41,2024-05-21,Molina PLC,50742.12
+item3,91.0,499.22,2025-02-08,Nash Inc,45429.020000000004
+item2,45.0,180.37,2025-05-05,Rodriguez-Buck,8116.650000000001
+item3,78.0,81.7,2024-12-16,Reeves LLC,6372.6
+item4,105.0,22.92,2024-12-09,Romero LLC,2406.6000000000004
+item3,85.0,357.33,2024-07-31,Pearson LLC,30373.05
+item4,16.0,81.22,2024-10-02,Alvarez-Dalton,1299.52
+item4,59.0,154.12,2025-05-02,"Horton, Mcintyre and Jackson",9093.08
+item2,118.0,86.0,2025-04-28,Massey Group,10148.0
+item2,112.0,12.82,2025-01-31,Smith PLC,1435.8400000000001
+item2,91.0,255.74,2024-09-04,Mathis-Garcia,23272.34
+item2,97.0,262.72,2025-02-14,Haney PLC,25483.840000000004
+item2,46.0,187.12,2024-11-14,Ross Ltd,8607.52
+item1,92.0,240.91,2024-08-19,Griffin Group,22163.72
+item2,21.0,39.72,2024-12-12,Armstrong Ltd,834.12
+item4,90.0,77.24,2024-09-28,Charles-Norris,6951.599999999999
+item2,54.0,344.21,2025-01-27,"Mitchell, Coffey and Miller",18587.34
+item3,143.0,470.76,2025-05-04,Bell-Bowman,67318.68
+item2,115.0,366.95,2024-06-14,Porter LLC,42199.25
+item4,63.0,211.39,2024-11-02,"Barnes, Johnson and Villa",13317.57
+item2,118.0,220.11,2025-02-12,Rosales-Jones,25972.980000000003
+item2,14.0,455.21,2024-07-12,Miller-Keith,6372.94
+item4,124.0,251.9,2025-02-27,Brown-Jackson,31235.600000000002
+item4,45.0,267.58,2024-12-24,Jefferson-Hoffman,12041.099999999999
+item2,84.0,130.98,2024-10-06,"Palmer, Rivera and Tate",11002.32
+item1,92.0,24.72,2025-04-14,"Martin, Stephens and Buckley",2274.24
+item4,120.0,301.03,2025-02-16,"Rios, Quinn and Vance",36123.6
+item2,78.0,394.8,2024-05-16,Esparza-Cunningham,30794.4
+item3,119.0,350.5,2024-12-18,Johnson-Jones,41709.5
+item1,107.0,202.54,2024-05-09,Scott Group,21671.78
+item1,28.0,315.29,2025-01-21,Campbell-Burke,8828.12
+item3,112.0,332.24,2024-08-13,Hanson-Padilla,37210.880000000005
+item4,128.0,183.31,2025-04-11,Ali Inc,23463.68
+item1,61.0,428.4,2024-07-18,Rogers Ltd,26132.399999999998
+item2,102.0,402.97,2024-12-07,Le and Sons,41102.94
+item3,18.0,35.85,2024-09-22,"Bright, Torres and Hancock",645.3000000000001
+item2,20.0,145.89,2024-05-12,Arnold-Beltran,2917.7999999999997
+item4,71.0,192.42,2025-05-05,Wiggins LLC,13661.82
+item1,80.0,201.94,2024-09-25,Mills-Baker,16155.2
+item2,47.0,461.04,2025-03-22,Hale-Walker,21668.88
+item2,132.0,345.25,2025-03-12,Johnston-Roth,45573.0
+item2,59.0,313.19,2025-02-16,"Adams, Norris and Thomas",18478.21
+item3,135.0,292.12,2024-08-17,Fry-Wilson,39436.2
+item3,133.0,493.85,2025-03-15,Cole-Sanford,65682.05
+item1,27.0,314.38,2024-10-07,Martinez and Sons,8488.26
+item1,126.0,232.02,2024-10-02,Raymond and Sons,29234.52
+item2,74.0,464.4,2024-05-15,Gutierrez-Gregory,34365.6
+item1,51.0,259.99,2024-08-21,"Martin, Rose and Watson",13259.49
+item4,14.0,351.92,2025-04-11,"West, Martin and Miller",4926.88
+item1,69.0,57.48,2025-03-15,Brown Group,3966.12
+item2,73.0,442.04,2024-05-25,Stanley-Jones,32268.920000000002
+item3,16.0,265.5,2025-04-08,Davis-Young,4248.0
+item4,107.0,441.32,2025-02-26,"Martin, Nelson and Williams",47221.24
+item2,66.0,21.64,2025-05-02,Graham LLC,1428.24
+item4,132.0,398.58,2025-02-14,"Patel, Campbell and Cummings",52612.56
+item2,134.0,202.34,2024-12-20,Watson PLC,27113.56
+item3,95.0,425.3,2024-10-28,Chang PLC,40403.5
+item1,65.0,151.71,2024-06-03,Adams-Porter,9861.15
+item4,49.0,425.58,2024-12-23,Gomez-Flowers,20853.42
+item3,33.0,212.46,2024-05-25,Nichols and Sons,7011.18
+item4,34.0,372.4,2024-12-04,Rodriguez-Peterson,12661.599999999999
+item1,24.0,384.91,2024-09-23,Hansen LLC,9237.84
+item4,125.0,108.21,2025-05-05,Schmidt-Hill,13526.25
+item4,74.0,43.86,2024-07-21,Willis-Walker,3245.64
+item2,39.0,363.82,2024-09-03,Moran Inc,14188.98
+item4,15.0,125.61,2025-03-30,James Ltd,1884.15
+item4,95.0,68.17,2024-12-30,Wilson-Harris,6476.150000000001
+item4,81.0,366.32,2024-05-15,Lowery PLC,29671.92
+item3,104.0,295.28,2024-12-10,"Fry, Martinez and Curtis",30709.119999999995
+item3,110.0,324.0,2025-04-12,Cook-Lee,35640.0
+item2,39.0,390.22,2025-01-03,"Harding, Smith and Roberts",15218.580000000002
+item4,94.0,408.65,2024-09-04,Thompson-Malone,38413.1
+item4,92.0,453.37,2024-10-31,Weaver-Ramos,41710.04
+item2,129.0,197.31,2025-05-07,Tanner LLC,25452.99
+item3,79.0,173.9,2024-07-20,West-Scott,13738.1
+item3,49.0,60.3,2025-02-02,Hunter-Williams,2954.7
+item1,105.0,375.46,2024-12-06,Scott Ltd,39423.299999999996
+item4,103.0,149.07,2025-04-10,Harrison-Rodriguez,15354.21
+item2,94.0,47.29,2024-05-13,Garcia LLC,4445.26
+item4,88.0,264.3,2025-02-21,Osborne Inc,23258.4
+item4,143.0,497.55,2025-05-02,"Mcclure, Zuniga and Gardner",71149.65000000001
+item2,43.0,318.52,2024-12-18,Williams PLC,13696.359999999999
+item1,23.0,367.69,2024-08-18,Kennedy and Sons,8456.87
+item3,30.0,398.24,2024-10-30,Mason LLC,11947.2
+item4,51.0,368.38,2025-01-23,Thomas PLC,18787.38
+item2,100.0,56.95,2024-09-13,"Williams, Rubio and Rios",5695.0
+item3,130.0,488.64,2024-05-28,"Mitchell, Curtis and Pruitt",63523.2
+item1,110.0,166.18,2025-03-06,"Brown, Singh and Davis",18279.8
+item4,111.0,373.05,2025-01-29,Rowland Ltd,41408.55
+item4,137.0,215.69,2024-08-22,Miller-Phillips,29549.53
+item1,102.0,286.49,2024-07-02,Schmidt LLC,29221.98
+item4,106.0,306.9,2024-12-06,Gentry-Suarez,32531.399999999998
+item2,137.0,184.45,2024-05-10,Cruz-Carson,25269.649999999998
+item2,106.0,499.13,2025-03-21,"Lee, Cox and Calderon",52907.78
+item1,78.0,380.92,2024-09-14,"Riddle, White and Perez",29711.760000000002
+item3,20.0,390.04,2024-10-27,Cameron-Perkins,7800.8
+item2,29.0,35.01,2025-04-04,Walker LLC,1015.29
+item2,132.0,417.42,2024-08-10,Thomas LLC,55099.44
+item2,98.0,212.81,2025-04-17,Reyes PLC,20855.38
+item2,81.0,67.94,2024-08-22,"Coleman, Lee and Simmons",5503.139999999999
+item3,19.0,482.17,2024-05-15,Becker and Sons,9161.23
+item3,127.0,436.9,2025-01-16,Santos LLC,55486.299999999996
+item2,85.0,230.23,2025-04-29,"Rodriguez, Powell and Schneider",19569.55
+item2,43.0,173.99,2024-05-30,Trujillo and Sons,7481.570000000001
+item2,91.0,444.17,2025-01-24,Webb-Brown,40419.47
+item3,46.0,38.62,2024-12-20,Hicks PLC,1776.52
+item4,27.0,405.84,2024-09-07,Brown-Nelson,10957.679999999998
+item2,24.0,272.39,2024-07-10,Jones LLC,6537.36
+item3,57.0,183.82,2025-05-07,"Hickman, Mendez and Wright",10477.74
+item2,44.0,428.19,2024-07-01,King-Montgomery,18840.36
+item3,109.0,77.29,2024-07-03,"Rodgers, Knight and Webb",8424.61
+item1,14.0,242.7,2025-01-03,Carroll Group,3397.7999999999997
+item3,69.0,170.02,2024-09-15,Diaz-Gonzales,11731.380000000001
+item4,122.0,461.97,2024-05-28,Cannon-Gilmore,56360.340000000004
+item2,63.0,441.37,2024-09-14,Moss-Blackburn,27806.31
+item2,98.0,282.63,2024-06-17,Castillo Inc,27697.739999999998
+item1,109.0,324.52,2024-08-26,Johnson-Smith,35372.68
+item2,24.0,24.29,2024-07-10,"Morales, Martinez and Foley",582.96
+item4,32.0,86.89,2024-08-31,Crawford PLC,2780.48
+item3,94.0,211.53,2024-11-02,Friedman-Chaney,19883.82
+item1,59.0,443.8,2024-05-09,Wright Inc,26184.2
+item1,94.0,231.26,2024-07-02,Anderson Group,21738.44
+item3,60.0,68.64,2024-08-04,"Reeves, Bates and Gaines",4118.4
+item4,135.0,243.12,2024-12-18,Calderon-Jennings,32821.2
+item4,135.0,264.26,2025-03-06,Brown PLC,35675.1
+item2,95.0,374.54,2024-10-10,"Evans, Clark and Cox",35581.3
+item1,89.0,432.45,2024-05-24,"Sawyer, Santiago and Olson",38488.049999999996
+item2,64.0,22.38,2024-08-31,"Hale, Johnson and Hamilton",1432.32
+item4,19.0,290.45,2024-07-20,Berry-Collier,5518.55
+item2,36.0,171.64,2024-12-20,Lee PLC,6179.039999999999
+item1,107.0,397.81,2025-02-22,"Shepherd, Watson and Turner",42565.67
+item3,74.0,186.47,2025-02-10,Barnes-Alexander,13798.78
+item3,111.0,445.22,2024-05-25,Lynch-Johnson,49419.420000000006
+item4,120.0,491.41,2025-05-08,"Torres, Obrien and Simpson",58969.200000000004
+item4,122.0,217.09,2025-01-20,Rose-Sutton,26484.98
+item2,71.0,386.13,2024-07-22,Mcmahon and Sons,27415.23
+item4,119.0,185.21,2024-05-19,Hernandez Group,22039.99
+item3,68.0,397.15,2024-07-17,"Becker, Wilson and Rhodes",27006.199999999997
+item2,62.0,278.5,2024-09-18,"Stevens, Hampton and Walker",17267.0
+item2,23.0,339.9,2025-05-01,"Lopez, Johnson and Chavez",7817.7
+item1,62.0,421.48,2025-04-17,Harris-Sullivan,26131.760000000002
+item4,85.0,111.52,2024-08-18,Khan Inc,9479.199999999999
+item3,24.0,50.82,2024-07-17,Little PLC,1219.68
+item1,40.0,89.39,2024-07-11,Randolph Ltd,3575.6
+item4,73.0,471.61,2024-05-22,Williams-Thompson,34427.53
+item1,29.0,197.8,2024-12-29,Schwartz-Marquez,5736.200000000001
+item3,95.0,369.38,2024-10-22,Garcia LLC,35091.1
+item3,18.0,348.55,2025-05-06,Bailey and Sons,6273.900000000001
+item3,89.0,487.82,2024-06-23,"Navarro, Rice and Lowe",43415.979999999996
+item1,81.0,90.71,2024-11-06,"Miller, Santos and Hodge",7347.509999999999
+item4,53.0,94.6,2025-04-17,Potts Inc,5013.799999999999
+item3,67.0,458.9,2024-12-10,Lawrence-Lewis,30746.3
+item2,113.0,483.3,2025-03-10,Rodriguez and Sons,54612.9
+item4,98.0,382.36,2024-07-01,Gutierrez-Bell,37471.28
+item3,47.0,12.54,2024-08-11,"Park, Le and Brown",589.38
+item1,114.0,432.92,2024-12-11,"Grant, Reed and Moss",49352.880000000005
+item3,85.0,324.66,2025-04-03,Nguyen-Johnson,27596.100000000002
+item1,43.0,28.37,2025-01-11,Cameron and Sons,1219.91
+item3,42.0,74.15,2025-04-14,Travis and Sons,3114.3
+item1,142.0,19.87,2024-08-10,"Jackson, Sanchez and Wilson",2821.54
+item1,18.0,235.21,2025-05-02,Orr Inc,4233.78
+item1,23.0,55.61,2025-01-16,"Bryant, Shepherd and Moore",1279.03
+item1,111.0,218.15,2024-05-13,"Obrien, Clark and Humphrey",24214.65
+item2,12.0,302.99,2024-06-25,"Wilson, Banks and Armstrong",3635.88
+item1,22.0,190.38,2024-09-20,Burgess-Wilson,4188.36
+item4,24.0,344.86,2024-06-01,"Santos, Mack and Simmons",8276.64
+item1,92.0,205.54,2024-10-15,Richardson-Coffey,18909.68
+item3,20.0,114.65,2024-09-12,Ross Ltd,2293.0
+item2,130.0,258.72,2025-01-06,Young and Sons,33633.600000000006
+item3,43.0,499.42,2024-08-27,Williams Ltd,21475.06
+item2,69.0,45.53,2024-09-13,Robinson-Robinson,3141.57
+item3,105.0,481.64,2024-05-23,"James, Flores and Mclean",50572.2
+item1,93.0,60.12,2024-12-06,Hodges-Le,5591.16
+item1,127.0,426.44,2024-08-25,"Patterson, Rowe and Evans",54157.88
+item2,91.0,27.83,2025-05-01,Walker Ltd,2532.5299999999997
+item4,43.0,236.09,2024-10-30,Franklin PLC,10151.87
+item3,59.0,14.91,2025-01-26,Escobar-West,879.69
+item2,67.0,353.08,2024-12-05,Black-Smith,23656.36
+item4,141.0,359.59,2024-11-29,Griffin Group,50702.189999999995
+item4,15.0,145.3,2024-10-08,"Davis, Gilmore and Marshall",2179.5
+item4,23.0,393.35,2024-08-16,Bryan LLC,9047.050000000001
+item3,139.0,351.39,2025-01-06,Bennett LLC,48843.21
+item1,126.0,390.28,2024-10-12,Farrell-Kaiser,49175.28
+item1,36.0,478.62,2024-08-02,Ford-Cohen,17230.32
+item4,94.0,369.95,2025-03-18,Patrick-Wells,34775.299999999996
+item1,73.0,75.43,2025-01-07,Hurst-Chavez,5506.39
+item2,98.0,182.1,2025-03-04,Avery Inc,17845.8
+item4,12.0,358.57,2025-01-12,Cooper LLC,4302.84
+item2,24.0,175.5,2025-02-05,Bryan PLC,4212.0
+item2,105.0,51.67,2024-06-16,Peterson PLC,5425.35
+item2,85.0,478.64,2024-11-08,Montgomery-Velez,40684.4
+item3,101.0,182.37,2025-03-24,Greene Group,18419.37
+item3,37.0,10.4,2024-08-12,"Campbell, Guzman and Hawkins",384.8
+item1,121.0,165.9,2024-08-08,Gibson-Johnson,20073.9
+item3,52.0,34.99,2024-11-21,"Oneill, Simmons and Owens",1819.48
+item3,122.0,193.31,2025-01-16,Parks LLC,23583.82
+item2,96.0,144.24,2024-12-21,"Carter, Munoz and Wood",13847.04
+item1,90.0,414.03,2024-10-26,Morrison Group,37262.7
+item3,69.0,102.86,2024-05-22,Patton-Mejia,7097.34
+item3,115.0,438.91,2025-01-12,"Hancock, Ortega and Holloway",50474.65
+item4,133.0,370.81,2025-03-31,Sanchez Group,49317.73
+item3,109.0,420.57,2024-05-31,Lopez-Herrera,45842.13
+item4,66.0,234.42,2024-10-23,Reese Inc,15471.72
+item1,33.0,324.6,2024-07-18,Park-Gardner,10711.800000000001
+item3,53.0,33.35,2024-11-26,"Daniels, Miller and Davis",1767.5500000000002
+item3,36.0,494.46,2024-09-08,"Combs, Wall and Smith",17800.559999999998
+item1,60.0,71.76,2024-10-16,"Lamb, Stone and Hill",4305.6
+item3,136.0,178.57,2024-12-27,Oliver and Sons,24285.52
+item4,49.0,451.35,2024-11-17,"Hill, Anderson and Henry",22116.15
+item3,85.0,384.86,2024-08-31,Smith-Richardson,32713.100000000002
+item1,73.0,286.76,2025-01-06,"Alvarado, Moreno and Bowen",20933.48
+item4,142.0,106.68,2024-08-01,Williams-Lawrence,15148.560000000001
+item1,123.0,253.15,2024-05-21,Smith and Sons,31137.45
+item1,22.0,70.66,2024-07-05,"Davis, King and Melendez",1554.52
+item1,79.0,322.73,2025-03-31,"Richardson, Duncan and Griffin",25495.670000000002
+item1,67.0,179.04,2024-09-04,Rodriguez-Lowery,11995.68
+item2,39.0,445.54,2025-04-15,"Cherry, Fernandez and Simmons",17376.06
+item4,118.0,301.42,2025-01-26,"Jones, Wilkins and Allison",35567.560000000005
+item4,90.0,31.4,2024-06-17,Freeman Group,2826.0
+item2,86.0,163.76,2024-08-29,Hood Ltd,14083.359999999999
+item2,122.0,142.98,2024-07-17,Navarro-Montes,17443.559999999998
+item3,67.0,220.84,2025-05-07,"Williams, Armstrong and Diaz",14796.28
+item4,103.0,89.59,2024-06-10,Fisher Inc,9227.77
+item2,104.0,306.68,2024-06-16,"Edwards, Hoffman and Rodriguez",31894.72
+item3,89.0,371.87,2024-11-23,"Griffin, Grant and Ford",33096.43
+item2,47.0,75.68,2024-11-21,Ross-Smith,3556.9600000000005
+item2,73.0,313.38,2024-12-16,Martin-Allen,22876.739999999998
+item2,33.0,399.93,2025-03-15,Howard Inc,13197.69
+item2,90.0,461.14,2025-01-24,Hodges and Sons,41502.6
+item2,15.0,304.79,2024-12-12,Stevenson Ltd,4571.85
+item2,23.0,346.44,2025-03-28,Sanchez-Mcbride,7968.12
+item3,91.0,348.12,2025-04-02,Allen-Fitzgerald,31678.920000000002
+item3,104.0,177.89,2024-11-06,"West, Silva and Odonnell",18500.559999999998
+item4,113.0,439.62,2024-12-07,"Roberts, Krueger and Khan",49677.06
+item1,124.0,453.51,2025-03-17,"Choi, Williams and Garcia",56235.24
+item2,58.0,475.07,2024-12-14,Patel Ltd,27554.06
+item1,22.0,374.32,2024-05-23,Henson and Sons,8235.039999999999
+item3,113.0,309.02,2024-12-14,Burgess Inc,34919.259999999995
+item2,111.0,129.64,2025-04-25,"Reid, Robinson and Le",14390.039999999999
+item3,26.0,265.6,2025-04-30,Mcguire and Sons,6905.6
+item2,129.0,253.44,2025-03-13,Schwartz Ltd,32693.76
+item2,127.0,12.32,2024-05-15,Edwards-Bean,1564.64
+item4,104.0,99.99,2024-10-17,Tucker-Riggs,10398.96
+item4,38.0,46.0,2024-10-06,Thompson-Tucker,1748.0
+item4,144.0,138.81,2024-07-19,Banks Group,19988.64
+item3,74.0,213.14,2024-12-10,Hunter LLC,15772.359999999999
+item4,143.0,376.01,2025-04-11,Torres-Thompson,53769.43
+item2,31.0,90.78,2024-11-27,Poole-Ortiz,2814.18
+item3,62.0,236.76,2024-11-22,"Blankenship, Martin and Graham",14679.119999999999
+item2,97.0,53.03,2024-11-21,Watkins Ltd,5143.91
+item4,50.0,81.06,2024-06-24,Davis-Jefferson,4053.0
+item3,45.0,309.01,2024-05-10,Sanders LLC,13905.449999999999
+item3,124.0,172.85,2024-12-07,"Perry, Tucker and Rodriguez",21433.399999999998
+item4,91.0,55.37,2024-10-15,Arias Inc,5038.67
+item3,79.0,185.26,2024-11-24,Shah and Sons,14635.539999999999
+item4,79.0,252.57,2025-04-18,Monroe Inc,19953.03
+item3,113.0,334.88,2024-06-06,"Lewis, Gutierrez and Barnett",37841.44
+item3,69.0,378.62,2024-08-20,Paul-Anderson,26124.78
+item4,141.0,29.87,2024-07-22,Greene LLC,4211.67
+item2,72.0,404.84,2024-06-28,Diaz PLC,29148.48
+item4,82.0,151.83,2025-02-03,Mccullough Ltd,12450.060000000001
+item2,111.0,113.96,2025-02-08,Haley-Gilbert,12649.56
+item1,82.0,282.19,2024-07-05,Henson and Sons,23139.579999999998
+item1,49.0,233.76,2025-01-27,"Lucas, Henderson and Powell",11454.24
+item4,65.0,273.33,2024-10-18,"Johnston, Garner and Cox",17766.45
+item2,100.0,446.87,2024-12-05,Casey Inc,44687.0
+item3,109.0,383.45,2025-04-03,Knight PLC,41796.049999999996
+item3,42.0,222.77,2024-05-21,"Long, Henderson and Rodriguez",9356.34
+item4,126.0,339.29,2025-03-14,"Holland, Brady and Miller",42750.54
+item2,135.0,350.3,2024-11-19,Morgan-Mcdonald,47290.5
+item1,112.0,244.82,2024-12-24,"Bauer, Henry and Griffin",27419.84
+item3,36.0,121.84,2024-06-11,Shaw-Dean,4386.24
+item2,119.0,324.89,2025-03-21,Jimenez Inc,38661.909999999996
+item4,65.0,278.39,2025-03-14,Hayes-Solis,18095.35
+item3,40.0,290.49,2024-06-13,Evans Group,11619.6
+item3,94.0,442.26,2024-08-03,Lewis Ltd,41572.44
+item2,109.0,168.52,2024-12-07,"Thomas, Lester and Bauer",18368.68
+item4,74.0,164.38,2025-04-09,Garcia Ltd,12164.119999999999
+item4,98.0,418.16,2024-11-04,Ross and Sons,40979.68
+item1,103.0,261.74,2024-10-16,"Edwards, Thompson and Thompson",26959.22
+item2,117.0,139.66,2024-06-22,Sexton Inc,16340.22
+item3,117.0,269.58,2025-02-12,"Lewis, Smith and Phillips",31540.859999999997
+item1,132.0,374.15,2025-04-17,"Martin, Guzman and Sullivan",49387.799999999996
+item4,101.0,455.4,2024-11-24,Bishop and Sons,45995.399999999994
+item1,83.0,311.6,2024-12-05,"Ramos, Davis and Taylor",25862.800000000003
+item2,29.0,219.51,2025-02-13,Henderson Group,6365.79
+item2,50.0,233.26,2024-05-22,Holden LLC,11663.0
+item3,78.0,408.63,2025-03-09,Garza-Chapman,31873.14
+item2,116.0,364.48,2024-12-03,Rhodes-Richards,42279.68
+item4,55.0,443.02,2025-01-07,Davis-Kelley,24366.1
+item3,88.0,264.55,2024-07-11,Suarez-Jackson,23280.4
+item1,54.0,67.11,2024-06-08,Lopez-Price,3623.94
+item1,102.0,423.31,2024-06-15,Hebert-Wilson,43177.62
+item4,84.0,288.16,2024-06-21,Lee Group,24205.440000000002
+item2,14.0,125.46,2024-06-14,"Miller, Graves and Johnson",1756.4399999999998
+item4,51.0,490.66,2024-08-16,"Yang, Thomas and Lucas",25023.66
+item1,70.0,117.77,2025-01-08,Chambers-Herrera,8243.9
+item3,100.0,203.17,2025-02-17,Orozco-Reyes,20317.0
+item4,56.0,414.66,2024-08-26,Sims Ltd,23220.960000000003
+item4,23.0,434.76,2025-01-11,Black and Sons,9999.48
+item2,38.0,304.4,2024-05-10,Davis-Jackson,11567.199999999999
+item4,36.0,336.45,2025-02-08,Murphy LLC,12112.199999999999
+item3,94.0,483.07,2025-04-08,Brown Ltd,45408.58
+item3,118.0,87.37,2025-01-11,Sellers-Hess,10309.66
+item2,121.0,322.43,2024-11-20,"Ramirez, Graham and Arnold",39014.03
+item3,84.0,344.73,2024-06-10,"Kelly, Johnson and Mitchell",28957.32
+item2,22.0,246.93,2024-07-07,Clark Group,5432.46
+item4,104.0,495.88,2025-03-18,Osborne-Roach,51571.52
+item2,61.0,266.02,2025-01-16,"Chambers, Richardson and Young",16227.22
+item2,105.0,165.39,2025-02-15,Hart Group,17365.949999999997
+item2,116.0,387.93,2024-08-20,Vance Ltd,44999.88
+item1,94.0,339.32,2024-10-05,Davis-Burnett,31896.079999999998
+item1,109.0,117.39,2025-03-12,"Middleton, Johnson and Waters",12795.51
+item3,23.0,161.12,2024-06-12,Johnson-Martinez,3705.76
+item3,12.0,272.29,2024-08-17,Hayes-Leach,3267.4800000000005
+item2,44.0,295.01,2025-02-10,Callahan-Mills,12980.439999999999
+item3,53.0,14.61,2024-05-28,"Stephens, Logan and Sheppard",774.3299999999999
+item3,79.0,406.31,2025-04-07,Barton Ltd,32098.49
+item2,95.0,330.24,2024-08-01,Carroll Group,31372.8
+item2,42.0,439.99,2024-11-18,Romero LLC,18479.58
+item4,106.0,11.78,2025-01-12,Lee Inc,1248.6799999999998
+item2,20.0,206.98,2024-05-17,"Hernandez, Fleming and Carter",4139.599999999999
+item2,42.0,133.01,2025-02-01,Levine-Martin,5586.42
+item4,65.0,361.45,2024-06-11,Torres-Williams,23494.25
+item4,96.0,422.77,2025-03-28,"Wiley, Kennedy and Lynch",40585.92
+item3,15.0,458.26,2024-10-08,Jacobson and Sons,6873.9
+item2,54.0,98.96,2024-09-26,Smith-Coleman,5343.839999999999
+item4,70.0,419.53,2025-02-11,"Henderson, Anderson and Green",29367.1
+item4,132.0,47.84,2024-12-17,"Jones, Clark and Davis",6314.88
+item1,95.0,274.24,2025-03-02,"Newman, Ashley and Ward",26052.8
+item3,116.0,101.05,2024-06-16,Richards-Horton,11721.8
+item4,105.0,148.48,2024-09-04,"Kaufman, Walker and Anderson",15590.4
+item2,139.0,129.09,2024-09-22,"Navarro, Salazar and Obrien",17943.510000000002
+item3,75.0,336.12,2025-02-18,Watson-Young,25209.0
+item4,50.0,85.52,2024-11-24,Mcdonald-Hunter,4276.0
+item4,79.0,208.88,2024-06-16,Walton-Taylor,16501.52
+item3,94.0,162.3,2024-10-06,"Grant, Sharp and Smith",15256.2
+item1,137.0,435.06,2024-12-02,"Miller, Allen and Palmer",59603.22
+item3,14.0,160.17,2024-07-16,Young-Weaver,2242.3799999999997
+item4,126.0,171.51,2024-08-26,Bell and Sons,21610.26
+item2,16.0,268.48,2024-12-30,"Smith, Bishop and Webb",4295.68
+item1,45.0,207.86,2025-03-31,Hansen-Thompson,9353.7
+item2,31.0,482.91,2025-05-06,Wade-Odonnell,14970.210000000001
+item3,60.0,53.88,2025-05-04,"Hendricks, Walker and Ford",3232.8
+item1,19.0,34.2,2024-09-22,Stone-Guerrero,649.8000000000001
+item3,71.0,121.02,2025-01-17,"Odom, Daniels and Romero",8592.42
+item3,26.0,255.69,2024-08-23,"Reed, Diaz and Johnson",6647.94
+item3,60.0,157.12,2024-07-16,Sosa-Conway,9427.2
+item3,49.0,229.68,2024-10-12,"Ford, Thompson and Nelson",11254.32
+item3,133.0,474.02,2024-06-20,"Palmer, Harrington and Shaw",63044.659999999996
+item3,61.0,389.29,2024-10-29,"Brown, Simmons and Mejia",23746.690000000002
+item3,42.0,202.69,2025-02-26,Snow PLC,8512.98
+item2,97.0,199.52,2025-03-28,Coleman-Smith,19353.440000000002
+item1,106.0,452.06,2024-10-31,Hanson-Hunter,47918.36
+item4,75.0,495.48,2024-09-18,Fisher Ltd,37161.0
+item2,103.0,478.05,2024-12-06,Hanson PLC,49239.15
+item1,13.0,205.48,2024-09-26,Key-Sanchez,2671.24
+item1,28.0,73.24,2025-02-13,"King, Price and Porter",2050.72
+item2,62.0,262.11,2025-02-01,Wright Ltd,16250.820000000002
+item2,14.0,426.95,2024-08-22,Cantrell Group,5977.3
+item4,18.0,280.84,2024-12-10,Gutierrez-Huang,5055.12
+item2,121.0,245.41,2024-08-18,Carr-Taylor,29694.61
+item4,140.0,342.79,2024-10-17,"Tapia, Hayden and Washington",47990.600000000006
+item4,18.0,359.51,2024-09-04,Bartlett PLC,6471.18
+item3,69.0,258.02,2024-12-12,Dominguez-Hall,17803.379999999997
+item2,29.0,72.22,2024-11-24,Gonzalez-Perez,2094.38
+item1,141.0,482.07,2025-03-10,Miller and Sons,67971.87
+item4,46.0,365.84,2025-03-01,Lamb Group,16828.64
+item1,123.0,315.47,2024-06-26,Bradshaw Ltd,38802.810000000005
+item4,128.0,179.44,2024-10-27,"Adams, Hall and Thompson",22968.32
+item4,96.0,58.21,2025-04-15,"Hensley, Meadows and Wright",5588.16
+item2,88.0,297.46,2024-07-01,"Scott, Hart and Simmons",26176.48
+item1,93.0,148.57,2024-05-27,"Johnson, Thompson and Gates",13817.01
+item3,57.0,347.84,2024-08-09,"Smith, Bridges and Washington",19826.879999999997
+item2,98.0,232.77,2024-10-14,"Sims, Miller and Roberson",22811.460000000003
+item4,129.0,130.88,2025-05-06,"Kerr, Ortiz and Gill",16883.52
+item1,103.0,358.83,2024-10-17,Bell-Sanchez,36959.49
+item1,97.0,212.16,2024-09-11,"Weeks, Carey and Lewis",20579.52
+item1,46.0,381.67,2024-06-30,"Webb, Arnold and Christian",17556.82
+item1,125.0,185.73,2024-12-15,"Frank, Stephens and Sanchez",23216.25
+item4,35.0,71.92,2024-08-20,Ingram Ltd,2517.2000000000003
+item2,136.0,449.25,2024-07-04,Smith Group,61098.0
+item1,121.0,262.1,2024-08-07,Miller-Johnson,31714.100000000002
+item1,112.0,212.56,2025-04-22,Lewis-Bryant,23806.72
+item2,86.0,493.01,2024-12-14,Pollard PLC,42398.86
+item2,107.0,332.09,2024-08-22,"Mcdonald, Harris and Petty",35533.63
+item3,82.0,361.35,2024-09-24,Cardenas-Ortiz,29630.7
+item4,133.0,356.18,2024-09-30,"Marshall, Greer and Wilkinson",47371.94
+item3,132.0,397.28,2025-04-03,Perez Inc,52440.96
+item1,81.0,186.35,2025-03-17,"Pham, Hart and Allen",15094.35
+item2,127.0,140.57,2024-09-06,Shah and Sons,17852.39
+item1,59.0,372.1,2025-01-21,Warner Ltd,21953.9
+item1,122.0,116.57,2024-11-21,"Rivera, Rodriguez and Rodriguez",14221.539999999999
+item4,88.0,65.92,2024-06-21,Johnson Inc,5800.96
+item3,47.0,209.04,2024-06-20,Hodges-Castillo,9824.88
+item1,87.0,430.79,2025-05-06,Johnson and Sons,37478.73
+item1,69.0,195.08,2024-09-23,Burke Inc,13460.52
+item4,51.0,347.05,2025-01-14,Rice PLC,17699.55
+item2,107.0,189.5,2024-12-27,"Pruitt, Williams and Montoya",20276.5
+item3,99.0,310.89,2025-03-20,Short Inc,30778.109999999997
+item2,22.0,29.33,2024-08-29,Jensen-Jones,645.26
+item3,101.0,398.2,2024-10-15,"Collins, Villa and Huang",40218.2
+item1,69.0,395.66,2024-07-02,Melton-Porter,27300.54
+item2,67.0,121.1,2024-06-22,Jones-King,8113.7
+item1,61.0,58.63,2024-09-30,"Anderson, Guzman and Miller",3576.4300000000003
+item2,79.0,99.56,2025-04-14,"Williams, Hudson and Miller",7865.24
+item3,92.0,325.73,2024-12-11,Miller Group,29967.160000000003
+item4,56.0,250.88,2024-09-18,"Becker, Harrison and Lambert",14049.279999999999
+item1,51.0,419.25,2024-06-16,"Zhang, Johnson and Henderson",21381.75
+item3,92.0,15.98,2024-05-26,Wells LLC,1470.16
+item1,30.0,246.19,2024-06-27,Sanders-Orozco,7385.7
+item4,14.0,120.84,2024-07-13,Watkins Inc,1691.76
+item4,121.0,460.82,2024-11-18,Green-Gibson,55759.22
+item4,110.0,155.66,2024-12-12,Singh-Walker,17122.6
+item1,93.0,118.98,2024-05-11,Jordan PLC,11065.140000000001
+item4,111.0,98.27,2024-08-02,Bryant Inc,10907.97
+item4,82.0,425.31,2025-04-15,Myers Inc,34875.42
+item1,143.0,336.22,2024-08-17,Jones Group,48079.46000000001
+item2,110.0,447.47,2024-06-17,Woods-Huerta,49221.700000000004
+item2,83.0,222.18,2025-02-21,"Castillo, Miller and Braun",18440.940000000002
+item3,29.0,356.44,2024-08-22,"Rojas, Cox and Sanford",10336.76
+item4,132.0,372.06,2025-01-01,Simmons Inc,49111.92
+item3,70.0,193.46,2025-01-11,Ryan-Green,13542.2
+item1,63.0,439.97,2024-12-06,"Williams, Estrada and King",27718.11
+item2,52.0,365.47,2024-07-24,Harris-Lopez,19004.440000000002
+item1,112.0,117.39,2024-08-25,Gibbs-Sims,13147.68
+item2,95.0,310.19,2025-05-04,Carroll and Sons,29468.05
+item4,119.0,19.48,2025-04-04,Rogers PLC,2318.12
+item4,41.0,113.33,2024-09-09,Aguilar Ltd,4646.53
+item4,118.0,99.7,2025-03-09,"Williams, Rogers and Roberts",11764.6
+item4,84.0,110.75,2024-10-10,Duran-Francis,9303.0
+item2,77.0,266.18,2024-06-04,Evans-Walker,20495.86
+item4,41.0,498.45,2024-06-14,Gibson-Williams,20436.45
+item2,78.0,83.79,2025-01-05,Daniel Inc,6535.620000000001
+item4,12.0,114.61,2024-07-02,Gilbert-Rangel,1375.32
+item4,89.0,375.74,2025-01-19,"Ferrell, Freeman and Olson",33440.86
+item1,141.0,25.52,2024-05-13,Snyder-Greer,3598.32
+item1,46.0,214.56,2024-10-01,"Fisher, Beltran and Stanley",9869.76
+item4,104.0,78.71,2024-08-30,"Baker, Daniels and Goodman",8185.839999999999
+item2,77.0,253.98,2024-05-16,Mcdaniel LLC,19556.46
+item2,115.0,220.92,2024-08-28,"Lee, Horn and Jackson",25405.8
+item4,62.0,18.14,2024-11-25,Neal-Mcgee,1124.68
+item3,33.0,159.06,2024-07-15,Davis-Miller,5248.9800000000005
+item4,37.0,420.72,2024-07-14,Garza LLC,15566.640000000001
+item2,13.0,232.85,2024-10-30,"Dominguez, Lee and Hanna",3027.0499999999997
+item2,18.0,422.96,2024-10-11,Conner Inc,7613.28
+item2,39.0,449.66,2024-10-06,"Adams, Wade and Boyer",17536.74
+item3,136.0,294.83,2025-01-01,Lambert-Reynolds,40096.88
+item1,53.0,40.15,2024-12-28,Bailey LLC,2127.95
+item4,137.0,318.26,2025-01-04,Phillips Group,43601.619999999995
+item1,41.0,61.8,2024-09-19,Ruiz-Perry,2533.7999999999997
+item3,40.0,263.28,2024-10-13,Cooper-Williams,10531.199999999999
+item4,143.0,109.76,2024-10-29,Barron-Wade,15695.68
+item3,59.0,92.73,2024-08-29,Santiago-Richards,5471.070000000001
+item1,144.0,117.31,2024-05-12,"May, Mullins and Garner",16892.64
+item4,31.0,282.61,2024-11-04,"Delgado, Harrison and Knight",8760.91
+item4,23.0,131.89,2024-06-05,"Ware, Gallagher and Stark",3033.47
+item1,122.0,279.13,2025-04-30,James LLC,34053.86
+item3,80.0,359.55,2024-08-02,Bowers-Cook,28764.0
+item1,101.0,361.91,2024-11-13,Banks Ltd,36552.91
+item3,94.0,407.44,2024-12-07,Mills-Mckenzie,38299.36
+item3,98.0,174.99,2024-06-27,Hall-Deleon,17149.02
+item4,85.0,270.37,2024-11-13,Reyes PLC,22981.45
+item3,24.0,486.39,2024-07-06,Melendez-Weber,11673.36
+item3,136.0,441.33,2024-07-09,Robinson-Parks,60020.88
+item2,90.0,379.34,2024-12-17,Smith-Adams,34140.6
+item4,139.0,81.15,2024-09-23,Dean LLC,11279.85
+item2,50.0,87.1,2025-03-12,"Watts, Matthews and Vasquez",4355.0
+item3,15.0,74.18,2024-10-25,Frost Group,1112.7
+item3,134.0,103.42,2024-12-31,"Noble, Coleman and Walter",13858.28
+item3,23.0,424.82,2024-08-29,"Carter, Benitez and Barr",9770.86
+item3,84.0,349.98,2025-01-25,Cameron-Branch,29398.32
+item1,29.0,315.45,2024-06-28,"Ross, Dennis and Wilson",9148.05
+item4,125.0,243.54,2025-03-23,"Patton, Nichols and Turner",30442.5
+item4,88.0,379.99,2024-11-19,Woods PLC,33439.12
+item2,41.0,154.37,2024-10-27,Walker Group,6329.17
+item4,137.0,368.5,2025-01-02,Martin-Marks,50484.5
+item3,51.0,94.34,2024-12-04,Valencia Group,4811.34
+item1,27.0,487.86,2025-05-04,Wright-Clark,13172.220000000001
+item3,40.0,328.23,2025-02-22,"Booth, Parsons and Bell",13129.2
+item1,52.0,122.37,2025-01-23,Washington Ltd,6363.24
+item4,121.0,82.25,2024-06-12,"Carpenter, Duncan and Clarke",9952.25
+item3,64.0,337.22,2025-01-22,Day Ltd,21582.08
+item3,125.0,392.24,2024-08-10,Thompson-Brown,49030.0
+item4,19.0,148.98,2025-01-15,"Liu, Alexander and Dickson",2830.62
+item3,93.0,171.44,2024-07-05,"Tran, White and Ruiz",15943.92
+item3,139.0,376.26,2024-09-25,Evans-Young,52300.14
+item1,73.0,88.36,2024-06-24,Edwards Inc,6450.28
+item4,57.0,345.95,2024-11-29,"Phillips, Black and Harris",19719.149999999998
+item1,23.0,468.77,2025-05-05,"Smith, Smith and Rodriguez",10781.71
+item3,82.0,337.38,2024-11-08,"Kaufman, Swanson and Rodriguez",27665.16
+item4,100.0,75.11,2024-09-06,Franklin Group,7511.0
+item4,57.0,253.75,2024-05-28,"Ramirez, Horn and Lee",14463.75
+item4,127.0,221.31,2024-05-11,Jackson PLC,28106.37
+item2,32.0,466.8,2024-12-04,Harris Ltd,14937.6
+item3,42.0,461.74,2025-05-06,"Galloway, Serrano and Rodriguez",19393.08
+item2,87.0,228.75,2024-12-21,Jenkins-Diaz,19901.25
+item3,100.0,70.11,2025-04-02,"Garcia, Gates and Harris",7011.0
+item2,114.0,414.14,2024-11-10,"George, Hopkins and Scott",47211.96
+item4,52.0,471.68,2024-11-12,"Harmon, Smith and Wiggins",24527.36
+item3,88.0,498.27,2024-09-23,"Richardson, Stanley and Acosta",43847.759999999995
+item2,120.0,351.54,2024-07-27,Lucas PLC,42184.8
+item3,71.0,483.06,2024-06-19,Gilbert Inc,34297.26
+item1,76.0,106.63,2025-04-17,"Bennett, Davis and Johnson",8103.879999999999
+item2,38.0,498.96,2024-10-10,Oneill and Sons,18960.48
+item4,67.0,388.53,2024-10-06,"Coleman, Anderson and Lewis",26031.51
+item4,30.0,326.13,2025-01-23,"Mayer, Little and Randolph",9783.9
+item3,42.0,385.1,2024-10-07,Clark-Tucker,16174.2
+item2,116.0,194.29,2025-02-06,"Graham, Hernandez and Walker",22537.64
+item1,71.0,381.66,2025-02-09,White-Tate,27097.86
+item3,109.0,161.82,2024-12-17,"Graham, Aguilar and Aguilar",17638.38
+item1,57.0,481.25,2025-02-16,Bailey-Anderson,27431.25
+item1,73.0,18.73,2025-04-03,"Leonard, Townsend and Brown",1367.29
+item2,99.0,289.17,2025-04-03,"Brock, Castro and Combs",28627.83
+item2,34.0,104.32,2025-04-09,Lopez LLC,3546.8799999999997
+item2,128.0,347.03,2024-09-12,"Gonzales, Nelson and Neal",44419.84
+item1,125.0,210.08,2024-10-31,"Diaz, West and Craig",26260.0
+item1,42.0,305.62,2025-01-28,Singleton-Holloway,12836.04
+item1,108.0,157.56,2025-04-11,Conway-Sanders,17016.48
+item2,27.0,351.29,2024-05-16,"Acosta, Berry and Scott",9484.83
+item1,49.0,419.95,2024-09-06,Wilson Ltd,20577.55
+item1,74.0,80.17,2024-10-19,Oconnell PLC,5932.58
+item4,111.0,96.39,2024-07-05,Shaw PLC,10699.29
+item2,109.0,259.76,2024-05-26,Miller Inc,28313.84
+item1,134.0,346.78,2025-03-22,Caldwell and Sons,46468.52
+item3,106.0,457.56,2024-12-13,"Thornton, Reed and Henderson",48501.36
+item2,71.0,370.51,2025-01-26,"Johnson, Rose and Harrell",26306.21
+item1,101.0,220.47,2024-07-05,Jimenez Ltd,22267.47
+item1,47.0,122.05,2024-12-13,Newton Ltd,5736.349999999999
+item1,97.0,187.97,2025-03-26,Jones and Sons,18233.09
+item4,93.0,274.45,2024-07-06,Elliott Inc,25523.85
+item2,114.0,174.41,2024-11-21,Richmond Group,19882.739999999998
+item1,140.0,450.21,2024-10-11,Alvarez and Sons,63029.399999999994
+item2,51.0,357.05,2024-08-10,Sparks-Calhoun,18209.55
+item1,72.0,401.69,2024-06-08,"Roth, Brooks and Cox",28921.68
+item2,61.0,259.57,2024-10-02,Fisher-Cochran,15833.77
+item4,129.0,449.27,2025-02-03,Hale-Garner,57955.829999999994
+item3,114.0,149.78,2025-02-13,"Ellis, Shaffer and Perez",17074.920000000002
+item3,63.0,226.58,2025-03-27,Carlson Inc,14274.54
+item4,106.0,397.11,2024-10-10,"Green, Gaines and Garza",42093.66
+item3,40.0,397.56,2025-04-26,Roberts-Campbell,15902.4
+item2,99.0,235.76,2024-08-24,"Torres, Espinoza and Miller",23340.239999999998
+item3,131.0,116.9,2025-05-09,"Scott, Prince and Bird",15313.900000000001
+item3,128.0,375.53,2024-09-25,Bentley-Walker,48067.84
+item4,42.0,148.72,2024-05-11,Wong Ltd,6246.24
+item4,43.0,181.82,2024-12-11,Wiley PLC,7818.259999999999
+item1,89.0,425.92,2025-01-07,Bradley-Valdez,37906.880000000005
+item2,105.0,137.26,2025-01-25,"Davis, Kemp and Simmons",14412.3
+item1,29.0,324.27,2025-01-17,Williams Group,9403.83
+item1,119.0,121.83,2025-04-08,Sanders-Leonard,14497.77
+item4,72.0,447.83,2024-08-14,Kline and Sons,32243.76
+item4,96.0,255.1,2024-06-12,York Ltd,24489.6
+item2,27.0,479.61,2024-05-28,"Chambers, Coffey and Porter",12949.470000000001
+item2,12.0,393.33,2025-02-09,Bailey-Thornton,4719.96
+item3,24.0,413.62,2024-10-14,Miller Ltd,9926.880000000001
+item4,49.0,464.52,2024-08-11,Mitchell-Rasmussen,22761.48
+item3,138.0,429.67,2024-09-16,Wright-Simon,59294.46
+item4,77.0,365.58,2024-12-22,Pitts Ltd,28149.66
+item3,63.0,303.5,2025-04-05,"Harper, Sandoval and Snyder",19120.5
+item4,83.0,331.63,2025-02-07,Allen Ltd,27525.29
+item3,127.0,111.43,2024-11-08,Davenport Inc,14151.61
+item2,103.0,92.44,2024-09-11,Dominguez-Ward,9521.32
+item2,19.0,243.96,2024-08-06,Sanchez-Wagner,4635.24
+item1,64.0,145.92,2024-11-20,"Day, Richardson and Padilla",9338.88
+item1,138.0,267.39,2024-08-16,Hubbard Ltd,36899.82
+item2,40.0,467.85,2024-08-11,Fuller-Potter,18714.0
+item2,73.0,10.71,2024-07-26,Moore-Morris,781.83
+item2,97.0,293.54,2024-07-12,"Jones, Miranda and Andrews",28473.38
+item1,85.0,297.22,2024-05-15,"Henry, Campbell and Dunn",25263.7
+item2,144.0,396.75,2024-08-09,Franklin-Buchanan,57132.0
+item2,77.0,122.14,2024-07-11,Cook-Thompson,9404.78
+item4,31.0,485.51,2025-03-05,Smith-Miller,15050.81
+item4,71.0,179.38,2025-01-28,Smith-Carr,12735.98
