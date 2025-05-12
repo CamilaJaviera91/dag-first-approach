@@ -43,7 +43,7 @@ def extract_data(n=1000):
 
     df = pd.DataFrame(records)
     data_store['raw'] = df
-    df.to_csv("sales_unprocessed.csv", index=False)
+    df.to_csv("results/sales_unprocessed.csv", index=False)
     print("✅ Extracted data with simulated errors...")
 
 def clean_data():
@@ -81,12 +81,12 @@ def plot_data():
     monthly_sales = df.groupby('month')['total'].sum()
     monthly_sales.plot(kind='bar', figsize=(10, 5), title="Monthly Sales")
     plt.tight_layout()
-    plt.savefig("monthly_sales.png")
+    plt.savefig("results/monthly_sales.png")
     print("📊 Saved plot as 'monthly_sales.png'")
 
 def load_data():
     df = data_store['transformed']
-    df.to_csv("sales_processed.csv", index=False)
+    df.to_csv("results/sales_processed.csv", index=False)
     print("📤 Data loaded into 'sales_processed.csv'.")
 
 # DAG definition
