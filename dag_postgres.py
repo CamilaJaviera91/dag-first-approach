@@ -4,7 +4,10 @@ from dotenv import load_dotenv
 from psycopg2.extras import execute_batch
 import os
 import pandas as pd
+import requests
+from decimal import Decimal
 
+# 1. Connect to PostgreSQL
 def connection():
 
     load_dotenv()
@@ -33,7 +36,8 @@ def connection():
         print("❌ Failed to connect to PostgreSQL:", e)
         return None, None
 
-def extract_data(_=None) -> pd.DataFrame | None:
+# 2. Execute SQL query and return results as DataFrame
+def extract_data(_=None):
     # Ejecuta una consulta y devuelve los resultados como DataFrame
     conn, cur = connection()
     if not conn:
@@ -82,19 +86,41 @@ def extract_data(_=None) -> pd.DataFrame | None:
         conn.close()
         print("🔒 Connection closed successfully.")
 
-# DAG definition with NetworkX
+# 3. Fetch current USD to CLP exchange rate
+def fetch_usd_to_clp(_=None):
+    url = "https://api.exchangerate-api.com/v4/latest/USD"
+    try:
+        response = requests.get(url)
+        data = response.json()
+
+        if "rates" in data and "CLP" in data["rates"]:
+            rate = data.get('rates', {}).get('CLP')
+            print(f"💱 Exchange rate: 1 USD = {rate:.2f} CLP")
+            return rate
+        else:
+            raise ValueError("CLP rate not found in API response.")
+    except Exception as e:
+        print("❌ Failed to retrieve exchange rate:", e)
+        return None
+    
+## Simulated DAG with networkx
 tasks = {
     "connect": connection,
-    "extract": extract_data
+    "extract": extract_data,
+    "fetch_usd_to_clp": fetch_usd_to_clp,
+    "enrich_report": enrich_report
 }
 
 dag = nx.DiGraph()
 dag.add_edges_from([
     ("connect", "extract"),
+    ("extract", "fetch_usd_to_clp"),
+    ("fetch_usd_to_clp", "enrich_report"),
 ])
 
+# Execute the DAG in topological order
 execution_order = list(nx.topological_sort(dag))
-print("📋 Execution order:", execution_order)
+print("\n🔁 Execution order:", execution_order)
 
 for task in execution_order:
-    tasks[task]()
+    tasks[task]()  # You can store returns if needed
