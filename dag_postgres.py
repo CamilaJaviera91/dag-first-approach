@@ -1,11 +1,9 @@
 import networkx as nx
 import psycopg2
 from dotenv import load_dotenv
-from psycopg2.extras import execute_batch
 import os
 import pandas as pd
 import requests
-from decimal import Decimal
 
 # 1. Connect to PostgreSQL
 def connection():
@@ -36,9 +34,8 @@ def connection():
         print("❌ Failed to connect to PostgreSQL:", e)
         return None, None
 
-# 2. Execute SQL query and return results as DataFrame
+# 2. Execute SQL query and return results as a DataFrame
 def extract_data(_=None):
-    # Ejecuta una consulta y devuelve los resultados como DataFrame
     conn, cur = connection()
     if not conn:
         return None
@@ -76,8 +73,7 @@ def extract_data(_=None):
         records = cur.fetchall()
         columns = [desc[0] for desc in cur.description]
         df = pd.DataFrame(records, columns=columns)
-        print(df)
-        return df
+        return df  # 🔁 No print here
     except psycopg2.Error as e:
         print(f"❌ Error executing the query: {e}")
         return None
@@ -102,10 +98,22 @@ def fetch_usd_to_clp(_=None):
     except Exception as e:
         print("❌ Failed to retrieve exchange rate:", e)
         return None
+
+# 4. Enrich report with CLP values
+def enrich_report(df_usd, clp_rate):
+    if df_usd is not None and clp_rate:
+        clp_rate = float(clp_rate)
+        df_usd["total"] = df_usd["total"].astype(float)
+        df_usd["total_clp"] = df_usd["total"] * clp_rate
+        print("📊 Enriched report:")
+        print(df_usd.head())
+        return df_usd
+    else:
+        print("⚠️ Report enrichment failed.")
+        return None
     
 ## Simulated DAG with networkx
 tasks = {
-    "connect": connection,
     "extract": extract_data,
     "fetch_usd_to_clp": fetch_usd_to_clp,
     "enrich_report": enrich_report
@@ -113,7 +121,6 @@ tasks = {
 
 dag = nx.DiGraph()
 dag.add_edges_from([
-    ("connect", "extract"),
     ("extract", "fetch_usd_to_clp"),
     ("fetch_usd_to_clp", "enrich_report"),
 ])
@@ -122,5 +129,14 @@ dag.add_edges_from([
 execution_order = list(nx.topological_sort(dag))
 print("\n🔁 Execution order:", execution_order)
 
+results = {}
+
 for task in execution_order:
-    tasks[task]()  # You can store returns if needed
+    if task == "extract":
+        results["extract"] = tasks[task]()  # Save DataFrame
+    elif task == "fetch_usd_to_clp":
+        results["fetch_usd_to_clp"] = tasks[task]()  # Save rate
+    elif task == "enrich_report":
+        tasks[task](results["extract"], results["fetch_usd_to_clp"])  # ✅ Pass arguments
+    else:
+        tasks[task]()  # e.g., "connect", which needs no arguments
