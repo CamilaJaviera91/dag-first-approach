@@ -2,6 +2,7 @@ import networkx as nx
 from faker import Faker
 import pandas as pd
 import random
+import matplotlib.pyplot as plt
 
 data_store = {}
 
@@ -19,12 +20,10 @@ def extract_data(n=1000):
         sales = []
         for _ in range(n):
             product = random.choice(products)
-            # Randomly introduce null values
             quantity = random.randint(12, 144) if random.random() > 0.05 else None
             unit_price = round(random.uniform(10.0, 500.0), 2) if random.random() > 0.05 else None
             date = faker.date_between(start_date='-1y', end_date='today')
             client = faker.company()
-            # Add random whitespaces
             if random.random() < 0.1:
                 client = f"  {client}  "
             if random.random() < 0.1:
@@ -39,8 +38,6 @@ def extract_data(n=1000):
         return sales
 
     records = generate_sales_data(n)
-
-    # Intentionally duplicate some records
     duplicates = random.sample(records, k=int(n * 0.05))
     records.extend(duplicates)
 
@@ -51,26 +48,41 @@ def extract_data(n=1000):
 
 def clean_data():
     df = data_store['raw'].copy()
-    
-    # Strip leading/trailing whitespaces
     df['product'] = df['product'].str.strip()
     df['client'] = df['client'].str.strip()
-
-    # Drop nulls
     df = df.dropna()
-
-    # Drop duplicates
     df = df.drop_duplicates()
-
     data_store['clean'] = df
     print("🧹 Cleaned data (whitespaces, nulls, duplicates)...")
 
-def transform_data():
+def validate_data():
     df = data_store['clean']
+    df = df[(df['quantity'] > 0) & (df['unit_price'] > 0)]
+    data_store['validated'] = df
+    print("✅ Validated data (positive quantity and price)...")
+
+def transform_data():
+    df = data_store['validated']
     df['total'] = df['quantity'] * df['unit_price']
     df['total'] = round(df['total'], 2)
     data_store['transformed'] = df
     print("🛠️ Transformed data...")
+
+def analyze_data():
+    df = data_store['transformed']
+    top_products = df.groupby('product')['total'].sum().sort_values(ascending=False).head(5)
+    print("🏆 Top 5 products by sales:")
+    print(top_products)
+    data_store['analysis'] = top_products
+
+def plot_data():
+    df = data_store['transformed']
+    df['month'] = pd.to_datetime(df['date']).dt.to_period('M')
+    monthly_sales = df.groupby('month')['total'].sum()
+    monthly_sales.plot(kind='bar', figsize=(10, 5), title="Monthly Sales")
+    plt.tight_layout()
+    plt.savefig("monthly_sales.png")
+    print("📊 Saved plot as 'monthly_sales.png'")
 
 def load_data():
     df = data_store['transformed']
@@ -81,14 +93,20 @@ def load_data():
 tasks = {
     "extract": extract_data,
     "clean": clean_data,
+    "validate": validate_data,
     "transform": transform_data,
+    "analyze": analyze_data,
+    "plot": plot_data,
     "load": load_data
 }
 
 dag = nx.DiGraph()
 dag.add_edges_from([
     ("extract", "clean"),
-    ("clean", "transform"),
+    ("clean", "validate"),
+    ("validate", "transform"),
+    ("transform", "analyze"),
+    ("transform", "plot"),
     ("transform", "load")
 ])
 
