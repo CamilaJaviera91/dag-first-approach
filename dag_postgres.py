@@ -105,6 +105,10 @@ def enrich_report(df_usd, clp_rate):
         clp_rate = float(clp_rate)
         df_usd["total"] = df_usd["total"].astype(float)
         df_usd["total_clp"] = df_usd["total"] * clp_rate
+
+        # Set float display format
+        pd.options.display.float_format = '{:,.2f}'.format
+
         print("📊 Enriched report:")
         print(df_usd.head())
         return df_usd
