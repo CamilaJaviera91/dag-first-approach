@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import requests
 
-# 1. Connect to PostgreSQL
+# Connect to PostgreSQL
 def connection():
 
     load_dotenv()
@@ -34,7 +34,7 @@ def connection():
         print("❌ Failed to connect to PostgreSQL:", e)
         return None, None
 
-# 2. Execute SQL query and return results as a DataFrame
+# 1. Execute SQL query and return results as a DataFrame
 def extract_data(_=None):
     conn, cur = connection()
     if not conn:
@@ -82,7 +82,7 @@ def extract_data(_=None):
         conn.close()
         print("🔒 Connection closed successfully.")
 
-# 3. Fetch current USD to CLP exchange rate
+# 2. Fetch current USD to CLP exchange rate
 def fetch_usd_to_clp(_=None):
     url = "https://api.exchangerate-api.com/v4/latest/USD"
     try:
@@ -99,12 +99,13 @@ def fetch_usd_to_clp(_=None):
         print("❌ Failed to retrieve exchange rate:", e)
         return None
 
-# 4. Enrich report with CLP values
+# 3. Enrich report with CLP values
 def enrich_report(df_usd, clp_rate):
     if df_usd is not None and clp_rate:
         clp_rate = float(clp_rate)
         df_usd["total"] = df_usd["total"].astype(float)
         df_usd["total_clp"] = df_usd["total"] * clp_rate
+        df_usd["total_clp"] = round(df_usd["total_clp"], 0)
 
         # Set float display format
         pd.options.display.float_format = '{:,.2f}'.format
@@ -115,18 +116,25 @@ def enrich_report(df_usd, clp_rate):
     else:
         print("⚠️ Report enrichment failed.")
         return None
-    
+
+# 4. Export results
+def export_results(df):
+    df.to_csv("report.csv", index=False)
+    print("📤 Exported report to 'report.csv'")
+
 ## Simulated DAG with networkx
 tasks = {
     "extract": extract_data,
     "fetch_usd_to_clp": fetch_usd_to_clp,
-    "enrich_report": enrich_report
+    "enrich_report": enrich_report,
+    "export": export_results
 }
 
 dag = nx.DiGraph()
 dag.add_edges_from([
     ("extract", "fetch_usd_to_clp"),
     ("fetch_usd_to_clp", "enrich_report"),
+    ("enrich_report", "export"),
 ])
 
 # Execute the DAG in topological order
@@ -141,6 +149,8 @@ for task in execution_order:
     elif task == "fetch_usd_to_clp":
         results["fetch_usd_to_clp"] = tasks[task]()  # Save rate
     elif task == "enrich_report":
-        tasks[task](results["extract"], results["fetch_usd_to_clp"])  # ✅ Pass arguments
+        results["enrich_report"] = tasks[task](results["extract"], results["fetch_usd_to_clp"])
+    elif task == "export":
+        tasks[task](results["enrich_report"])
     else:
         tasks[task]()  # e.g., "connect", which needs no arguments
