@@ -119,7 +119,7 @@ def enrich_report(df_usd, clp_rate):
 
 # 4. Export results
 def export_results(df):
-    df.to_csv("report.csv", index=False)
+    df.to_csv("results/report.csv", index=False)
     print("📤 Exported report to 'report.csv'")
 
 ## Simulated DAG with networkx
