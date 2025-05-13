@@ -55,3 +55,7 @@ Camila Javiera Muñoz Navarro
 <br>
 
 [LinkedIn](https://www.linkedin.com/in/camilajmn/) | [GitHub](https://github.com/CamilaJaviera91)
+
+## 📄 License
+
+This project is licensed under the MIT License.
