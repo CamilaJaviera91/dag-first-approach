@@ -12,7 +12,7 @@ The goal of this project is to provide a minimal and clear setup to get started 
 
 This project follows a "DAG-first" development approach: you start by defining your DAG structure and logic before integrating it into a larger pipeline system.
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
 - Python 3.10+
 - Apache Airflow 2.7+
