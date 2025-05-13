@@ -183,6 +183,14 @@ The tasks will be executed in the order defined by the DAG, and the enriched sal
 
 ---
 
+## 📝 Notes
+
+- Make sure your PostgreSQL database is accessible, and your Google API credentials are set up correctly.
+
+- The Google Sheets API requires the appropriate permissions to modify the sheet, so ensure your service account has the necessary access.
+
+---
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
