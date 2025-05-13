@@ -40,7 +40,6 @@ A DAG, or **Directed Acyclic Graph**, is a type of graph used in computer scienc
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
-
 <br>
 
 [LinkedIn](https://www.linkedin.com/in/camilajmn/) | [GitHub](https://github.com/CamilaJaviera91)
