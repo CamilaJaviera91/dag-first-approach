@@ -53,6 +53,16 @@ DB_SCHEMA=your_database_schema (optional)
 GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 ```
 
+### 2. Google Sheets Setup:
+
+To export data to Google Sheets, you'll need to set up Google API credentials:
+
+- Create a project in the Google Developers Console.
+
+- Enable the "Google Sheets API" and "Google Drive API".
+
+- Download the credentials JSON file and set the GOOGLE_CREDENTIALS_PATH in the .env file to the path of the credentials file.
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
