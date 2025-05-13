@@ -1,0 +1,8 @@
+psycopg2
+python-dotenv
+pandas
+requests
+gspread
+gspread_dataframe
+oauth2client
+networkx
