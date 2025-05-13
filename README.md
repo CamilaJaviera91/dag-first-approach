@@ -67,6 +67,64 @@ To export data to Google Sheets, you'll need to set up Google API credentials:
 
 ---
 
+## 📝 Script Functions
+
+### 1. connection()
+
+Establishes a connection to the PostgreSQL database using the parameters from the .env file.
+
+- **Returns:** conn (connection object), cur (cursor object) if successful, None, None if failed.
+
+### 2. extract_data()
+
+Extracts sales data from the PostgreSQL database by executing an SQL query that performs a series of joins and aggregations.
+
+- **Returns:** A Pandas DataFrame containing the aggregated sales data.
+
+### 3. fetch_usd_to_clp()
+
+Fetches the current USD to CLP exchange rate from the ExchangeRate-API.
+
+- **Returns:** The exchange rate (float) if successful, None if failed.
+
+### 4. enrich_report()
+
+Enriches the extracted data with the exchange rate (converts totals to CLP).
+
+- **Parameters:**
+
+    - **df_usd:** The DataFrame containing sales data in USD.
+
+    - **clp_rate:** The exchange rate from USD to CLP.
+
+- **Returns:** The enriched DataFrame with totals converted to CLP.
+
+### 5. export_results()
+
+Exports the enriched data to a CSV file (results/report.csv).
+
+- **Parameters:**
+
+    - **df:** The DataFrame containing the data to be exported.
+
+- **Returns:** None.
+
+### 6. export_to_google_sheets()
+
+Exports the enriched data to a Google Sheet using the Google Sheets API.
+
+- **Parameters:**
+
+    - **df:** The DataFrame containing the data to be exported.
+
+    - **sheet_name:** The name of the sheet within the spreadsheet.
+
+    - **spreadsheet_name:** The name of the spreadsheet.
+
+- **Returns:** None.
+
+---
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
