@@ -37,6 +37,18 @@ A DAG, or **Directed Acyclic Graph**, is a type of graph used in computer scienc
 
 - Compilers: Representing expressions or instructions.
 
+## 📅 DAG Overview
+
+- start_task: Dummy operator to signal the start of the DAG
+
+- extract_data: Simulates data extraction
+
+- transform_data: Simulates data transformation
+
+- load_data: Simulates loading data into a target system
+
+All tasks are executed sequentially to demonstrate dependency chaining.
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
