@@ -125,6 +125,20 @@ Exports the enriched data to a Google Sheet using the Google Sheets API.
 
 ---
 
+## 📑 Task Execution Flow
+
+- **Data Extraction:** The script starts by extracting the data from the PostgreSQL database using the extract_data() function.
+
+- **Exchange Rate Fetch:** The script fetches the USD to CLP exchange rate using the fetch_usd_to_clp() function.
+
+- **Report Enrichment:** The sales data is enriched by converting the totals to CLP using the exchange rate.
+
+- **CSV Export:** The enriched report is exported to a CSV file.
+
+- **Google Sheets Export:** Finally, the enriched report is exported to a Google Sheet.
+
+---
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
