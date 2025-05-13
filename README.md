@@ -139,6 +139,22 @@ Exports the enriched data to a Google Sheet using the Google Sheets API.
 
 ---
 
+## 🔁 DAG (Directed Acyclic Graph)
+
+A Directed Acyclic Graph (DAG) is used to define task dependencies and ensure they are executed in the correct order:
+
+```
+dag = nx.DiGraph()
+dag.add_edges_from([
+    ("extract", "fetch_usd_to_clp"),
+    ("fetch_usd_to_clp", "enrich_report"),
+    ("enrich_report", "export"),
+    ("export", "googlesheets"),
+])
+```
+
+---
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
