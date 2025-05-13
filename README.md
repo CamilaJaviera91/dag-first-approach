@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ## 🛠️ Setup
 
-### 1. Environment Variables:
+### 📖 1. Environment Variables:
 
 The script uses environment variables to connect to the PostgreSQL database and authenticate with Google Sheets. Create a .env file in the project directory and include the following parameters:
 
@@ -53,7 +53,7 @@ DB_SCHEMA=your_database_schema (optional)
 GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 ```
 
-### 2. Google Sheets Setup:
+### 📄 2. Google Sheets Setup:
 
 To export data to Google Sheets, you'll need to set up Google API credentials:
 
