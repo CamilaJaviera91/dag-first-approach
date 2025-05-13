@@ -36,3 +36,11 @@ A DAG, or **Directed Acyclic Graph**, is a type of graph used in computer scienc
 - Data processing pipelines: Stages of transformation that must occur in a specific order.
 
 - Compilers: Representing expressions or instructions.
+
+## 👩‍💻 Author
+
+Camila Javiera Muñoz Navarro
+
+<br>
+
+[LinkedIn](https://www.linkedin.com/in/camilajmn/) | [GitHub](https://github.com/CamilaJaviera91)
