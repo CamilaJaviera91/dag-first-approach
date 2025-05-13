@@ -1,16 +1,8 @@
 # DAG first approach
 
-This repository contains a simple example of an Apache Airflow DAG ("Directed Acyclic Graph") for orchestration of a basic data pipeline. It is intended as a starting point for understanding how to define, schedule, and run tasks using Airflow.
-
 ## 📌 Project Description
 
-The goal of this project is to provide a minimal and clear setup to get started with Airflow DAGs. It includes:
-
-- A basic DAG with Python tasks
-- Task dependencies and execution order
-- Local development setup instructions
-
-This project follows a "DAG-first" development approach: you start by defining your DAG structure and logic before integrating it into a larger pipeline system.
+This project automates the extraction, transformation, and export of sales data from a PostgreSQL database, enhances the data with exchange rate information, and exports the results in CSV and Google Sheets formats. It uses a Directed Acyclic Graph (DAG) to manage task dependencies and execute them in order.
 
 ## 🛠️ Technologies Used
 
