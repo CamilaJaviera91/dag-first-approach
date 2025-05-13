@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 import os
 import pandas as pd
 import requests
+import gspread
+from gspread_dataframe import set_with_dataframe
+from oauth2client.service_account import ServiceAccountCredentials
 
 # Connect to PostgreSQL
 def connection():
@@ -122,12 +125,52 @@ def export_results(df):
     df.to_csv("results/report.csv", index=False)
     print("📤 Exported report to 'report.csv'")
 
+# 5. Export to googlesheets
+
+def export_to_google_sheets(df, sheet_name="ReportSheet", spreadsheet_name="Sales Report"):
+    
+    load_dotenv()
+    credentials_path = os.getenv("GOOGLE_CREDENTIALS_PATH")
+
+    if not credentials_path or not os.path.exists(credentials_path):
+        print("❌ Google credentials path is invalid or not set.")
+        return
+
+    try:
+        scope = [
+            "https://spreadsheets.google.com/feeds",
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive.file",
+            "https://www.googleapis.com/auth/drive"
+        ]
+
+        creds = ServiceAccountCredentials.from_json_keyfile_name(credentials_path, scope)
+        client = gspread.authorize(creds)
+
+        try:
+            spreadsheet = client.open(spreadsheet_name)
+        except gspread.SpreadsheetNotFound:
+            spreadsheet = client.create(spreadsheet_name)
+
+        try:
+            worksheet = spreadsheet.worksheet(sheet_name)
+            worksheet.clear()
+        except gspread.WorksheetNotFound:
+            worksheet = spreadsheet.add_worksheet(title=sheet_name, rows="1000", cols="20")
+
+        set_with_dataframe(worksheet, df)
+        print(f"📤 Data exported to Google Sheets: {spreadsheet_name} -> {sheet_name}")
+
+    except Exception as e:
+        print("❌ Failed to export to Google Sheets:", e)
+
 ## Simulated DAG with networkx
 tasks = {
     "extract": extract_data,
     "fetch_usd_to_clp": fetch_usd_to_clp,
     "enrich_report": enrich_report,
-    "export": export_results
+    "export": export_results,
+    "googlesheets": export_to_google_sheets
 }
 
 dag = nx.DiGraph()
@@ -135,6 +178,7 @@ dag.add_edges_from([
     ("extract", "fetch_usd_to_clp"),
     ("fetch_usd_to_clp", "enrich_report"),
     ("enrich_report", "export"),
+    ("export", "googlesheets"),
 ])
 
 # Execute the DAG in topological order
@@ -145,12 +189,14 @@ results = {}
 
 for task in execution_order:
     if task == "extract":
-        results["extract"] = tasks[task]()  # Save DataFrame
+        results["extract"] = tasks[task]()
     elif task == "fetch_usd_to_clp":
-        results["fetch_usd_to_clp"] = tasks[task]()  # Save rate
+        results["fetch_usd_to_clp"] = tasks[task]()
     elif task == "enrich_report":
         results["enrich_report"] = tasks[task](results["extract"], results["fetch_usd_to_clp"])
     elif task == "export":
+        tasks[task](results["enrich_report"])
+    elif task == "googlesheets":
         tasks[task](results["enrich_report"])
     else:
         tasks[task]()  # e.g., "connect", which needs no arguments
