@@ -170,6 +170,19 @@ The tasks are executed in the following order:
 5. googlesheets (Export to Google Sheets)
 
 ---
+
+## ▶️ Execution Example
+
+To run the script, execute the Python file directly:
+
+```
+python dag_postgres.py
+```
+
+The tasks will be executed in the order defined by the DAG, and the enriched sales data will be saved to both a CSV file and a Google Sheet.
+
+---
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
