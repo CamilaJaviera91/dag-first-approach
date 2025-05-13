@@ -155,6 +155,21 @@ dag.add_edges_from([
 
 ---
 
+## ⏩ Execution Order
+
+The tasks are executed in the following order:
+
+1. extract (Extract data from PostgreSQL)
+
+2. fetch_usd_to_clp (Fetch exchange rate)
+
+3. enrich_report (Enrich data with exchange rate)
+
+4. export (Export to CSV)
+
+5. googlesheets (Export to Google Sheets)
+
+---
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
