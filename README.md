@@ -36,6 +36,8 @@ Before running the script, make sure you have the following dependencies install
 pip install -r requirements.txt
 ```
 
+---
+
 ## 🛠️ Setup
 
 ### 📖 1. Environment Variables:
@@ -63,12 +65,16 @@ To export data to Google Sheets, you'll need to set up Google API credentials:
 
 - Download the credentials JSON file and set the GOOGLE_CREDENTIALS_PATH in the .env file to the path of the credentials file.
 
+---
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
 <br>
 
 [LinkedIn](https://www.linkedin.com/in/camilajmn/) | [GitHub](https://github.com/CamilaJaviera91)
+
+---
 
 ## 📄 License
 
