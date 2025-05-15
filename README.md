@@ -85,59 +85,37 @@ GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 
 ## 📝 Script Functions
 
-### 1. connection()
+**1. connection()**
 
-Establishes a connection to the PostgreSQL database using the parameters from the .env file.
+Establishes a connection to the PostgreSQL database.
 
-- **Returns:** conn (connection object), cur (cursor object) if successful, None, None if failed.
+    - Returns: conn, cur on success; None, None on failure
 
-### 2. extract_data()
+**2. extract_data()**
 
-Extracts sales data from the PostgreSQL database by executing an SQL query that performs a series of joins and aggregations.
+Runs an SQL query to extract and aggregate sales data.
 
-- **Returns:** A Pandas DataFrame containing the aggregated sales data.
+    - Returns: DataFrame of extracted data
 
-### 3. fetch_usd_to_clp()
+**3. fetch_usd_to_clp()**
 
-Fetches the current USD to CLP exchange rate from the ExchangeRate-API.
+Fetches the current USD to CLP exchange rate.
 
-- **Returns:** The exchange rate (float) if successful, None if failed.
+    - Returns: float (exchange rate) or None on failure
 
-### 4. enrich_report()
+**4. enrich_report(df_usd, clp_rate)**
 
-Enriches the extracted data with the exchange rate (converts totals to CLP).
+Adds a CLP total to the report using the fetched exchange rate.
 
-- **Parameters:**
+    - Returns: Enriched DataFrame
 
-    - **df_usd:** The DataFrame containing sales data in USD.
+**5. export_results(df)**
 
-    - **clp_rate:** The exchange rate from USD to CLP.
+Saves the enriched data as `results/report.csv`
 
-- **Returns:** The enriched DataFrame with totals converted to CLP.
+**6. export_to_google_sheets(df, sheet_name, spreadsheet_name)**
 
-### 5. export_results()
-
-Exports the enriched data to a CSV file (results/report.csv).
-
-- **Parameters:**
-
-    - **df:** The DataFrame containing the data to be exported.
-
-- **Returns:** None.
-
-### 6. export_to_google_sheets()
-
-Exports the enriched data to a Google Sheet using the Google Sheets API.
-
-- **Parameters:**
-
-    - **df:** The DataFrame containing the data to be exported.
-
-    - **sheet_name:** The name of the sheet within the spreadsheet.
-
-    - **spreadsheet_name:** The name of the spreadsheet.
-
-- **Returns:** None.
+Exports the data to a `Google Sheet`
 
 ---
 
