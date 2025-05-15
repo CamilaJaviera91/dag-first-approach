@@ -216,6 +216,8 @@ python dag_postgres.py
 
 - The Google Sheets API requires the appropriate permissions to modify the sheet, so ensure your service account has the necessary access.
 
+- You can change the SQL query or sheet names as needed.
+
 ---
 
 ## 👩‍💻 Author
