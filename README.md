@@ -238,7 +238,6 @@ If you get stuck or need help customizing the pipeline, feel free to open an iss
 ## 👩‍💻 Author
 
 **Camila Javiera Muñoz Navarro**  
-<br>
 [🔗 LinkedIn](https://www.linkedin.com/in/camilajmn/)  
 [🐙 GitHub](https://github.com/CamilaJaviera91)
 
