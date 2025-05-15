@@ -6,6 +6,22 @@ This project automates the extraction, transformation, and export of sales data 
 
 ---
 
+## 🧩 What This Project Does
+
+1. Extracts data from a PostgreSQL database using a custom SQL query.
+
+2. Fetches the current USD to CLP exchange rate from a public API.
+
+3. Enriches the data by converting sales totals from USD to CLP.
+
+4. Exports the final dataset:
+
+    - as a CSV file (report.csv)
+
+    - to a Google Sheet
+
+---
+
 ## 🗂️ What's DAG?
 
 A DAG, or **Directed Acyclic Graph**, is a type of graph used in computer science and mathematics that has the following properties:
