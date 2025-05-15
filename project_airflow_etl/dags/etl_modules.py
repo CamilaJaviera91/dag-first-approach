@@ -1,52 +1,47 @@
-# Import required libraries
-import networkx as nx
-import psycopg2
-from dotenv import load_dotenv
+# etl_modules.py
+
 import os
-import pandas as pd
 import requests
+import pandas as pd
+import psycopg2
 import gspread
+from dotenv import load_dotenv
 from gspread_dataframe import set_with_dataframe
 from oauth2client.service_account import ServiceAccountCredentials
+from airflow.utils.log.logging_mixin import LoggingMixin
 
-# Establish connection with PostgreSQL database
+# Airflow logger
+logger = LoggingMixin().log
+
+# Load environment variables (for local testing only)
+load_dotenv()
+
+# PostgreSQL connection
 def connection():
-    load_dotenv()  # Load environment variables from .env file
-
-    # Retrieve database connection parameters
-    DB_HOST = os.getenv("DB_HOST")
-    DB_PORT = os.getenv("DB_PORT")
-    DB_NAME = os.getenv("DB_NAME")
-    DB_USER = os.getenv("DB_USER")
-    DB_PASSWORD = os.getenv("DB_PASSWORD")
-    DB_SCHEMA = os.getenv("DB_SCHEMA")
-
     try:
-        # Connect to the PostgreSQL database
         conn = psycopg2.connect(
-            host=DB_HOST,
-            port=DB_PORT,
-            dbname=DB_NAME,
-            user=DB_USER,
-            password=DB_PASSWORD
+            host=os.getenv("DB_HOST"),
+            port=os.getenv("DB_PORT"),
+            dbname=os.getenv("DB_NAME"),
+            user=os.getenv("DB_USER"),
+            password=os.getenv("DB_PASSWORD")
         )
         cur = conn.cursor()
-        # Set the default schema if provided
-        if DB_SCHEMA:
-            cur.execute(f'SET search_path TO {DB_SCHEMA};')
-        print("✅ Successfully connected to PostgreSQL.")
+        schema = os.getenv("DB_SCHEMA")
+        if schema:
+            cur.execute(f'SET search_path TO {schema};')
+        logger.info("✅ Successfully connected to PostgreSQL.")
         return conn, cur
     except Exception as e:
-        print("❌ Failed to connect to PostgreSQL:", e)
+        logger.error(f"❌ Failed to connect to PostgreSQL: {e}")
         return None, None
 
-# Step 1: Extract data from PostgreSQL and return it as a DataFrame
+# Step 1: Extract data
 def extract_data(_=None):
     conn, cur = connection()
     if not conn:
         return None
 
-    # Define SQL query with joins and aggregation
     query = '''
         WITH resume AS (
             SELECT 
@@ -76,141 +71,120 @@ def extract_data(_=None):
     '''
 
     try:
-        # Execute query and convert result into a DataFrame
         cur.execute(query)
         records = cur.fetchall()
         columns = [desc[0] for desc in cur.description]
         df = pd.DataFrame(records, columns=columns)
-        return df
+        return df.to_dict()  # Return serializable dict for XCom
     except psycopg2.Error as e:
-        print(f"❌ Error executing the query: {e}")
+        logger.error(f"❌ Error executing the query: {e}")
         return None
     finally:
-        # Close DB connection
         cur.close()
         conn.close()
-        print("🔒 Connection closed successfully.")
+        logger.info("🔒 PostgreSQL connection closed.")
 
-# Step 2: Fetch USD to CLP exchange rate from an external API
+# Step 2: Fetch exchange rate
 def fetch_usd_to_clp(_=None):
     url = "https://api.exchangerate-api.com/v4/latest/USD"
     try:
         response = requests.get(url)
         data = response.json()
-
-        # Extract CLP rate from API response
-        if "rates" in data and "CLP" in data["rates"]:
-            rate = data.get('rates', {}).get('CLP')
-            print(f"💱 Exchange rate: 1 USD = {rate:.2f} CLP")
-            return rate
-        else:
-            raise ValueError("CLP rate not found in API response.")
+        rate = data.get('rates', {}).get('CLP')
+        if not rate:
+            raise ValueError("CLP rate not found.")
+        logger.info(f"💱 1 USD = {rate:.2f} CLP")
+        return rate
     except Exception as e:
-        print("❌ Failed to retrieve exchange rate:", e)
+        logger.error(f"❌ Failed to fetch exchange rate: {e}")
         return None
 
-# Step 3: Enrich the report with CLP values
+# Step 3: Enrich report
 def enrich_report(df_usd, clp_rate):
     if df_usd is not None and clp_rate:
-        clp_rate = float(clp_rate)
-        df_usd["total"] = df_usd["total"].astype(float)
-        df_usd["total_clp"] = df_usd["total"] * clp_rate
-        df_usd["total_clp"] = round(df_usd["total_clp"], 0)
+        df = pd.DataFrame(df_usd)
+        df["total"] = df["total"].astype(float)
+        df["total_clp"] = round(df["total"] * float(clp_rate), 0)
+        logger.info("📊 Enriched report sample:\n%s", df.head().to_string(index=False))
+        return df.to_dict()
+    logger.warning("⚠️ Report enrichment failed.")
+    return None
 
-        # Format float display for better readability
-        pd.options.display.float_format = '{:,.2f}'.format
-
-        print("📊 Enriched report:")
-        print(df_usd.head())
-        return df_usd
-    else:
-        print("⚠️ Report enrichment failed.")
-        return None
-
-# Step 4: Export results as CSV
-def export_results(df):
+# Step 4: Export to CSV
+def export_results(df_dict):
+    df = pd.DataFrame(df_dict)
+    os.makedirs("data", exist_ok=True)
     df.to_csv("data/report.csv", index=False)
-    print("📤 Exported report to 'report.csv'")
+    logger.info("📤 Report exported to data/report.csv")
 
-# Step 5: Export the results to a Google Sheet
-def export_to_google_sheets(df, sheet_name="ReportSheet", spreadsheet_name="Sales Report"):
-    
-    load_dotenv()
+# Step 5: Export to Google Sheets
+def export_to_google_sheets(df_dict, sheet_name="ReportSheet", spreadsheet_name="Sales Report"):
+    df = pd.DataFrame(df_dict)
     credentials_path = os.getenv("GOOGLE_CREDENTIALS_PATH")
 
-    # Validate credentials path
     if not credentials_path or not os.path.exists(credentials_path):
-        print("❌ Google credentials path is invalid or not set.")
+        logger.error("❌ Invalid or missing GOOGLE_CREDENTIALS_PATH")
         return
 
     try:
-        # Define scope for Google Sheets API access
         scope = [
             "https://spreadsheets.google.com/feeds",
             "https://www.googleapis.com/auth/spreadsheets",
             "https://www.googleapis.com/auth/drive.file",
             "https://www.googleapis.com/auth/drive"
         ]
-
-        # Authorize client
         creds = ServiceAccountCredentials.from_json_keyfile_name(credentials_path, scope)
         client = gspread.authorize(creds)
 
-        # Open or create spreadsheet
         try:
             spreadsheet = client.open(spreadsheet_name)
         except gspread.SpreadsheetNotFound:
             spreadsheet = client.create(spreadsheet_name)
 
-        # Open or create worksheet
         try:
             worksheet = spreadsheet.worksheet(sheet_name)
             worksheet.clear()
         except gspread.WorksheetNotFound:
             worksheet = spreadsheet.add_worksheet(title=sheet_name, rows="1000", cols="20")
 
-        # Write DataFrame to Google Sheet
         set_with_dataframe(worksheet, df)
-        print(f"📤 Data exported to Google Sheets: {spreadsheet_name} -> {sheet_name}")
-
+        logger.info(f"📤 Data exported to Google Sheets: {spreadsheet_name} -> {sheet_name}")
     except Exception as e:
-        print("❌ Failed to export to Google Sheets:", e)
+        logger.error(f"❌ Failed to export to Google Sheets: {e}")
 
-# Define a DAG (Directed Acyclic Graph) to represent task dependencies
-tasks = {
-    "extract": extract_data,
-    "fetch_usd_to_clp": fetch_usd_to_clp,
-    "enrich_report": enrich_report,
-    "export": export_results,
-    "googlesheets": export_to_google_sheets
-}
+# 🔁 Optional: Local test DAG execution
+if __name__ == "__main__":
+    import networkx as nx
 
-dag = nx.DiGraph()
-dag.add_edges_from([
-    ("extract", "fetch_usd_to_clp"),       # Step 1 -> Step 2
-    ("fetch_usd_to_clp", "enrich_report"), # Step 2 -> Step 3
-    ("enrich_report", "export"),           # Step 3 -> Step 4
-    ("export", "googlesheets"),            # Step 4 -> Step 5
-])
+    tasks = {
+        "extract": extract_data,
+        "fetch_usd_to_clp": fetch_usd_to_clp,
+        "enrich_report": enrich_report,
+        "export": export_results,
+        "googlesheets": export_to_google_sheets
+    }
 
-# Execute tasks based on topological sorting of the DAG
-execution_order = list(nx.topological_sort(dag))
-print("\n🔁 Execution order:", execution_order)
+    dag = nx.DiGraph()
+    dag.add_edges_from([
+        ("extract", "fetch_usd_to_clp"),
+        ("fetch_usd_to_clp", "enrich_report"),
+        ("enrich_report", "export"),
+        ("export", "googlesheets"),
+    ])
 
-# Dictionary to store intermediate results
-results = {}
+    order = list(nx.topological_sort(dag))
+    logger.info("🔁 Local test execution order: %s", order)
 
-# Loop through the tasks and execute them in order
-for task in execution_order:
-    if task == "extract":
-        results["extract"] = tasks[task]()
-    elif task == "fetch_usd_to_clp":
-        results["fetch_usd_to_clp"] = tasks[task]()
-    elif task == "enrich_report":
-        results["enrich_report"] = tasks[task](results["extract"], results["fetch_usd_to_clp"])
-    elif task == "export":
-        tasks[task](results["enrich_report"])
-    elif task == "googlesheets":
-        tasks[task](results["enrich_report"])
-    else:
-        tasks[task]()  # Generic fallback for functions without arguments
+    results = {}
+
+    for task in order:
+        if task == "extract":
+            results["extract"] = tasks[task]()
+        elif task == "fetch_usd_to_clp":
+            results["fetch_usd_to_clp"] = tasks[task]()
+        elif task == "enrich_report":
+            results["enrich_report"] = tasks[task](
+                results["extract"], results["fetch_usd_to_clp"]
+            )
+        elif task in {"export", "googlesheets"}:
+            tasks[task](results["enrich_report"])
