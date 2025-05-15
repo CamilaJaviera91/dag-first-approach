@@ -189,13 +189,24 @@ The tasks are executed in the following order:
 
 ## ▶️ Execution Example
 
-To run the script, execute the Python file directly:
+- To run the script, execute the Python file directly:
 
 ```
 python dag_postgres.py
 ```
 
-The tasks will be executed in the order defined by the DAG, and the enriched sales data will be saved to both a CSV file and a Google Sheet.
+- The tasks will be executed in the order defined by the DAG, and the enriched sales data will be saved to both a CSV file and a Google Sheet.
+
+- You'll see output like:
+
+```
+✅ Successfully connected to PostgreSQL.
+💱 Exchange rate: 1 USD = 900.50 CLP
+📊 Enriched report:
+📤 Exported report to 'report.csv'
+📤 Data exported to Google Sheets: Sales Report -> ReportSheet
+🔒 Connection closed successfully.
+```
 
 ---
 
