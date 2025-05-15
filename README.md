@@ -2,7 +2,7 @@
 
 ## 📌 Project Description
 
-This project automates the extraction, transformation, and export of sales data from a PostgreSQL database. It enriches the data with real-time USD to CLP exchange rate information and exports the results to both CSV and Google Sheets formats. A Directed Acyclic Graph (DAG) is used to manage task dependencies and ensure the correct execution order.
+This project automates the **extraction**, **transformation**, and **export** of sales data from a PostgreSQL database. It enriches the data with real-time USD to CLP exchange rate information and exports the results to both CSV and Google Sheets formats. A **Directed Acyclic Graph (DAG)** is used to manage task dependencies and ensure the correct execution order.
 
 ---
 
@@ -24,11 +24,11 @@ This project automates the extraction, transformation, and export of sales data 
 
 ## 🗂️ What's DAG?
 
-A Directed Acyclic Graph (DAG) is a graph where:
+A **Directed Acyclic Graph (DAG)** is a graph where:
 
-- Directed: All edges have a direction (from one node to another)
+1. **Directed:** All edges have a direction (from one node to another)
 
-- Acyclic: No cycles exist—you can’t loop back to a previous node
+2. **Acyclic:** No cycles exist—you can’t loop back to a previous node
 
 ---
 
