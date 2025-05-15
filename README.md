@@ -228,6 +228,12 @@ python dag_postgres.py
 
 ---
 
+## 📧 Questions?
+
+If you get stuck or need help customizing the pipeline, feel free to open an issue or reach out!
+
+---
+
 ## 👩‍💻 Author
 
 Camila Javiera Muñoz Navarro
