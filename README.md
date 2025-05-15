@@ -8,13 +8,13 @@ This project automates the extraction, transformation, and export of sales data 
 
 ## 🧩 What This Project Does
 
-1. Extracts data from a PostgreSQL database using a custom SQL query.
+- Extracts data from a PostgreSQL database using a custom SQL query.
 
-2. Fetches the current USD to CLP exchange rate from a public API.
+- Fetches the current USD to CLP exchange rate from a public API.
 
-3. Enriches the data by converting sales totals from USD to CLP.
+- Enriches the data by converting sales totals from USD to CLP.
 
-4. Exports the final dataset:
+- Exports the final dataset:
 
     - as a CSV file (report.csv)
 
@@ -61,6 +61,7 @@ pip install -r requirements.txt
 The script uses environment variables to connect to the PostgreSQL database and authenticate with Google Sheets. Create a .env file in the project directory and include the following parameters:
 
 ```
+DB_SCHEMA=your_database_schema  # Optional
 DB_HOST=your_database_host
 DB_PORT=your_database_port
 DB_NAME=your_database_name
