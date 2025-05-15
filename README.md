@@ -2,7 +2,7 @@
 
 ## 📌 Project Description
 
-This project automates the extraction, transformation, and export of sales data from a PostgreSQL database, enhances the data with exchange rate information, and exports the results in CSV and Google Sheets formats. It uses a Directed Acyclic Graph (DAG) to manage task dependencies and execute them in order.
+This project automates the extraction, transformation, and export of sales data from a PostgreSQL database. It enriches the data with real-time USD to CLP exchange rate information and exports the results to both CSV and Google Sheets formats. A Directed Acyclic Graph (DAG) is used to manage task dependencies and ensure the correct execution order.
 
 ---
 
@@ -24,23 +24,23 @@ This project automates the extraction, transformation, and export of sales data 
 
 ## 🗂️ What's DAG?
 
-A DAG, or **Directed Acyclic Graph**, is a type of graph used in computer science and mathematics that has the following properties:
+A Directed Acyclic Graph (DAG) is a graph where:
 
-1. Directed: All edges (connections between nodes) have a direction — they go from one node to another in a specific direction.
+- Directed: All edges have a direction (from one node to another)
 
-2. Acyclic: There are no cycles — you can't start at one node and follow the edges to eventually loop back to the same node.
+- Acyclic: No cycles exist—you can’t loop back to a previous node
 
 ---
 
 ### 📋 Common Uses of DAGs:
 
-- Task scheduling (e.g., Airflow, build systems like Make): Tasks depend on other tasks, and the execution order must follow the dependencies.
+- Task scheduling (e.g., Airflow, build systems like Make)
 
-- Version control systems (e.g., Git): Commits are nodes in a DAG showing how changes depend on each other.
+- Version control systems (e.g., Git)
 
-- Data processing pipelines: Stages of transformation that must occur in a specific order.
+- Data processing pipelines
 
-- Compilers: Representing expressions or instructions.
+- Compilers and expression trees
 
 ---
 
@@ -58,29 +58,28 @@ pip install -r requirements.txt
 
 ### 🔐 1. Environment Variables:
 
-The script uses environment variables to connect to the PostgreSQL database and authenticate with Google Sheets. Create a .env file in the project directory and include the following parameters:
+Create a `.env` file with the following:
 
 ```
-DB_SCHEMA=your_database_schema  # Optional
 DB_HOST=your_database_host
 DB_PORT=your_database_port
 DB_NAME=your_database_name
 DB_USER=your_database_user
 DB_PASSWORD=your_database_password
-DB_SCHEMA=your_database_schema (optional)
+DB_SCHEMA=your_database_schema #optional
 
 GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 ```
 
 ### 📄 2. Google Sheets Setup:
 
-To export data to Google Sheets, you'll need to set up Google API credentials:
+1. Create a project in Google Developers Console.
 
-- Create a project in the Google Developers Console.
+2. Enable the **Google Sheets API** and **Google Drive API**.
 
-- Enable the "Google Sheets API" and "Google Drive API".
+3. Download the JSON credentials file.
 
-- Download the credentials JSON file and set the GOOGLE_CREDENTIALS_PATH in the .env file to the path of the credentials file.
+5. Set the path to this file in `GOOGLE_CREDENTIALS_PATH`.
 
 ---
 
