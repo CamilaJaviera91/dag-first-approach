@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ## 🛠️ Setup
 
-### 📖 1. Environment Variables:
+### 🔐 1. Environment Variables:
 
 The script uses environment variables to connect to the PostgreSQL database and authenticate with Google Sheets. Create a .env file in the project directory and include the following parameters:
 
