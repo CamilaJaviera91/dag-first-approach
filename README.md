@@ -101,13 +101,13 @@ Runs an SQL query to extract and aggregate sales data.
 
 Fetches the current USD to CLP exchange rate.
 
-    - Returns: float (exchange rate) or None on failure
+- **Returns:** `float` (exchange rate) or `None` on failure
 
 4. `enrich_report(df_usd, clp_rate)`
 
 Adds a CLP total to the report using the fetched exchange rate.
 
-    - Returns: Enriched DataFrame
+- **Returns:** Enriched `DataFrame`
 
 5. `export_results(df)`
 
