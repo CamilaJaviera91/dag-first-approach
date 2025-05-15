@@ -119,23 +119,23 @@ Exports the data to a `Google Sheet`
 
 ---
 
-## 📑 Task Execution Flow
+## 📁 Task Execution Flow
 
-- **Data Extraction:** The script starts by extracting the data from the PostgreSQL database using the extract_data() function.
+1. Data Extraction
 
-- **Exchange Rate Fetch:** The script fetches the USD to CLP exchange rate using the fetch_usd_to_clp() function.
+2. Exchange Rate Fetch
 
-- **Report Enrichment:** The sales data is enriched by converting the totals to CLP using the exchange rate.
+3. Report Enrichment
 
-- **CSV Export:** The enriched report is exported to a CSV file.
+4. CSV Export
 
-- **Google Sheets Export:** Finally, the enriched report is exported to a Google Sheet.
+5. Google Sheets Export
 
 ---
 
 ## 🔁 DAG (Directed Acyclic Graph)
 
-A Directed Acyclic Graph (DAG) is used to define task dependencies and ensure they are executed in the correct order:
+The DAG defines task dependencies:
 
 ```
 dag = nx.DiGraph()
@@ -167,13 +167,11 @@ The tasks are executed in the following order:
 
 ## ▶️ Execution Example
 
-- To run the script, execute the Python file directly:
+- Run de pipeline: 
 
 ```
 python dag_postgres.py
 ```
-
-- The tasks will be executed in the order defined by the DAG, and the enriched sales data will be saved to both a CSV file and a Google Sheet.
 
 - You'll see output like:
 
@@ -192,17 +190,17 @@ python dag_postgres.py
 
 - results/report.csv
 
-- Google Spreadsheet: Sales Report → ReportSheet
+- Google Spreadsheet: **Sales Report → ReportSheet**
 
 ---
 
 ## 📝 Notes
 
-- Make sure your PostgreSQL database is accessible, and your Google API credentials are set up correctly.
+- Ensure the database is accessible and credentials are valid
 
-- The Google Sheets API requires the appropriate permissions to modify the sheet, so ensure your service account has the necessary access.
+- The service account must have permission to edit the target Google Sheet
 
-- You can change the SQL query or sheet names as needed.
+- You can customize the SQL query, filenames, and sheet names
 
 ---
 
@@ -222,4 +220,4 @@ If you get stuck or need help customizing the pipeline, feel free to open an iss
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
