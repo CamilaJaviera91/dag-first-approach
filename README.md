@@ -121,15 +121,15 @@ GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 
 ## 📁 Task Execution Flow
 
-1. Data Extraction
+1. **Data Extraction**
 
-2. Exchange Rate Fetch
+2. **Exchange Rate Fetch**
 
-3. Report Enrichment
+3. **Report Enrichment**
 
-4. CSV Export
+4. **CSV Export**
 
-5. Google Sheets Export
+5. **Google Sheets Export**
 
 ---
 
