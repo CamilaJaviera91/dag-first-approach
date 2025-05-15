@@ -129,7 +129,7 @@ def enrich_report(df_usd, clp_rate):
 
 # Step 4: Export results as CSV
 def export_results(df):
-    df.to_csv("./data/report.csv", index=False)
+    df.to_csv("data/report.csv", index=False)
     print("📤 Exported report to 'report.csv'")
 
 # Step 5: Export the results to a Google Sheet
