@@ -210,6 +210,14 @@ python dag_postgres.py
 
 ---
 
+## 📂 Output Files
+
+- results/report.csv
+
+- Google Spreadsheet: Sales Report → ReportSheet
+
+---
+
 ## 📝 Notes
 
 - Make sure your PostgreSQL database is accessible, and your Google API credentials are set up correctly.
