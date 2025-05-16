@@ -1,8 +1,22 @@
-psycopg2-binary
-python-dotenv
-pandas
-requests
-gspread
-gspread_dataframe
-oauth2client
-networkx
+# Airflow core
+apache-airflow==2.8.1
+
+# Extras de Airflow
+apache-airflow-providers-google==10.14.0     # BigQuery, Cloud Storage, etc.
+apache-airflow-providers-postgres==5.10.0     # Para PostgreSQL
+apache-airflow-providers-http==4.9.0          # Para API REST
+
+# DB Client (elige uno)
+psycopg2-binary==2.9.9  # más fácil de instalar para desarrollo
+
+# GCP SDK (útil si trabajas fuera de Airflow también)
+google-cloud-bigquery==3.17.2
+google-cloud-storage==2.16.0
+
+# Utilidades comunes
+pandas==2.2.2
+gspread==6.1.0
+oauth2client==4.1.3
+openpyxl==3.1.2
+requests==2.31.0
+python-dotenv==1.0.1
