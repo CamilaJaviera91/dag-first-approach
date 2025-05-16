@@ -115,7 +115,7 @@ def export_results(df_dict):
     df = pd.DataFrame(df_dict)
     os.makedirs("data", exist_ok=True)
     df.to_csv("data/report.csv", index=False)
-    logger.info("📤 Report exported to data/report.csv")
+    logger.info("📤 Report exported to ./data/report.csv")
 
 # Step 5: Export to Google Sheets
 def export_to_google_sheets(df_dict, sheet_name="ReportSheet", spreadsheet_name="Sales Report"):

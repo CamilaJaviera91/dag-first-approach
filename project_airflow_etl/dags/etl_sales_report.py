@@ -2,9 +2,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 import pandas as pd
-import os
 
-# Import your own functions from a local module or paste them here
 from etl_modules import extract_data, fetch_usd_to_clp, enrich_report, export_results, export_to_google_sheets
 
 default_args = {
@@ -16,7 +14,7 @@ default_args = {
 with DAG(
     dag_id='sales_etl_dag',
     default_args=default_args,
-    schedule_interval='@daily',  # o '0 8 * * *' para 8 AM
+    schedule='@daily',
     catchup=False
 ) as dag:
 
@@ -39,8 +37,7 @@ with DAG(
 
     task_enrich = PythonOperator(
         task_id='enrich_report',
-        python_callable=_enrich_report,
-        provide_context=True
+        python_callable=_enrich_report
     )
 
     def _export(**context):
@@ -50,8 +47,7 @@ with DAG(
 
     task_export_csv = PythonOperator(
         task_id='export_csv',
-        python_callable=_export,
-        provide_context=True
+        python_callable=_export
     )
 
     def _export_gsheet(**context):
@@ -61,9 +57,7 @@ with DAG(
 
     task_export_gsheet = PythonOperator(
         task_id='export_gsheet',
-        python_callable=_export_gsheet,
-        provide_context=True
+        python_callable=_export_gsheet
     )
 
-    # Define DAG dependencies
     task_extract >> task_fetch >> task_enrich >> task_export_csv >> task_export_gsheet
