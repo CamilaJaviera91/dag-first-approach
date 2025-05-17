@@ -59,6 +59,12 @@ cd dag-first-approach
 pip install -r requirements.txt
 ```
 
+3. Run the main script:
+
+```
+python main.py
+```
+
 ---
 
 ## 🛠️ Setup
