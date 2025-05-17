@@ -67,6 +67,25 @@ python main.py
 
 ---
 
+## 🧪 Example Usage
+When running the script, the following tasks are created in a DAG:
+
+- Task A
+
+- Task B (depends on A)
+
+- Task C (depends on B)
+
+The expected output is:
+
+```
+Running Task A
+Running Task B
+Running Task C
+```
+
+---
+
 ## 🛠️ Setup
 
 ### 🔐 1. Environment Variables:
