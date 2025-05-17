@@ -89,23 +89,26 @@ Running Task C
 ## 📂 Project Structure
 
 ```
-├──project_airflow_etl
-│   ├── config/
-│   ├── dags/
-│   │   ├── etl_modules.py
-│   │   ├── etl_sales_report.py
-│   ├── data/
-│   │   ├── monthly_sales.png
-│   │   ├── report.csv
-│   │   ├── sales_processed.csv
-│   │   └── sales_unprocessed.csv
-│   ├── logs/
-│   ├── plugins/
-│   ├── sources/
-│   ├── airflow.cfg
-│   ├── airflow.db
-│   ├── docker-compose.yaml
-└── └── requirements.txt
+┌── dag-first-approach
+│   ├── .venv/
+│   ├──project_airflow_etl
+│   │   ├── config/
+│   │   ├── dags/
+│   │   │   ├── etl_modules.py
+│   │   │   ├── etl_sales_report.py
+│   │   ├── data/
+│   │   │   ├── monthly_sales.png
+│   │   │   ├── report.csv
+│   │   │   ├── sales_processed.csv
+│   │   │   └── sales_unprocessed.csv
+│   │   ├── logs/
+│   │   ├── plugins/
+│   │   ├── sources/
+│   │   ├── airflow.cfg
+│   │   ├── airflow.db
+│   │   ├── docker-compose.yaml
+│   │   ├── requirements.txt
+└── └── README.md
 ```
 
 ---
