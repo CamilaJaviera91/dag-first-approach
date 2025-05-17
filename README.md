@@ -91,7 +91,7 @@ Running Task C
 ```
 ┌── dag-first-approach
 │   ├── .venv/
-│   ├──project_airflow_etl
+│   ├── project_airflow_etl
 │   │   ├── config/
 │   │   ├── dags/
 │   │   │   ├── etl_modules.py
