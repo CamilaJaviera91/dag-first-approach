@@ -59,6 +59,31 @@ cd dag-first-approach
 pip install -r requirements.txt
 ```
 
+3. Environment Variables:
+
+Create a `.env` file with the following:
+
+```
+DB_HOST=your_database_host
+DB_PORT=your_database_port
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_SCHEMA=your_database_schema #optional
+
+GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
+```
+
+4. Google Sheets Setup:
+
+    1. Create a project in Google Developers Console.
+
+    2. Enable the **Google Sheets API** and **Google Drive API**.
+
+    3. Download the JSON credentials file.
+
+    5. Set the path to this file in `GOOGLE_CREDENTIALS_PATH`.
+
 3. Run the main script:
 
 ```
@@ -110,35 +135,6 @@ Running Task C
 │   │   ├── requirements.txt
 └── └── README.md
 ```
-
----
-
-## 🛠️ Setup
-
-### 🔐 1. Environment Variables:
-
-Create a `.env` file with the following:
-
-```
-DB_HOST=your_database_host
-DB_PORT=your_database_port
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-DB_SCHEMA=your_database_schema #optional
-
-GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
-```
-
-### 📄 2. Google Sheets Setup:
-
-1. Create a project in Google Developers Console.
-
-2. Enable the **Google Sheets API** and **Google Drive API**.
-
-3. Download the JSON credentials file.
-
-5. Set the path to this file in `GOOGLE_CREDENTIALS_PATH`.
 
 ---
 
