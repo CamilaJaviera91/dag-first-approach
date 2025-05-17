@@ -90,22 +90,22 @@ Running Task C
 
 ```
 ├──project_airflow_etl
-│   ├── airflow.cfg
-│   ├── airflow.db
-│   ├── config
-│   ├── dags
+│   ├── config/
+│   ├── dags/
 │   │   ├── etl_modules.py
 │   │   ├── etl_sales_report.py
-│   ├── data
+│   ├── data/
 │   │   ├── monthly_sales.png
 │   │   ├── report.csv
 │   │   ├── sales_processed.csv
 │   │   └── sales_unprocessed.csv
-│   ├── docker-compose.yaml
 │   ├── logs/
 │   ├── plugins/
-│   ├── requirements.txt
-└── └── sources/
+│   ├── sources/
+│   ├── airflow.cfg
+│   ├── airflow.db
+│   ├── docker-compose.yaml
+└── └── requirements.txt
 ```
 
 ---
