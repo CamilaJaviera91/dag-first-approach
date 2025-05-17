@@ -44,9 +44,16 @@ A **Directed Acyclic Graph (DAG)** is a graph where:
 
 ---
 
-## ⚙️ Requirements
+## 🚀 Installation and Execution
 
-Before running the script, make sure you have the following dependencies installed:
+1. Clone the repository:
+
+```
+git clone https://github.com/CamilaJaviera91/dag-first-approach.git
+cd dag-first-approach
+```
+
+2. Install the required dependencies:
 
 ```
 pip install -r requirements.txt
