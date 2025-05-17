@@ -86,6 +86,30 @@ Running Task C
 
 ---
 
+## 📂 Project Structure
+
+```
+├──project_airflow_etl
+    ├── airflow.cfg
+    ├── airflow.db
+    ├── config
+    ├── dags
+    │   ├── etl_modules.py
+    │   ├── etl_sales_report.py
+    ├── data
+    │   ├── monthly_sales.png
+    │   ├── report.csv
+    │   ├── sales_processed.csv
+    │   └── sales_unprocessed.csv
+    ├── docker-compose.yaml
+    ├── logs/
+    ├── plugins/
+    ├── requirements.txt
+    └── sources/
+```
+
+---
+
 ## 🛠️ Setup
 
 ### 🔐 1. Environment Variables:
