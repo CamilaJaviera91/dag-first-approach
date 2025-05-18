@@ -139,6 +139,7 @@ Running Task C
 │   │   ├── airflow.cfg
 │   │   ├── airflow.db
 │   │   ├── docker-compose.yaml
+│   │   ├── flask_session
 │   │   ├── requirements.txt
 └── └── README.md
 ```
