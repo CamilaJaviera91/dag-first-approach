@@ -119,8 +119,7 @@ Running Task C
 │   ├── project_airflow_etl
 │   │   ├── config/
 │   │   ├── dags/
-│   │   │   ├── etl_modules.py
-│   │   │   ├── etl_sales_report.py
+│   │   │   └── etl_sales_report.py
 │   │   ├── data/
 │   │   │   ├── monthly_sales.png
 │   │   │   ├── report.csv
@@ -128,7 +127,15 @@ Running Task C
 │   │   │   └── sales_unprocessed.csv
 │   │   ├── logs/
 │   │   ├── plugins/
-│   │   ├── sources/
+│   │   ├── src
+│   |   |   ├──etl_modules
+│   │   |   |   ├── connection.py
+│   │   |   |   ├── enrich.py
+│   │   |   |   ├── export.py
+│   │   |   |   ├── extract.py
+│   │   |   |   ├── fx.py
+│   │   |   |   ├── google_sheets.py
+│   │   |   |   └── __init__.py
 │   │   ├── airflow.cfg
 │   │   ├── airflow.db
 │   │   ├── docker-compose.yaml
