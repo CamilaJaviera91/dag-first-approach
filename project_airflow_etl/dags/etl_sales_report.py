@@ -3,7 +3,11 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 import pandas as pd
 
-from etl_modules import extract_data, fetch_usd_to_clp, enrich_report, export_results, export_to_google_sheets
+from src.etl_modules.extract import extract_data
+from src.etl_modules.fx import fetch_usd_to_clp
+from src.etl_modules.enrich import enrich_report
+from src.etl_modules.export import export_results
+from src.etl_modules.google_sheets import export_to_google_sheets
 
 default_args = {
     'owner': 'camila',
