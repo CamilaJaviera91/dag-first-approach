@@ -3,6 +3,10 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 import pandas as pd
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.etl_modules.extract import extract_data
 from src.etl_modules.fx import fetch_usd_to_clp
 from src.etl_modules.enrich import enrich_report
