@@ -1,3 +1,5 @@
+# airflow webserver --port 8080
+
 from flask import Flask, jsonify
 from etl_sales_report import dag
 
