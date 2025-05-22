@@ -267,6 +267,22 @@ python dag_postgres.py
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+- Fork the repository.
+
+- Create a new branch: ```git checkout -b feature/YourFeatureName```
+
+- Commit your changes: ```git commit -m 'Add some feature'```
+
+- Push to the branch: ```git push origin feature/YourFeatureName```
+
+- Open a pull request.
+
+---
+
 ## 📧 Questions?
 
 If you get stuck or need help customizing the pipeline, feel free to open an issue or reach out!
