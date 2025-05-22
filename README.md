@@ -66,9 +66,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Environment Variables:
+4. Configure Environment Variables:
 
-Create a `.env` file with the following:
+Create a ```.env``` file in the root directory and add the following:
 
 ```
 DB_HOST=your_database_host
