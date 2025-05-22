@@ -110,6 +110,9 @@ airflow webserver --port 8080
 airflow scheduler
 ```
 
+9. Access the Airflow Web Interface:
+
+Navigate to http://localhost:8080 in your web browser.
 
 ---
 
