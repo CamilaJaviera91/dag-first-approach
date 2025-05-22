@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 4. Configure Environment Variables:
 
-Create a ```.env``` file in the root directory and add the following:
+Create a `.env` file in the root directory and add the following:
 
 ```
 DB_HOST=your_database_host
@@ -102,6 +102,14 @@ airflow db init
 ```
 python main.py
 ```
+
+8. Start Airflow Services:
+
+```
+airflow webserver --port 8080
+airflow scheduler
+```
+
 
 ---
 
@@ -286,11 +294,11 @@ Contributions are welcome! Please follow these steps:
 
 - Fork the repository.
 
-- Create a new branch: ```git checkout -b feature/YourFeatureName```
+- Create a new branch: `git checkout -b feature/YourFeatureName`
 
-- Commit your changes: ```git commit -m 'Add some feature'```
+- Commit your changes: `git commit -m 'Add some feature'`
 
-- Push to the branch: ```git push origin feature/YourFeatureName```
+- Push to the branch: `git push origin feature/YourFeatureName`
 
 - Open a pull request.
 
