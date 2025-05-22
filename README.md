@@ -53,13 +53,20 @@ git clone https://github.com/CamilaJaviera91/dag-first-approach.git
 cd dag-first-approach
 ```
 
-2. Install the required dependencies:
+2. Create a Virtual Environment:
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install the required dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-3. Environment Variables:
+4. Environment Variables:
 
 Create a `.env` file with the following:
 
@@ -74,7 +81,7 @@ DB_SCHEMA=your_database_schema #optional
 GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 ```
 
-4. Google Sheets Setup:
+5. Google Sheets Setup:
 
     1. Create a project in Google Developers Console.
 
@@ -84,7 +91,7 @@ GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 
     5. Set the path to this file in `GOOGLE_CREDENTIALS_PATH`.
 
-3. Run the main script:
+6. Run the main script:
 
 ```
 python main.py
