@@ -135,6 +135,18 @@ Running Task C
 
 ---
 
+## 🧪 Running the DAG
+
+1. Place the DAG File:
+
+    - Ensure sales_etl_dag.py is located in the dags/ directory of your Airflow home.
+
+2. Trigger the DAG:
+
+    - In the Airflow web interface, locate sales_etl_dag and click the "Trigger DAG" button.
+
+---
+
 ## 📂 Project Structure
 
 ```
