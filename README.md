@@ -22,6 +22,20 @@ This project automates the **extraction**, **transformation**, and **export** of
 
 ---
 
+## 🛠️ Technologies Used
+
+- Python
+
+- Apache Airflow
+
+- PostgreSQL
+
+- Google Sheets API
+
+- REST APIs for exchange rate data
+
+---
+
 ## 🗂️ What's DAG?
 
 A **Directed Acyclic Graph (DAG)** is a graph where:
