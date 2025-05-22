@@ -81,7 +81,13 @@ DB_SCHEMA=your_database_schema #optional
 GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 ```
 
-5. Google Sheets Setup:
+5. Initialize the Airflow Database:
+
+```
+airflow db init
+```
+
+6. Google Sheets Setup:
 
     1. Create a project in Google Developers Console.
 
@@ -91,7 +97,7 @@ GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
 
     5. Set the path to this file in `GOOGLE_CREDENTIALS_PATH`.
 
-6. Run the main script:
+7. Run the main script:
 
 ```
 python main.py
