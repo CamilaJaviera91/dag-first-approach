@@ -245,6 +245,16 @@ python dag_postgres.py
 
 ---
 
+## ❗Troubleshooting
+
+- Connection Errors: Check your database credentials and network access.
+
+- Google Sheets Permissions: Make sure the service account has access to edit the target sheet.
+
+- Missing Environment Variables: Ensure `.env` is properly set and loaded.
+
+---
+
 ## 📝 Notes
 
 - Ensure the database is accessible and credentials are valid
