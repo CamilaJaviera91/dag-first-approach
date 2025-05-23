@@ -7,7 +7,6 @@ from src.etl_modules.fx import fetch_usd_to_clp
 from src.etl_modules.export import export_results
 from src.etl_modules.google_sheets import export_to_google_sheets
 
-
 default_args = {
     'owner': 'camila',
     'start_date': datetime(2024, 1, 1),
