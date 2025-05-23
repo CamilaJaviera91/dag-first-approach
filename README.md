@@ -140,15 +140,19 @@ GOOGLE_SERVICE_ACCOUNT_FILE=path/to/your/service_account.json
 airflow db init
 ```
 
-6. Google Sheets Setup:
+6. Set Up Google Sheets API
 
-    1. Create a project in Google Developers Console.
+    - Follow this [guide](https://developers.google.com/workspace/sheets/api/quickstart/python?hl=es-419) to:
 
-    2. Enable the **Google Sheets API** and **Google Drive API**.
+        1. Create a project in Google Developers Console.
 
-    3. Download the JSON credentials file.
+        2. Enable the **Google Sheets API** and **Google Drive API**.
 
-    5. Set the path to this file in `GOOGLE_CREDENTIALS_PATH`.
+        3. Download the service account JSON credentials
+
+        4. Set the path to this file in `GOOGLE_CREDENTIALS_PATH`.
+
+    - Make sure to share your target Google Sheet with the service account email.
 
 7. Run the main script:
 
