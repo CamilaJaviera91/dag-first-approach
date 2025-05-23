@@ -169,25 +169,6 @@ Navigate to http://localhost:8080 in your web browser.
 
 ---
 
-## 🧪 Example Usage
-When running the script, the following tasks are created in a DAG:
-
-- Task A
-
-- Task B (depends on A)
-
-- Task C (depends on B)
-
-The expected output is:
-
-```
-Running Task A
-Running Task B
-Running Task C
-```
-
----
-
 ## 🧪 Running the DAG
 
 1. Place the DAG File:
