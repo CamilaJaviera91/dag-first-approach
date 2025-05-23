@@ -68,7 +68,9 @@ dag-first-approach/
 
 - Google Sheets API
 
-- REST APIs for exchange rate data
+- Docker (via `docker-compose`)
+
+- Pandas, Requests, Matplotlib
 
 ---
 
