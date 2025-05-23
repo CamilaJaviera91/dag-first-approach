@@ -109,7 +109,7 @@ cd dag-first-approach
 
 ```
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate # On Windows: venv\Scripts\activate
 ```
 
 3. Install the required dependencies:
