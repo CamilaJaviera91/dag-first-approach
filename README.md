@@ -1,8 +1,44 @@
 # 💡 DAG-Based ETL Pipeline for Sales Reporting
 
-## 📌 Project Description
+## 🧠 Project Description
 
-This project automates the **extraction**, **transformation**, and **export** of sales data from a PostgreSQL database. It enriches the data with real-time USD to CLP exchange rate information and exports the results to both CSV and Google Sheets formats. A **Directed Acyclic Graph (DAG)** is used to manage task dependencies and ensure the correct execution order.
+This project automates the extraction, transformation, and export of sales data using Apache Airflow. It pulls data from a PostgreSQL database, enriches it with USD to CLP exchange rate information, and exports the final dataset to both a CSV file and a Google Sheet.
+<br> <br>
+The pipeline is designed as a Directed Acyclic Graph (DAG) to manage task dependencies and ensure a reliable and repeatable workflow.
+
+---
+
+## 🚀 Project Structure
+
+```bash
+dag-first-approach/
+├── project_airflow_etl/
+│   ├── config/
+│   ├── dags/
+│   │   └── etl_sales_report.py       # Airflow DAG definition
+│   ├── data/
+│   │   ├── monthly_sales.png         # Visualization output
+│   │   ├── report.csv                # Final report file
+│   │   ├── sales_processed.csv       # Cleaned data
+│   │   └── sales_unprocessed.csv     # Raw data
+│   ├── logs/                         # Airflow logs
+│   ├── plugins/                      # Custom Airflow plugins
+│   ├── src/
+│   │   └── etl_modules/              # ETL module scripts
+│   │       ├── connection.py
+│   │       ├── enrich.py
+│   │       ├── export.py
+│   │       ├── extract.py
+│   │       ├── fx.py
+│   │       ├── google_sheets.py
+│   │       └── __init__.py
+│   ├── airflow.cfg                   # Airflow configuration file
+│   ├── airflow.db                    # Airflow database (SQLite for local use)
+│   ├── docker-compose.yaml           # Docker setup for Airflow
+│   ├── flask_session/
+│   ├── requirements.txt              # Python dependencies
+└── README.md
+```
 
 ---
 
@@ -158,41 +194,6 @@ Running Task C
 2. Trigger the DAG:
 
     - In the Airflow web interface, locate sales_etl_dag and click the "Trigger DAG" button.
-
----
-
-## 📂 Project Structure
-
-```
-┌── dag-first-approach
-│   ├── .venv/
-│   ├── project_airflow_etl
-│   │   ├── config/
-│   │   ├── dags/
-│   │   │   └── etl_sales_report.py
-│   │   ├── data/
-│   │   │   ├── monthly_sales.png
-│   │   │   ├── report.csv
-│   │   │   ├── sales_processed.csv
-│   │   │   └── sales_unprocessed.csv
-│   │   ├── logs/
-│   │   ├── plugins/
-│   │   ├── src
-│   |   |   ├──etl_modules
-│   │   |   |   ├── connection.py
-│   │   |   |   ├── enrich.py
-│   │   |   |   ├── export.py
-│   │   |   |   ├── extract.py
-│   │   |   |   ├── fx.py
-│   │   |   |   ├── google_sheets.py
-│   │   |   |   └── __init__.py
-│   │   ├── airflow.cfg
-│   │   ├── airflow.db
-│   │   ├── docker-compose.yaml
-│   │   ├── flask_session
-│   │   ├── requirements.txt
-└── └── README.md
-```
 
 ---
 
