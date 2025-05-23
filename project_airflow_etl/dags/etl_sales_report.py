@@ -37,9 +37,9 @@ def sales_etl_pipeline():
         df["total_clp"] = round(df["total"] * float(rate), 0)
         return df.to_dict(orient='records')
 
-    @task()
-    def export_csv(data):
-        df = pd.DataFrame(data)
+    @task
+    def export(df_dict):
+        df = pd.DataFrame(df_dict)
         export_results(df)
 
     @task()
@@ -51,7 +51,7 @@ def sales_etl_pipeline():
     raw_data = extract()
     rate = fetch_fx_rate()
     enriched_data = enrich(raw_data, rate)
-    export_csv(enriched_data)
+    export(enriched_data)
     export_gsheet(enriched_data)
 
 # DAG instance
