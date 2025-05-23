@@ -39,7 +39,8 @@ def extract_data(_=None):
         records = cur.fetchall()
         columns = [desc[0] for desc in cur.description]
         df = pd.DataFrame(records, columns=columns)
-        return df
+        return df.to_dict(orient='records')  
+    
     except Exception as e:
         logger.error(f"❌ Error executing query: {e}")
         return None
