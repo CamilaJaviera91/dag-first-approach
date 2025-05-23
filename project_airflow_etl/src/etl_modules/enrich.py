@@ -9,7 +9,7 @@ def enrich_report(df_usd, clp_rate):
         df["total"] = df["total"].astype(float)
         df["total_clp"] = round(df["total"] * float(clp_rate), 0)
         logger.info("📊 Enriched report sample:\n%s", df.head().to_string(index=False))
-        return df 
+        return df.to_dict(orient='records')  
     logger.warning("⚠️ Report enrichment failed.")
     return None
 
