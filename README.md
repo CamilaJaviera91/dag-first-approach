@@ -215,53 +215,6 @@ Navigate to http://localhost:8080 in your web browser.
 
 - Exports the data to a `Google Sheet`
 
----
-
-## 📁 Task Execution Flow
-
-1. **Data Extraction**
-
-2. **Exchange Rate Fetch**
-
-3. **Report Enrichment**
-
-4. **CSV Export**
-
-5. **Google Sheets Export**
-
----
-
-## 🔁 DAG (Directed Acyclic Graph)
-
-The DAG defines task dependencies:
-
-```
-dag = nx.DiGraph()
-dag.add_edges_from([
-    ("extract", "fetch_usd_to_clp"),
-    ("fetch_usd_to_clp", "enrich_report"),
-    ("enrich_report", "export"),
-    ("export", "googlesheets"),
-])
-```
-
----
-
-## ⏩ Execution Order
-
-The tasks are executed in the following order:
-
-1. `extract` (Extract data from PostgreSQL)
-
-2. `fetch_usd_to_clp` (Fetch exchange rate)
-
-3. `enrich_report` (Enrich data with exchange rate)
-
-4. `export` (Export to CSV)
-
-5. `googlesheets` (Export to Google Sheets)
-
----
 
 ## ▶️ Execution Example
 
