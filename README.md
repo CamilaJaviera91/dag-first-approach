@@ -130,7 +130,8 @@ DB_USER=your_database_user
 DB_PASSWORD=your_database_password
 DB_SCHEMA=your_database_schema #optional
 
-GOOGLE_CREDENTIALS_PATH=path_to_your_google_credentials.json
+GOOGLE_SHEET_ID=your_google_sheet_id
+GOOGLE_SERVICE_ACCOUNT_FILE=path/to/your/service_account.json
 ```
 
 5. Initialize the Airflow Database:
