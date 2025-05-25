@@ -310,6 +310,22 @@ http://localhost:8080
 
 - You should see your DAG (`my_example_dag`) listed. Enable it and trigger it as needed.
 
+### 🛠️ Troubleshooting in how to Add a DAG to Apache Airflow
+
+If your DAG doesn't appear:
+
+- ✅ Ensure the file ends with .py
+
+- ✅ Make sure dag_id is unique and the syntax is valid
+
+- ✅ Confirm it's located in the correct dags_folder
+
+- ✅ Check the Airflow scheduler logs for errors:
+
+```
+airflow scheduler --log-level INFO
+```
+
 ---
 
 ## 🤝 Contributing
