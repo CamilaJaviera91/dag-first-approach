@@ -283,6 +283,14 @@ Airflow loads DAGs from a specific folder, typically located at:
 
 - If you've changed the path in your `airflow.cfg` (`dags_folder`), use that custom directory instead.
 
+2. 📝 Create Your DAG File
+
+Create a new Python file inside the dags folder. For example:
+
+```
+~/airflow/dags/my_example_dag.py
+```
+
 ---
 
 ## 🤝 Contributing
