@@ -291,6 +291,15 @@ Create a new Python file inside the dags folder. For example:
 ~/airflow/dags/my_example_dag.py
 ```
 
+3. 🔁 Restart Airflow Services
+
+After placing your DAG file, restart the Airflow scheduler and webserver:
+
+```
+airflow scheduler
+airflow webserver
+```
+
 ---
 
 ## 🤝 Contributing
