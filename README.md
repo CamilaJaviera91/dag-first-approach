@@ -300,6 +300,16 @@ airflow scheduler
 airflow webserver
 ```
 
+4. 🌐 Open the Airflow Web UI
+
+Visit the Airflow UI in your browser:
+
+```
+http://localhost:8080
+```
+
+- You should see your DAG (`my_example_dag`) listed. Enable it and trigger it as needed.
+
 ---
 
 ## 🤝 Contributing
