@@ -269,6 +269,12 @@ python dag_postgres.py
 
 ---
 
+## 📘 How to Add a DAG to Apache Airflow and Display It in the Webserver
+
+Follow these steps to add your DAG to Apache Airflow and make it visible in the Airflow web interface.
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
