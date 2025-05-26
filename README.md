@@ -4,7 +4,7 @@
 
 This project automates the **extraction**, **transformation**, and **export** of sales data using **Apache Airflow**. It pulls **data** from a **PostgreSQL** database, enriches it with **USD to CLP exchange rate** information, and **exports** the final dataset to both a **CSV file** and a **Google Sheet**.
 
-<br> <br>
+<br>
 
 The **pipeline** is designed as a **Directed Acyclic Graph** (`DAG`) to manage task dependencies and ensure a reliable and repeatable workflow.
 
@@ -46,13 +46,13 @@ dag-first-approach/
 
 ## 🧩 What This Project Does
 
-- *Extracts* data from a PostgreSQL database using a custom SQL query.
+- **Extracts** data from a PostgreSQL database using a custom SQL query.
 
-- *Fetches* the current USD to CLP exchange rate from a public API.
+- **Fetches** the current USD to CLP exchange rate from a public API.
 
-- *Enriches* the data by converting sales totals from USD to CLP.
+- **Enriches** the data by converting sales totals from USD to CLP.
 
-- *Exports* the final dataset:
+- **Exports** the final dataset:
 
     - as a CSV file (`report.csv`)
 
