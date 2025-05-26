@@ -274,9 +274,9 @@ python dag_postgres.py
 
 ## 📘 How to Add a DAG to Apache Airflow and Display It in the Webserver
 
-Follow these steps to add your DAG to Apache Airflow and make it visible in the Airflow web interface.
+Follow these steps to add your `DAG` to Apache Airflow and make it visible in the Airflow web interface.
 
-1. 📂 Place Your DAG in the dags Directory
+1. 📂 **Place Your DAG in the dags Directory**
 
 Airflow loads DAGs from a specific folder, typically located at:
 
@@ -286,7 +286,7 @@ Airflow loads DAGs from a specific folder, typically located at:
 
 - If you've changed the path in your `airflow.cfg` (`dags_folder`), use that custom directory instead.
 
-2. 📝 Create Your DAG File
+2. 📝 **Create Your DAG File**
 
 Create a new Python file inside the dags folder. For example:
 
@@ -294,7 +294,7 @@ Create a new Python file inside the dags folder. For example:
 ~/airflow/dags/my_example_dag.py
 ```
 
-3. 🔁 Restart Airflow Services
+3. 🔁 **Restart Airflow Services**
 
 After placing your DAG file, restart the Airflow scheduler and webserver:
 
@@ -303,7 +303,7 @@ airflow scheduler
 airflow webserver
 ```
 
-4. 🌐 Open the Airflow Web UI
+4. 🌐 **Open the Airflow Web UI**
 
 Visit the Airflow UI in your browser:
 
