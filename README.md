@@ -248,17 +248,17 @@ python dag_postgres.py
 
 - results/report.csv
 
-- Google Spreadsheet: **Sales Report → ReportSheet**
+- Google Spreadsheet: `Sales Report → ReportSheet`
 
 ---
 
 ## ❗Troubleshooting
 
-- Connection Errors: Check your database credentials and network access.
+- **Connection Errors:** Check your database credentials and network access.
 
-- Google Sheets Permissions: Make sure the service account has access to edit the target sheet.
+- **Google Sheets Permissions:** Make sure the service account has access to edit the target sheet.
 
-- Missing Environment Variables: Ensure `.env` is properly set and loaded.
+- **Missing Environment Variables:** Ensure `.env` is properly set and loaded.
 
 ---
 
