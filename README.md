@@ -46,13 +46,13 @@ dag-first-approach/
 
 ## 🧩 What This Project Does
 
-- Extracts data from a PostgreSQL database using a custom SQL query.
+- *Extracts* data from a PostgreSQL database using a custom SQL query.
 
-- Fetches the current USD to CLP exchange rate from a public API.
+- *Fetches* the current USD to CLP exchange rate from a public API.
 
-- Enriches the data by converting sales totals from USD to CLP.
+- *Enriches* the data by converting sales totals from USD to CLP.
 
-- Exports the final dataset:
+- *Exports* the final dataset:
 
     - as a CSV file (`report.csv`)
 
