@@ -2,9 +2,11 @@
 
 ## 🧠 Project Description
 
-This project automates the extraction, transformation, and export of sales data using Apache Airflow. It pulls data from a PostgreSQL database, enriches it with USD to CLP exchange rate information, and exports the final dataset to both a CSV file and a Google Sheet.
+This project automates the **extraction**, **transformation**, and **export** of sales data using **Apache Airflow**. It pulls **data** from a **PostgreSQL** database, enriches it with **USD to CLP exchange rate** information, and **exports** the final dataset to both a **CSV file** and a **Google Sheet**.
+
 <br> <br>
-The pipeline is designed as a Directed Acyclic Graph (DAG) to manage task dependencies and ensure a reliable and repeatable workflow.
+
+The **pipeline** is designed as a **Directed Acyclic Graph** (`DAG`) to manage task dependencies and ensure a reliable and repeatable workflow.
 
 ---
 
