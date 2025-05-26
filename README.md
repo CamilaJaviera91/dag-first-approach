@@ -90,7 +90,7 @@ A **Directed Acyclic Graph (DAG)** is a graph where:
 
 - Task scheduling (e.g., Airflow, build systems like Make)
 
-- Version control systems (e.g., Git)
+- Version control systems (`e.g., Git`)
 
 - Data processing pipelines
 
@@ -179,36 +179,37 @@ Navigate to http://localhost:8080 in your web browser.
 
 1. `connection()`
 
-- Establishes a connection to the PostgreSQL database.
+- **Establishes** a connection to the PostgreSQL database.
 
 - **Returns:** `conn`, `cur` on success; `None, None` on failure
 
 2. `extract_data()`
 
-- Runs an SQL query to extract and aggregate sales data.
+- **Runs** an SQL query to extract and aggregate sales data.
 
 - **Returns:** `DataFrame` of extracted data
 
 3. `fetch_usd_to_clp()`
 
-- Fetches the current USD to CLP exchange rate.
+- **Fetches** the current USD to CLP exchange rate.
 
 - **Returns:** `float` (exchange rate) or `None` on failure
 
 4. `enrich_report(df_usd, clp_rate)`
 
-- Adds a CLP total to the report using the fetched exchange rate.
+- **Adds** a CLP total to the report using the fetched exchange rate.
 
 - **Returns:** Enriched `DataFrame`
 
 5. `export_results(df)`
 
-- Saves the enriched data as `results/report.csv`
+- **Saves** the enriched data as `results/report.csv`
 
 6. `export_to_google_sheets(df, sheet_name, spreadsheet_name)`
 
-- Exports the data to a `Google Sheet`
+- **Exports** the data to a `Google Sheet`
 
+---
 
 ## ▶️ Execution Example
 
