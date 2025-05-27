@@ -28,11 +28,11 @@ default_args = {
 def sales_etl_pipeline():
 
     @task()
-    def extract():
+    def extract() -> list[dict]:
         return extract_data()
 
     @task()
-    def fetch_fx_rate():
+    def fetch_fx_rate() -> float:
         return fetch_usd_to_clp()
 
     @task()
