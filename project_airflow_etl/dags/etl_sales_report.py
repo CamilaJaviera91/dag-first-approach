@@ -2,6 +2,10 @@ from airflow.decorators import dag, task
 from datetime import datetime
 import pandas as pd
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from src.etl_modules.extract import extract_data
 from src.etl_modules.fx import fetch_usd_to_clp
 from src.etl_modules.export import export_results
@@ -16,18 +20,19 @@ default_args = {
 @dag(
     dag_id='sales_etl_dag',
     default_args=default_args,
-    schedule_interval='@daily',
+    schedule='@daily',
     catchup=False,
     description="Sales ETL: PostgreSQL -> Enrichment -> CSV and Google Sheets"
 )
+
 def sales_etl_pipeline():
 
     @task()
-    def extract():
+    def extract() -> list[dict]:
         return extract_data()
 
     @task()
-    def fetch_fx_rate():
+    def fetch_fx_rate() -> float:
         return fetch_usd_to_clp()
 
     @task()
