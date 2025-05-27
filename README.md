@@ -162,14 +162,20 @@ airflow db init
 python main.py
 ```
 
-8. Start Airflow Services:
+8. Start Postgres Services:
+
+```
+sudo systemctl start postgresql
+```
+
+9. Start Airflow Services:
 
 ```
 airflow webserver --port 8080
 airflow scheduler
 ```
 
-9. Access the Airflow Web Interface:
+10. Access the Airflow Web Interface:
 
 Navigate to http://localhost:8080 in your web browser.
 
