@@ -7,7 +7,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.etl_modules.extract import extract_data
-from project_airflow_etl.src.etl_modules.usd_to_clp import fetch_usd_to_clp
+from src.etl_modules.usd_to_clp import fetch_usd_to_clp
 from src.etl_modules.export import export_results
 from src.etl_modules.google_sheets import export_to_google_sheets
 
