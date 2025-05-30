@@ -49,8 +49,7 @@ def sales_etl_pipeline():
         
         logging.info(f"Generating plot at: {output_path}")
         logging.info(f"Data sample (first 3 rows): {data[:3]}")
-
-        # Intentar crear carpeta antes por si acaso
+        
         from pathlib import Path
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
 
