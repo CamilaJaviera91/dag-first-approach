@@ -10,6 +10,7 @@ from src.etl_modules.extract import extract_data
 from src.etl_modules.usd_to_clp import fetch_usd_to_clp
 from src.etl_modules.export import export_results
 from src.etl_modules.google_sheets import export_to_google_sheets
+from src.etl_modules.generate_sales_plot import generate_sales_by_year_plot
 
 default_args = {
     'owner': 'camila',
@@ -24,7 +25,6 @@ default_args = {
     catchup=False,
     description="Sales ETL: PostgreSQL -> Enrichment -> CSV and Google Sheets"
 )
-
 def sales_etl_pipeline():
 
     @task()
@@ -41,8 +41,13 @@ def sales_etl_pipeline():
         df["total"] = df["total"].astype(float)
         df["total_clp"] = round(df["total"] * float(rate), 0)
         return df.to_dict(orient='records')
+    
+    @task()
+    def generate_plot(data):
+        output_path = 'output/ventas_por_anio.png'
+        generate_sales_by_year_plot(data, output_path)
 
-    @task
+    @task()
     def export(df_dict):
         df = pd.DataFrame(df_dict)
         export_results(df)
@@ -56,6 +61,7 @@ def sales_etl_pipeline():
     raw_data = extract()
     rate = fetch_fx_rate()
     enriched_data = enrich(raw_data, rate)
+    generate_plot(enriched_data)
     export(enriched_data)
     export_gsheet(enriched_data)
 
