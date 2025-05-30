@@ -2,8 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-def generate_sales_by_year_plot(data: list[dict], output_path: str):
-
+def generate_sales_by_year_plot(data: list[dict], output_path: str = 'data/yearly_sales.png'):
     df = pd.DataFrame(data)
 
     if 'Year' not in df.columns or 'total_clp' not in df.columns:
