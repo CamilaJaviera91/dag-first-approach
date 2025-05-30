@@ -6,7 +6,7 @@ logger = LoggingMixin().log
 
 def export_results(df):
     # Crear carpeta 'data' si no existe
-    output_dir = os.path.join(os.getcwd(), "data") 
+    output_dir = os.path.join(os.getcwd(), "./data") 
     os.makedirs(output_dir, exist_ok=True)
 
     output_file = os.path.join(output_dir, "report.csv")
