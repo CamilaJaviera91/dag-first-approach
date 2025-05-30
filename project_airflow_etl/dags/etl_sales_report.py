@@ -44,8 +44,22 @@ def sales_etl_pipeline():
     
     @task()
     def generate_plot(data):
-        output_path = 'output/ventas_por_anio.png'
-        generate_sales_by_year_plot(data, output_path)
+        import logging
+        output_path = '/home/camilajaviera/Documentos/github/dag-first-approach/project_airflow_etl/data/sales.png'
+        
+        logging.info(f"Generating plot at: {output_path}")
+        logging.info(f"Data sample (first 3 rows): {data[:3]}")
+
+        # Intentar crear carpeta antes por si acaso
+        from pathlib import Path
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+
+        try:
+            generate_sales_by_year_plot(data, output_path)
+            logging.info("Plot generated successfully")
+        except Exception as e:
+            logging.error(f"Failed to generate plot: {e}")
+            raise
 
     @task()
     def export(df_dict):
