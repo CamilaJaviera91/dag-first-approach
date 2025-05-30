@@ -9,6 +9,7 @@ google-cloud-bigquery==3.17.2
 google-cloud-storage==2.16.0
 
 pandas==2.2.3
+matplotlib==3.8.4
 gspread==6.1.0
 gspread_dataframe==3.3.0
 oauth2client==4.1.3
