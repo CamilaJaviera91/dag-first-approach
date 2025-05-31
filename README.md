@@ -19,21 +19,20 @@ dag-first-approach/
 │   ├── dags/
 │   │   └── etl_sales_report.py       # Airflow DAG definition
 │   ├── data/
-│   │   ├── monthly_sales.png         # Visualization output
 │   │   ├── report.csv                # Final report file
-│   │   ├── sales_processed.csv       # Cleaned data
-│   │   └── sales_unprocessed.csv     # Raw data
+│   │   └── sales.png                 # Yearly sales
 │   ├── logs/                         # Airflow logs
 │   ├── plugins/                      # Custom Airflow plugins
 │   ├── src/
 │   │   └── etl_modules/              # ETL module scripts
+│   │       ├── __init__.py
 │   │       ├── connection.py
 │   │       ├── enrich.py
 │   │       ├── export.py
 │   │       ├── extract.py
-│   │       ├── fx.py
+│   │       ├── generate_sales_plot.py
 │   │       ├── google_sheets.py
-│   │       └── __init__.py
+│   │       └── usd_to_clp.py
 │   ├── airflow.cfg                   # Airflow configuration file
 │   ├── airflow.db                    # Airflow database (SQLite for local use)
 │   ├── docker-compose.yaml           # Docker setup for Airflow
