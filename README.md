@@ -206,11 +206,15 @@ Navigate to http://localhost:8080 in your web browser.
 
 - **Returns:** Enriched `DataFrame`
 
-5. `export_results(df)`
+5. `generate_sales_by_year_plot(data: list[dict], output_path: str = 'data/yearly_sales.png')`
+
+- **Return:** image with yearly sales
+
+6. `export_results(df)`
 
 - **Saves** the enriched data as `results/report.csv`
 
-6. `export_to_google_sheets(df, sheet_name, spreadsheet_name)`
+7. `export_to_google_sheets(df, sheet_name, spreadsheet_name)`
 
 - **Exports** the data to a `Google Sheet`
 
