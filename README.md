@@ -220,7 +220,7 @@ Navigate to http://localhost:8080 in your web browser.
 
 ---
 
-## ▶️ Execution Example
+## ▶️ Execution Example:
 
 - Run de pipeline: 
 
@@ -241,7 +241,7 @@ python dag_postgres.py
 
 ---
 
-## 📊 Sample Output
+## 📊 Sample Output:
 
 | year | store          | total       | total_clp     |
 |------|----------------|-------------|---------------|
@@ -253,7 +253,7 @@ python dag_postgres.py
 
 ---
 
-## 📂 Output Files
+## 📂 Output Files:
 
 - results/report.csv
 
@@ -261,7 +261,7 @@ python dag_postgres.py
 
 ---
 
-## ❗Troubleshooting
+## ❗Troubleshooting:
 
 - **Connection Errors:** Check your database credentials and network access.
 
