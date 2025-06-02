@@ -17,7 +17,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r ./requirements.txt
+        pip install -r project_airflow_etl/requirements.txt
 
     - name: Run tests
       run: |
