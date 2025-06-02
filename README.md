@@ -1,4 +1,4 @@
-# 💡 DAG-Based ETL Pipeline for Sales Reporting
+8# 💡 DAG-Based ETL Pipeline for Sales Reporting
 
 ## 🧠 Project Description:
 
@@ -43,7 +43,7 @@ dag-first-approach/
 
 ---
 
-## 🧩 What This Project Does? 
+## 🧩 What This Project Does?:
 
 - **Extracts** data from a PostgreSQL database using a custom SQL query.
 
@@ -59,7 +59,7 @@ dag-first-approach/
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used:
 
 - Python
 
@@ -75,7 +75,7 @@ dag-first-approach/
 
 ---
 
-## 🗂️ What's DAG?
+## 🗂️ What's DAG?:
 
 A **Directed Acyclic Graph (DAG)** is a graph where:
 
