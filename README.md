@@ -1,4 +1,4 @@
-8# 💡 DAG-Based ETL Pipeline for Sales Reporting
+98# 💡 DAG-Based ETL Pipeline for Sales Reporting
 
 ## 🧠 Project Description:
 
@@ -97,7 +97,7 @@ A **Directed Acyclic Graph (DAG)** is a graph where:
 
 ---
 
-## 🚀 Installation and Execution
+## 🚀 Installation and Execution:
 
 1. Clone the repository:
 
@@ -180,7 +180,7 @@ Navigate to http://localhost:8080 in your web browser.
 
 ---
 
-## 📝 Script Functions
+## 📝 Script Functions:
 
 1. `connection()`
 
