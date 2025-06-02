@@ -201,9 +201,9 @@ This project defines an Apache Airflow DAG that automates a complete ETL process
 
 ```
 [A]📥Extract data ─> [B]💱Fetch rate ─> [C]🧪Enrich data
-                                           ├> [D]📊Generate sales plot
-                                           ├─> [E]💾Export to CSV
-                                           └──> [F]☁️Export to Google Sheets
+                                         ├─> [D]📊Generate sales plot
+                                         ├───> [E]💾Export to CSV
+                                         └─────> [F]☁️Export to Google Sheets
 ```
 
 ---
