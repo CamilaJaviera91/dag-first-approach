@@ -1,4 +1,4 @@
-98# 💡 DAG-Based ETL Pipeline for Sales Reporting
+# 💡 DAG-Based ETL Pipeline for Sales Reporting
 
 ## 🧠 Project Description:
 
