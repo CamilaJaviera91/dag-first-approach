@@ -21,4 +21,4 @@ jobs:
 
     - name: Run test
       run: |
-        pytest test/
+        pytest project_airflow_etl/test/
