@@ -5,7 +5,7 @@ __pycache__/
 airflow.db
 logs/
 .env
-.github/
+../.github/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
