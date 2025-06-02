@@ -340,6 +340,21 @@ airflow scheduler --log-level INFO
 
 ---
 
+## 🧪 Testing
+
+This project uses `pytest` to validate the ETL modules and ensure they work as expected.
+
+### ✅ How to Run Tests
+
+1. Run the tests:
+
+```
+pytest test/
+```
+This will execute all test files inside the `test/` folder.
+
+---
+
 ## 🤝 Contributing:
 
 Contributions are welcome! Please follow these steps:
