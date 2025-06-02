@@ -180,43 +180,21 @@ Navigate to http://localhost:8080 in your web browser.
 
 ---
 
-## 📝 Script Functions:
+## 🧩 Sales ETL Pipeline
 
-1. `connection()`
+This project defines an Apache Airflow DAG that automates a complete ETL process:
 
-- **Establishes** a connection to the PostgreSQL database.
+- 📥 Extracts sales data from a PostgreSQL database.
 
-- **Returns:** `conn`, `cur` on success; `None, None` on failure
+- 💱 Fetches the current USD to CLP exchange rate.
 
-2. `extract_data()`
+- 🧪 Enriches the data by converting USD totals into CLP.
 
-- **Runs** an SQL query to extract and aggregate sales data.
+- 📊 Generates a sales plot by year.
 
-- **Returns:** `DataFrame` of extracted data
+- 💾 Exports the enriched data to a CSV file.
 
-3. `fetch_usd_to_clp()`
-
-- **Fetches** the current USD to CLP exchange rate.
-
-- **Returns:** `float` (exchange rate) or `None` on failure
-
-4. `enrich_report(df_usd, clp_rate)`
-
-- **Adds** a CLP total to the report using the fetched exchange rate.
-
-- **Returns:** Enriched `DataFrame`
-
-5. `generate_sales_by_year_plot(data: list[dict], output_path: str = 'data/yearly_sales.png')`
-
-- **Return:** image with yearly sales
-
-6. `export_results(df)`
-
-- **Saves** the enriched data as `results/report.csv`
-
-7. `export_to_google_sheets(df, sheet_name, spreadsheet_name)`
-
-- **Exports** the data to a `Google Sheet`
+- ☁️ Sends the data to Google Sheets for easy access.
 
 ---
 
