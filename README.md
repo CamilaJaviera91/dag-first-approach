@@ -33,10 +33,14 @@ dag-first-approach/
 │   │       ├── generate_sales_plot.py
 │   │       ├── google_sheets.py
 │   │       └── usd_to_clp.py
+│   ├── test/
+│   │   ├── test_extract.py
+│   │   ├── test_usd_to_clp.py
+│   │   └── test_enrich.py
 │   ├── airflow.cfg                   # Airflow configuration file
 │   ├── airflow.db                    # Airflow database (SQLite for local use)
 │   ├── docker-compose.yaml           # Docker setup for Airflow
-│   ├── flask_session/
+│   ├── flask_session
 │   ├── requirements.txt              # Python dependencies
 └── README.md
 ```
