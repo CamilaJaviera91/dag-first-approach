@@ -357,6 +357,22 @@ pytest test/
 ```
 This will execute all test files inside the `test/` folder.
 
+- Results:
+
+```
+======================== test session starts ========================
+platform linux -- Python 3.10.17, pytest-8.3.5, pluggy-1.6.0
+rootdir: /home/user/dag-first-approach/project_airflow_etl
+plugins: anyio-4.9.0
+collected 3 items                                                                                                
+
+test/test_enrich.py .                                          [ 33%]
+test/test_extract.py .                                         [ 66%]
+test/test_usd_to_clp.py  .                                     [100%]
+
+========================= 3 passed in 2.19s =========================
+```
+
 ### 📁 Example Test Structure
 
 ```
