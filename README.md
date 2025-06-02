@@ -200,12 +200,10 @@ This project defines an Apache Airflow DAG that automates a complete ETL process
 ## ⚙️ DAG Task Flow
 
 ```
-graph TD
-    A[📥 extract()\nExtract sales data from PostgreSQL] --> B[💱 fetch_fx_rate()\nGet USD to CLP rate]
-    B --> C[🧪 enrich()\nConvert totals to CLP]
-    C --> D[📊 generate_plot()\nGenerate sales plot]
-    C --> E[💾 export()\nExport to CSV]
-    C --> F[☁️ export_gsheet()\nExport to Google Sheets]
+[A]📥Extract data ─> [B]💱Fetch rate ─> [C]🧪Enrich data
+                                           ├> [D]📊Generate sales plot
+                                           ├─> [E]💾Export to CSV
+                                           └──> [F]☁️Export to Google Sheets
 ```
 
 ---
