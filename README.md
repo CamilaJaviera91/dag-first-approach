@@ -346,12 +346,24 @@ This project uses `pytest` to validate the ETL modules and ensure they work as e
 
 ### ✅ How to Run Tests
 
-1. Run the tests:
+- Run the tests:
 
 ```
 pytest test/
 ```
 This will execute all test files inside the `test/` folder.
+
+### 📁 Example Test Structure
+
+```
+dag-first-approach/
+├── src/
+│   └── etl_modules/
+├── test/
+│   ├── test_extract.py
+│   ├── test_usd_to_clp.py
+│   └── test_enrich.py
+```
 
 ---
 
