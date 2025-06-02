@@ -271,7 +271,7 @@ python dag_postgres.py
 
 ---
 
-## 📝 Notes
+## 📝 Notes:
 
 - Ensure the database is accessible and credentials are valid
 
@@ -340,7 +340,7 @@ airflow scheduler --log-level INFO
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing:
 
 Contributions are welcome! Please follow these steps:
 
@@ -356,13 +356,13 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📧 Questions?
+## 📧 Questions?:
 
 If you get stuck or need help customizing the pipeline, feel free to open an issue or reach out!
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻 Author:
 
 **Camila Javiera Muñoz Navarro**  
 [🔗 LinkedIn](https://www.linkedin.com/in/camilajmn/)  
@@ -370,6 +370,6 @@ If you get stuck or need help customizing the pipeline, feel free to open an iss
 
 ---
 
-## 📄 License
+## 📄 License:
 
 This project is licensed under the **MIT License**. 
