@@ -197,7 +197,6 @@ This project defines an Apache Airflow DAG that automates a complete ETL process
 - ☁️ Sends the data to Google Sheets for easy access.
 
 ---
-
 ## ⚙️ DAG Task Flow
 
 ```
@@ -208,6 +207,18 @@ graph TD
     C --> E[💾 export()\nExport to CSV]
     C --> F[☁️ export_gsheet()\nExport to Google Sheets]
 ```
+
+---
+
+## 🗓️ DAG Configuration
+
+| Parameter      | Value           |
+| -------------- | --------------- |
+| **DAG ID**     | `sales_etl_dag` |
+| **Schedule**   | `@daily`        |
+| **Catchup**    | `False`         |
+| **Start Date** | `2024-01-01`    |
+| **Owner**      | `Camila`        |
 
 ---
 
