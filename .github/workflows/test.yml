@@ -15,10 +15,19 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install dependencies
+    - name: Upgrade pip, setuptools, and wheel
       run: |
-        pip install -r project_airflow_etl/requirements.txt
+        python -m pip install --upgrade pip setuptools wheel
 
-    - name: Run test
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential libpq-dev python3-dev
+
+    - name: Install Python dependencies
+      run: |
+        pip install -r project_airflow_etl/requirements.txt --verbose
+
+    - name: Run tests
       run: |
         pytest project_airflow_etl/test/
