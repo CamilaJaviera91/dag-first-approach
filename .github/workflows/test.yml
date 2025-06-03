@@ -23,7 +23,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         pip install --upgrade pip setuptools wheel
-        pip install -r project_airflow_etl/requirements.txt -c project_airflow_etl/constraints.txt
+        pip install -r project_airflow_etl/requirements.txt
 
     - name: Run tests
       run: |
