@@ -27,4 +27,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest project_airflow_etl/test/ --disable-warnings --maxfail=2
+        pytest project_airflow_etl/test/ --disable-warnings --maxfail=2 
