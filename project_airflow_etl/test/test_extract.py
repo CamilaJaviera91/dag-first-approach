@@ -1,8 +1,10 @@
 from unittest.mock import patch, MagicMock
+import pandas as pd
+
 from etl_modules.extract import extract_data
 
-@patch("etl_modules.extract.connect_to_postgres")
-def test_extract_data_returns_expected_structure(mock_connect):
+@patch("etl_modules.extract.get_connection")
+def test_extract_data_returns_expected_structure(mock_get_connection):
     fake_rows = [
         (2024, "Santiago-01", 1000),
         (2025, "Temuco-02", 1300)
@@ -14,8 +16,12 @@ def test_extract_data_returns_expected_structure(mock_connect):
     mock_cursor.description = fake_description
 
     mock_conn = MagicMock()
-    mock_conn.cursor.return_value.__enter__.return_value = mock_cursor
-    mock_connect.return_value = mock_conn
+    mock_conn.cursor.return_value = mock_cursor
+    # Además, extract_data hace cur.close() y conn.close(), el mock debe tenerlos:
+    mock_cursor.close.return_value = None
+    mock_conn.close.return_value = None
+
+    mock_get_connection.return_value = (mock_conn, mock_cursor)
 
     result = extract_data()
 
