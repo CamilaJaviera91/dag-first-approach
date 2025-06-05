@@ -1,11 +1,11 @@
 from unittest.mock import patch, MagicMock
 import pandas as pd
 
-from src.etl_modules.enrich import enrich_report
-from src.etl_modules.extract import extract_data
+from etl_modules.enrich import enrich_report
+from etl_modules.extract import extract_data
 
-@patch("src.etl_modules.enrich.fetch_usd_to_clp")
-@patch("src.etl_modules.extract.extract_data")
+@patch("etl_modules.enrich.fetch_usd_to_clp")
+@patch("etl_modules.extract.extract_data")
 def test_enrich_adds_total_clp(mock_extract_data, mock_fetch_usd_to_clp):
     mock_extract_data.return_value = [
         {"item": "shoes", "price": 50, "quantity": 2, "total": 100},
