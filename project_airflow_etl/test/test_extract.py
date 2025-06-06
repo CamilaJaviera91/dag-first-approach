@@ -1,5 +1,10 @@
-from unittest.mock import patch, MagicMock
+# pyright: reportMissingImports=false
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
+
+from unittest.mock import patch, MagicMock
 from etl_modules.extract import extract_data
 
 @patch("etl_modules.extract.get_connection")
