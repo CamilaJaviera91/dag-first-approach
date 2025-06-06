@@ -1,5 +1,4 @@
 from unittest.mock import patch, MagicMock
-import pandas as pd
 
 from etl_modules.extract import extract_data
 
@@ -17,7 +16,7 @@ def test_extract_data_returns_expected_structure(mock_get_connection):
 
     mock_conn = MagicMock()
     mock_conn.cursor.return_value = mock_cursor
-    # Además, extract_data hace cur.close() y conn.close(), el mock debe tenerlos:
+  
     mock_cursor.close.return_value = None
     mock_conn.close.return_value = None
 
