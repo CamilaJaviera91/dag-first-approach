@@ -236,7 +236,7 @@ This is the task flow as represented in Airflow:
 
 ![sales](project_airflow_etl/data/sales.png)
 
-### 📄 report.csv
+### 📄 report.csv & Google Spreadsheet
 
 | year | store          | total       | total_clp     |
 |------|----------------|-------------|---------------|
