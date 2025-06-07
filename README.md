@@ -182,14 +182,6 @@ Navigate to http://localhost:8080 in your web browser.
 
 ---
 
-## 🖼️ DAG Graph View
-
-This is the task flow as represented in Airflow:
-
-![DAG Screenshot](project_airflow_etl/data/dag.png)
-
----
-
 ## 🧩 Sales ETL Pipeline
 
 This project defines an Apache Airflow DAG that automates a complete ETL process:
@@ -207,13 +199,13 @@ This project defines an Apache Airflow DAG that automates a complete ETL process
 - ☁️ Sends the data to Google Sheets for easy access.
 
 ---
-## ⚙️ DAG Task Flow
 
-```
-[A]📥Extract data ─> [B]💱Fetch rate ─> [C]🧪Enrich data
-                                         ├─> [D]📊Generate sales plot
-                                         ├───> [E]💾Export to CSV
-                                         └─────> [F]☁️Export to Google Sheets
+## 🖼️ DAG Graph View
+
+This is the task flow as represented in Airflow:
+
+![DAG Screenshot](project_airflow_etl/data/dag.png)
+
 ```
 
 ---
@@ -230,28 +222,9 @@ This project defines an Apache Airflow DAG that automates a complete ETL process
 
 ---
 
-## ▶️ Execution Example:
-
-- Run de pipeline: 
-
-```
-python dag_postgres.py
-```
-
-- You'll see output like:
-
-```
-✅ Successfully connected to PostgreSQL.
-💱 Exchange rate: 1 USD = 900.50 CLP
-📊 Enriched report:
-📤 Exported report to 'report.csv'
-📤 Data exported to Google Sheets: Sales Report -> ReportSheet
-🔒 Connection closed successfully.
-```
-
----
-
 ## 📊 Sample Output:
+
+### report.csv
 
 | year | store          | total       | total_clp     |
 |------|----------------|-------------|---------------|
@@ -260,6 +233,10 @@ python dag_postgres.py
 | 2020 | Villa Alegre-2	|1,325,040.86 | 1,250,189,302 |
 | 2020 | Longaví-9      |1,353,795.29 | 1,277,319,394 |
 | 2020 | Constitución-4 |1,353,981.94 | 1,277,495,500 |
+
+### sales.png
+
+![DAG Screenshot](project_airflow_etl/data/sales.png)
 
 ---
 
