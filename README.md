@@ -163,26 +163,20 @@ airflow db init
 
     - Make sure to share your target Google Sheet with the service account email.
 
-7. Run the main script:
-
-```
-python main.py
-```
-
-8. Start Postgres Services:
+7. Start Postgres Services:
 
 ```
 sudo systemctl start postgresql
 ```
 
-9. Start Airflow Services:
+8. Start Airflow Services:
 
 ```
 airflow webserver --port 8080
 airflow scheduler
 ```
 
-10. Access the Airflow Web Interface:
+9. Access the Airflow Web Interface:
 
 Navigate to http://localhost:8080 in your web browser.
 
