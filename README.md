@@ -188,6 +188,14 @@ Navigate to http://localhost:8080 in your web browser.
 
 ---
 
+## 🖼️ DAG Graph View
+
+This is the task flow as represented in Airflow:
+
+![DAG Screenshot](project_airflow_etl/data/dag.png)
+
+---
+
 ## 🧩 Sales ETL Pipeline
 
 This project defines an Apache Airflow DAG that automates a complete ETL process:
