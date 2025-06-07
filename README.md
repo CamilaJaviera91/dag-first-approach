@@ -206,8 +206,6 @@ This is the task flow as represented in Airflow:
 
 ![DAG Screenshot](project_airflow_etl/data/dag.png)
 
-```
-
 ---
 
 ## 🗓️ DAG Configuration
@@ -232,19 +230,13 @@ This is the task flow as represented in Airflow:
 
 ---
 
-## ❗Troubleshooting:
-
-- **Connection Errors:** Check your database credentials and network access.
-
-- **Google Sheets Permissions:** Make sure the service account has access to edit the target sheet.
-
-- **Missing Environment Variables:** Ensure `.env` is properly set and loaded.
-
----
-
 ## 📊 Sample Output:
 
-### report.csv
+- sales
+
+![sales](project_airflow/data/sales.png)
+
+- report
 
 | year | store          | total       | total_clp     |
 |------|----------------|-------------|---------------|
@@ -254,9 +246,15 @@ This is the task flow as represented in Airflow:
 | 2020 | Longaví-9      |1,353,795.29 | 1,277,319,394 |
 | 2020 | Constitución-4 |1,353,981.94 | 1,277,495,500 |
 
-### sales.png
+---
 
-![DAG Screenshot](project_airflow_etl/data/sales.png)
+## ❗Troubleshooting:
+
+- **Connection Errors:** Check your database credentials and network access.
+
+- **Google Sheets Permissions:** Make sure the service account has access to edit the target sheet.
+
+- **Missing Environment Variables:** Ensure `.env` is properly set and loaded.
 
 ---
 
