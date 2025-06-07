@@ -222,6 +222,26 @@ This is the task flow as represented in Airflow:
 
 ---
 
+## 📂 Output Files:
+
+- data/report.csv
+
+- data/sales.png
+
+- Google Spreadsheet: `Sales Report → ReportSheet`
+
+---
+
+## ❗Troubleshooting:
+
+- **Connection Errors:** Check your database credentials and network access.
+
+- **Google Sheets Permissions:** Make sure the service account has access to edit the target sheet.
+
+- **Missing Environment Variables:** Ensure `.env` is properly set and loaded.
+
+---
+
 ## 📊 Sample Output:
 
 ### report.csv
@@ -237,24 +257,6 @@ This is the task flow as represented in Airflow:
 ### sales.png
 
 ![DAG Screenshot](project_airflow_etl/data/sales.png)
-
----
-
-## 📂 Output Files:
-
-- results/report.csv
-
-- Google Spreadsheet: `Sales Report → ReportSheet`
-
----
-
-## ❗Troubleshooting:
-
-- **Connection Errors:** Check your database credentials and network access.
-
-- **Google Sheets Permissions:** Make sure the service account has access to edit the target sheet.
-
-- **Missing Environment Variables:** Ensure `.env` is properly set and loaded.
 
 ---
 
