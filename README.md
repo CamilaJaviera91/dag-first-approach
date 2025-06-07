@@ -19,10 +19,11 @@ The **pipeline** is designed as a **Directed Acyclic Graph** (`DAG`) to manage t
 ```bash
 dag-first-approach/
 ├── project_airflow_etl/
-│   ├── config/
+
 │   ├── dags/
 │   │   └── etl_sales_report.py       # Airflow DAG definition
 │   ├── data/
+│   │   ├── dag.csv
 │   │   ├── report.csv                # Final report file
 │   │   └── sales.png                 # Yearly sales
 │   ├── logs/                         # Airflow logs
@@ -38,13 +39,11 @@ dag-first-approach/
 │   │       ├── google_sheets.py
 │   │       └── usd_to_clp.py
 │   ├── test/
-│   │   ├── test_extract.py
-│   │   ├── test_usd_to_clp.py
-│   │   └── test_enrich.py
+│   │   ├── test_enrich.py
+│   │   └── test_extract.py
 │   ├── airflow.cfg                   # Airflow configuration file
 │   ├── airflow.db                    # Airflow database (SQLite for local use)
 │   ├── docker-compose.yaml           # Docker setup for Airflow
-│   ├── flask_session
 │   ├── requirements.txt              # Python dependencies
 └── README.md
 ```
