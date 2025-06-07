@@ -230,13 +230,13 @@ This is the task flow as represented in Airflow:
 
 ---
 
-## 📊 Sample Output:
+## ✅ Sample Output:
 
-- sales
+### 📊 sales.png
 
 ![sales](project_airflow_etl/data/sales.png)
 
-- report
+### 📄 report.csv
 
 | year | store          | total       | total_clp     |
 |------|----------------|-------------|---------------|
