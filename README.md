@@ -348,49 +348,6 @@ airflow scheduler --log-level INFO
 
 ---
 
-## 🧪 Testing
-
-This project uses `pytest` to validate the ETL modules and ensure they work as expected.
-
-### ✅ How to Run Tests
-
-- Run the tests:
-
-```
-pytest test/
-```
-This will execute all test files inside the `test/` folder.
-
-- Results:
-
-```
-======================== test session starts ========================
-platform linux -- Python 3.10.17, pytest-8.3.5, pluggy-1.6.0
-rootdir: /home/user/dag-first-approach/project_airflow_etl
-plugins: anyio-4.9.0
-collected 3 items
-
-test/test_enrich.py .                                          [ 33%]
-test/test_extract.py .                                         [ 66%]
-test/test_usd_to_clp.py  .                                     [100%]
-
-========================= 3 passed in 2.19s =========================
-```
-
-### 📁 Example Test Structure
-
-```
-dag-first-approach/
-├── src/
-│   └── etl_modules/
-├── test/
-│   ├── test_extract.py
-│   ├── test_usd_to_clp.py
-│   └── test_enrich.py
-```
-
----
-
 ## 🤝 Contributing:
 
 Contributions are welcome! Please follow these steps:
