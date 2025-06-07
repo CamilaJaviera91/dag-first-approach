@@ -421,6 +421,14 @@ If you get stuck or need help customizing the pipeline, feel free to open an iss
 
 ---
 
+## 📚 Useful Resources
+
+- [Apache Airflow Docs](https://airflow.apache.org/docs/)
+- [Google Sheets API Python](https://developers.google.com/sheets/api/quickstart/python)
+- [Docker Compose for Airflow](https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml)
+
+---
+
 ## 📄 License:
 
 This project is licensed under the **MIT License**. 
