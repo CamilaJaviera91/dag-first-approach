@@ -234,7 +234,7 @@ This is the task flow as represented in Airflow:
 
 - sales
 
-![sales](project_airflow/data/sales.png)
+![sales](project_airflow_etl/data/sales.png)
 
 - report
 
