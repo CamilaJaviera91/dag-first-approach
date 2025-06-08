@@ -39,6 +39,7 @@ dag-first-approach/
 │   │       ├── google_sheets.py
 │   │       └── usd_to_clp.py
 │   ├── test/                         # For testing on Github
+│   │   ├── test_connection.py
 │   │   ├── test_enrich.py
 │   │   ├── test_export.py
 │   │   ├── test_extract.py
