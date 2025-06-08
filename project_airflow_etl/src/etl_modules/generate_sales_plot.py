@@ -7,23 +7,25 @@ from pathlib import Path
 def generate_sales_by_year_plot(data: list[dict], output_path: str = 'data/yearly_sales.png'):
     df = pd.DataFrame(data)
 
-    if 'year' not in df.columns or 'total_clp' not in df.columns:
-        raise ValueError("Missing required columns in data: 'Year' and 'total_clp'.")
+    required_columns = {'year', 'total_clp'}
+    missing_columns = required_columns - set(df.columns)
+    if missing_columns:
+        raise ValueError(f"Missing required columns in data: {missing_columns}.")
+
+    if df[['year', 'total_clp']].isnull().any().any():
+        raise ValueError("Null values found in required columns: 'year' and/or 'total_clp'.")
 
     df['year'] = df['year'].astype(int)
-    df['total_clp'] = pd.to_numeric(df['total_clp'])
+    df['total_clp'] = df['total_clp'].astype(float)
 
-    sales = df.groupby('year')['total_clp'].sum().reset_index()
+    df = df.sort_values('year')
 
-    plt.figure(figsize=(8, 5))
-    plt.bar(sales['year'], sales['total_clp'], color='skyblue')
-    plt.title('Total de Ventas Anuales en CLP')
+    plt.figure(figsize=(10, 6))
+    plt.bar(df['year'], df['total_clp'])
     plt.xlabel('Year')
-    plt.ylabel('Total CLP')
-    plt.grid(axis='y', linestyle='--', alpha=0.7)
-    plt.xticks(sales['year'])
+    plt.ylabel('Total Sales (CLP)')
+    plt.title('Total Sales by Year in CLP')
     plt.tight_layout()
 
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(output_path)
     plt.close()
