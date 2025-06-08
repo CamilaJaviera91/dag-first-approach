@@ -224,7 +224,7 @@ This is the task flow as represented in Airflow:
 
 ---
 
-## 📂 Output Files:
+## 🗂️ Output Files:
 
 - data/report.csv
 
@@ -240,7 +240,7 @@ This is the task flow as represented in Airflow:
 
 ![sales](project_airflow_etl/data/sales.png)
 
-### 📄 report.csv & Google Spreadsheet
+### 📂 report.csv 
 
 | year | store          | total       | total_clp     |
 |------|----------------|-------------|---------------|
@@ -249,6 +249,10 @@ This is the task flow as represented in Airflow:
 | 2020 | Villa Alegre-2	|1,325,040.86 | 1,250,189,302 |
 | 2020 | Longaví-9      |1,353,795.29 | 1,277,319,394 |
 | 2020 | Constitución-4 |1,353,981.94 | 1,277,495,500 |
+
+### 📄 Sales Report (GoogleSheets)
+
+- [Link to Sales Report](https://docs.google.com/spreadsheets/d/1PszowXv_7GFDleYF1D-4mhRgbrHmDlGkVTWiCCJm2lk/edit?gid=435698635#gid=435698635)
 
 ---
 
