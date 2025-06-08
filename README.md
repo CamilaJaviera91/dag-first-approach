@@ -42,6 +42,7 @@ dag-first-approach/
 │   │   ├── test_enrich.py
 │   │   ├── test_export.py
 │   │   ├── test_extract.py
+│   │   ├── test_generate_sales_plot.py
 │   │   └── test_usd_to_clp.py
 │   ├── airflow.cfg                   # Airflow configuration file
 │   ├── airflow.db                    # Airflow database (SQLite for local use)
