@@ -30,10 +30,10 @@ def test_generate_sales_by_year_plot_creates_file(mock_mkdir, mock_savefig):
 @patch("etl_modules.generate_sales_plot.plt.savefig")
 def test_generate_sales_by_year_plot_raises_with_missing_columns(mock_savefig):
     incomplete_data = [
-        {"year": 2022},      
-        {"total_clp": 2000}   
+        {"year": 2022},
+        {"total_clp": 2000}
     ]
     try:
         generate_sales_by_year_plot(incomplete_data)
     except ValueError as e:
-        assert str(e) == "Missing required columns in data: {'year', 'total_clp'}."
+        assert str(e) == "Null values found in required columns: 'year' and/or 'total_clp'."
