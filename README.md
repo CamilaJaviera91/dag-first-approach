@@ -387,3 +387,7 @@ If you get stuck or need help customizing the pipeline, feel free to open an iss
 ## 📄 License:
 
 This project is licensed under the **MIT License**. 
+
+---
+
+📚 [Extended usage guide](docs/usage.md)
