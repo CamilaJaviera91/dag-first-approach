@@ -352,6 +352,16 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
+## 🗒️ Roadmap
+
+- [x] Extraction from PostgreSQL.
+- [x] Enrichment with exchange rate.
+- [x] Export to CSV and Google Sheets.
+- [ ] Integration with other data sources (e.g., S3, external APIs).
+- [ ] Real-time dashboard visualization.
+
+---
+
 ## 📧 Questions?:
 
 If you get stuck or need help customizing the pipeline, feel free to open an issue or reach out!
