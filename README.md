@@ -1,7 +1,3 @@
-[![Python Tests](https://github.com/CamilaJaviera91/dag-first-approach/actions/workflows/python-tests.yml/badge.svg)](https://github.com/CamilaJaviera91/dag-first-approach/actions/workflows/python-tests.yml)
-
----
-
 # 💡 DAG-Based ETL Pipeline for Sales Reporting
 
 ## 🧠 Project Description:
