@@ -390,4 +390,6 @@ This project is licensed under the **MIT License**.
 
 ---
 
-📚 [Extended usage guide](https://github.com/CamilaJaviera91/dag-first-approach/wiki)
+## 📚 Wiki
+
+- [Extended usage guide](https://github.com/CamilaJaviera91/dag-first-approach/wiki)
