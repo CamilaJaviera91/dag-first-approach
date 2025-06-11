@@ -30,6 +30,17 @@
 
 ---
 
+## 🧪 Continuous Integration (CI)
+
+This project uses [GitHub Actions](https://github.com/features/actions) to automatically run tests on every push.
+
+CI file: [python-tests.yml](.github/workflows/python-tests.yml)
+
+✅ Ensures code quality  
+✅ Prevents regressions
+
+---
+
 # 💡 DAG-Based ETL Pipeline for Sales Reporting
 
 ## 🧠 Project Description:
