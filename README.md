@@ -1,9 +1,4 @@
-
-[![Python Tests](https://github.com/CamilaJaviera91/dag-first-approach/actions/workflows/python-tests.yml/badge.svg)](https://github.com/CamilaJaviera91/dag-first-approach/actions/workflows/python-tests.yml)
-
----
-
-## 🧭 Table of Contents
+# 🧭 Table of Contents
 
 - [💡 Project Description](#-project-description)
 - [🚀 Project Structure](#-project-structure)
@@ -26,6 +21,12 @@
 - [📚 Useful Resources](#-useful-resources)
 - [📄 License](#-license)
 - [📚 Wiki](#-wiki)
+
+---
+
+## 🧪 Test Badge
+
+[![Python Tests](https://github.com/CamilaJaviera91/dag-first-approach/actions/workflows/python-tests.yml/badge.svg)](https://github.com/CamilaJaviera91/dag-first-approach/actions/workflows/python-tests.yml)
 
 ---
 
