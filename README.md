@@ -3,6 +3,32 @@
 
 ---
 
+## 🧭 Table of Contents
+
+- [💡 Project Description](#-project-description)
+- [🚀 Project Structure](#-project-structure)
+- [🧩 What This Project Does?](#-what-this-project-does)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [🗂️ What's DAG?](#️-whats-dag)
+- [🚀 Installation and Execution](#-installation-and-execution)
+- [🧩 Sales ETL Pipeline](#-sales-etl-pipeline)
+- [🖼️ DAG Graph View](#️-dag-graph-view)
+- [🗓️ DAG Configuration](#️-dag-configuration)
+- [🗂️ Output Files](#️-output-files)
+- [✅ Sample Output](#-sample-output)
+- [❗ Troubleshooting](#-troubleshooting)
+- [📝 Notes](#-notes)
+- [📘 How to Add a DAG to Apache Airflow](#-how-to-add-a-dag-to-apache-airflow)
+- [🤝 Contributing](#-contributing)
+- [🗒️ Roadmap](#️-roadmap)
+- [📧 Questions?](#-questions)
+- [👩‍💻 Author](#-author)
+- [📚 Useful Resources](#-useful-resources)
+- [📄 License](#-license)
+- [📚 Wiki](#-wiki)
+
+---
+
 # 💡 DAG-Based ETL Pipeline for Sales Reporting
 
 ## 🧠 Project Description:
