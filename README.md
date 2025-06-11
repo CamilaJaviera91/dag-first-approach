@@ -422,6 +422,16 @@ If you get stuck or need help customizing the pipeline, feel free to open an iss
 
 ---
 
+## ✨ Coding Standards and Best Practices
+
+- Modular structure for maintainability
+- Separation of concerns in ETL steps
+- CI with unit tests using `pytest`
+- Secure use of `.env` for credentials
+- Logging and exception handling in DAGs
+
+---
+
 ## 📄 License:
 
 This project is licensed under the **MIT License**. 
