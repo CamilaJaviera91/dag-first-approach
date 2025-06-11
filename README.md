@@ -19,6 +19,7 @@
 - [📧 Questions?](#-questions)
 - [👩‍💻 Author](#-author)
 - [📚 Useful Resources](#-useful-resources)
+- [✨ Coding Standards and Best Practices](#-coding-standards-and-best-practices)
 - [📄 License](#-license)
 - [📚 Wiki](#-wiki)
 
